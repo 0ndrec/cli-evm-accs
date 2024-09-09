@@ -11,6 +11,11 @@ A simple CLI tool for safety managing EVM accounts.
     ```sh
     cp .env.example .env
     ```
+    ```sh
+    nano .env
+    
+    # DEFINE ENDPOINT
+    ```
 
 2. **Install the required dependencies**:
     ```sh
