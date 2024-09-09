@@ -1,0 +1,7 @@
+colorama
+web3
+requests
+python-dotenv
+cryptography
+eth-account
+eth-utils
