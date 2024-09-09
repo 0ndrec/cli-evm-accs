@@ -5,8 +5,8 @@ A simple CLI tool for safety managing EVM accounts.
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/______________.git
-    cd ____________________
+    git clone https://github.com/0ndrec/cli-evm-accs.git
+    cd cli-evm-accs
     ```
 
 2. **Install the required dependencies**:
