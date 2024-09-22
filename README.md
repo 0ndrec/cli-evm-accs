@@ -1,6 +1,6 @@
 ## Description
 A simple CLI tool for safety managing EVM accounts.
-![alt text](https://github.com/0ndrec/cli-evm-accs/edit/main/img.gif)
+![alt text](https://github.com/0ndrec/cli-evm-accs/blob/main/img.gif)
 
 ## 🚀 Setup
 
