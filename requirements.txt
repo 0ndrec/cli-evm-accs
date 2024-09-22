@@ -1,4 +1,5 @@
 colorama
+inquirer
 web3
 requests
 python-dotenv
