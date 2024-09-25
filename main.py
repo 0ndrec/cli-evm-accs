@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from utils.account import new_encrypt_token, KeyManager
 from dotenv import load_dotenv, dotenv_values, set_key
 from colorama import Fore, Back, Style
@@ -36,6 +37,17 @@ def w3_init(endpoint) -> Web3:
 # _____________________________________________________________________________
 
 
+# _________________________________PRIVATE_KEYS_EXPORT_TO_TXT_SECTION____________________________
+def export_private_keys_to_txt(keys: dict, file_path: str):
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    file_name = f"{timestamp}_export.txt"
+    file_path = os.path.join(file_path, file_name)
+    with open(file_path, 'w') as file:
+        for address, private_key in keys.items():
+            file.write(f"{private_key} {address}\n")
+#_________________________________________________________________________________________
+
+
 def menu():
     sentinel = "Exit"
     choice = None
@@ -55,6 +67,7 @@ def menu():
                     "Generate new account(s)",
                     "Connect to endpoint",
                     "Show my accounts",
+                    "Unsafe export keys to text file",
                     "Get balance of each account",
                     "Exit",
                 ],
@@ -182,6 +195,42 @@ def menu():
                     for idx, acc in enumerate(accounts, start=1):
                         print(f"{idx}. {acc}")
                     print("_________________\n")
+                else:
+                    print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
+                input("Press Enter to continue...")
+                continue
+
+            case "Export private keys to text file":
+                DEFAULT_EXPORT_PATH = os.getcwd()
+                os.system('cls' if os.name == 'nt' else 'clear')
+                
+                export_data = {}
+                accounts = km.load_keys()
+
+                if w3 is None:
+                    print(f"{Fore.RED}\nPlease connect to the endpoint first.{Style.RESET_ALL}\n")
+                    input("Press Enter to continue...")
+                    continue
+
+                for acc in accounts:
+                    key = km.get_decrypted_key(acc)
+                    evm_acc = w3.eth.account.from_key(key)
+                    address = evm_acc.address
+                    if key:
+                        export_data[address] = key
+
+                if accounts:
+                    questions = [
+                        inquirer.Text(
+                            "export_path",
+                            message="Enter the path to export the keys to ",
+                            default=DEFAULT_EXPORT_PATH
+                        )
+                    ]
+                    answers = inquirer.prompt(questions)
+                    export_path = answers["export_path"] or DEFAULT_EXPORT_PATH
+                    export_private_keys_to_txt(export_data, export_path)
+                    print("\n")
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
                 input("Press Enter to continue...")
