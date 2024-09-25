@@ -200,7 +200,7 @@ def menu():
                 input("Press Enter to continue...")
                 continue
 
-            case "Export private keys to text file":
+            case "Unsafe export keys to text file":
                 DEFAULT_EXPORT_PATH = os.getcwd()
                 os.system('cls' if os.name == 'nt' else 'clear')
                 
