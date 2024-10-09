@@ -49,16 +49,9 @@ function install_app {
         echo "Virtual environment already exists at $VENV_DIR."
     fi
 
+    # list files in bin directory: python, python3, python3.10
     # Activate virtual environment
-    if [[ -f "$VENV_DIR/bin/activate" ]]; then
-        source "$VENV_DIR/bin/activate" || error_exit "Failed to activate virtual environment."
-    elif [[ -f "$VENV_DIR/bin/activate.csh" ]]; then
-        source "$VENV_DIR/bin/activate.csh" || error_exit "Failed to activate virtual environment."
-    elif [[ -f "$VENV_DIR/bin/activate.fish" ]]; then
-        source "$VENV_DIR/bin/activate.fish" || error_exit "Failed to activate virtual environment."
-    else
-        echo "Virtual environment activation script not found. Skipping."
-    fi
+    source "$VENV_DIR/bin/activate" || error_exit "Failed to activate virtual environment."
 
     # Clone the repository
     if [[ ! -d "$REPO_DIR" ]]; then
@@ -132,3 +125,4 @@ if [[ "$1" == "update" ]]; then
 else
     install_app
 fi
+
