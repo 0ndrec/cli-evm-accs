@@ -10,7 +10,7 @@ function error_exit {
 
 # Variables
 APP_DIR="/opt/cli-evm-accs"
-VENV_DIR="$APP_DIR/venv"
+VENV_DIR="$APP_DIR/.env"
 REPO_URL="https://github.com/0ndrec/cli-evm-accs.git"
 REPO_DIR="$APP_DIR/cli-evm-accs"
 EXECUTABLE="/usr/local/bin/evmaccs"
@@ -44,7 +44,7 @@ function install_app {
     # Create virtual environment
     if [[ ! -d "$VENV_DIR" ]]; then
         echo "Creating Python virtual environment..."
-        python3 -m venv "$VENV_DIR" || error_exit "Failed to create virtual environment."
+        cd "$APP_DIR" && python3 -m venv .env || error_exit "Failed to create virtual environment."
     else
         echo "Virtual environment already exists at $VENV_DIR."
     fi
