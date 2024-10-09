@@ -26,6 +26,8 @@ function install_app {
         echo "Python3 is already installed."
     fi
 
+    apt-get install -y python3-venv python3-pip || error_exit "Failed to install Python3."
+
     # Install git if not installed
     if ! command -v git >/dev/null 2>&1; then
         echo "Git not found. Installing..."
