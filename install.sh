@@ -50,7 +50,15 @@ function install_app {
     fi
 
     # Activate virtual environment
-    source "$VENV_DIR/bin/activate" || error_exit "Failed to activate virtual environment."
+    if [[ -f "$VENV_DIR/bin/activate" ]]; then
+        source "$VENV_DIR/bin/activate" || error_exit "Failed to activate virtual environment."
+    elif [[ -f "$VENV_DIR/bin/activate.csh" ]]; then
+        source "$VENV_DIR/bin/activate.csh" || error_exit "Failed to activate virtual environment."
+    elif [[ -f "$VENV_DIR/bin/activate.fish" ]]; then
+        source "$VENV_DIR/bin/activate.fish" || error_exit "Failed to activate virtual environment."
+    else
+        echo "Virtual environment activation script not found. Skipping."
+    fi
 
     # Clone the repository
     if [[ ! -d "$REPO_DIR" ]]; then
