@@ -30,6 +30,10 @@ Run the script:
 ```sh
 python main.py
 ```
+## Autoinstall
 
+```sh
+  bash <(curl -s "https://raw.githubusercontent.com/0ndrec/onchain/main/toolchain/<name>.sh")
+```
 
 Happy testing! 🎉
