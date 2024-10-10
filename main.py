@@ -9,6 +9,11 @@ import inquirer
 load_dotenv()
 config = dotenv_values(".env")
 
+def init(config):
+    if config.get("ENDPOINT") == "" or config.get("ENDPOINT") is None:
+        set_key(".env", "ENDPOINT", "")
+    if config.get("KEYS_PATH") == "" or config.get("KEYS_PATH") is None:
+        set_key(".env", "KEYS_PATH", "keys.json")
 
 # ____________________________ENCRYPTION_TOKEN_SECTION________________________________
 if config.get("ENCRYPTION_TOKEN") == "" or config.get("ENCRYPTION_TOKEN") is None:
@@ -21,14 +26,6 @@ if config.get("ENCRYPTION_TOKEN") == "" or config.get("ENCRYPTION_TOKEN") is Non
     print(f"Encryption token written in .env file")
 else:
     km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
-# ____________________________________________________________________________________
-
-
-# _________________________________DEFAULT_VALUES_IN_ENV_______________________________
-if config.get("ENDPOINT") == "" or config.get("ENDPOINT") is None:
-    config["ENDPOINT"] = "https://mainnet.base.org/"
-if config.get("KEYS_PATH") == "" or config.get("KEYS_PATH") is None:
-    config["KEYS_PATH"] = "keys.json"
 # ____________________________________________________________________________________
 
 
@@ -280,4 +277,5 @@ def menu():
 
 
 if __name__ == "__main__":
+    init()
     menu()
