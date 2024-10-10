@@ -60,7 +60,7 @@ source "$VENV_DIR/bin/activate" || error_exit "Failed to activate virtual enviro
 # Install dependencies
 if [[ -f "$REPO_DIR/requirements.txt" ]]; then
     echo "Installing Python dependencies..."
-    pip install -r "$REPO_DIR/requirements.txt" || error_exit "Failed to install dependencies."
+    pip install -r "$REPO_DIR/requirements.txt" > /dev/null || error_exit "Failed to install dependencies."
 else
     echo "No requirements.txt found. Skipping dependency installation."
 fi

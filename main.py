@@ -24,7 +24,6 @@ if config.get("ENCRYPTION_TOKEN") == "" or config.get("ENCRYPTION_TOKEN") is Non
     # Save the new encryption token in the .env file
     set_key(".env", "ENCRYPTION_TOKEN", __token)
     km = KeyManager(config["KEYS_PATH"], __token)
-    print(f"Encryption token written in .env file")
 else:
     km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
 # ____________________________________________________________________________________
