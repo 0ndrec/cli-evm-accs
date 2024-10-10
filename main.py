@@ -9,6 +9,7 @@ import inquirer
 load_dotenv()
 config = dotenv_values(".env")
 
+
 # ____________________________ENCRYPTION_TOKEN_SECTION________________________________
 if config.get("ENCRYPTION_TOKEN") == "" or config.get("ENCRYPTION_TOKEN") is None:
     print("Generating a new encryption token for safely storing private keys...")
@@ -17,9 +18,19 @@ if config.get("ENCRYPTION_TOKEN") == "" or config.get("ENCRYPTION_TOKEN") is Non
     # Save the new encryption token in the .env file
     set_key(".env", "ENCRYPTION_TOKEN", __token)
     km = KeyManager(config["KEYS_PATH"], __token)
+    print(f"Encryption token written in .env file")
 else:
     km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
 # ____________________________________________________________________________________
+
+
+# _________________________________DEFAULT_VALUES_IN_ENV_______________________________
+if config.get("ENDPOINT") == "" or config.get("ENDPOINT") is None:
+    config["ENDPOINT"] = "https://mainnet.base.org/"
+if config.get("KEYS_PATH") == "" or config.get("KEYS_PATH") is None:
+    config["KEYS_PATH"] = "keys.json"
+# ____________________________________________________________________________________
+
 
 
 # ______________________________INITIALIZE_WEB3_SECTION________________________
