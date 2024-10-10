@@ -9,13 +9,14 @@ import inquirer
 load_dotenv()
 config = dotenv_values(".env")
 
-def init(config):
-    if config.get("ENDPOINT") == "" or config.get("ENDPOINT") is None:
-        set_key(".env", "ENDPOINT", "")
-    if config.get("KEYS_PATH") == "" or config.get("KEYS_PATH") is None:
-        set_key(".env", "KEYS_PATH", "keys.json")
 
-# ____________________________ENCRYPTION_TOKEN_SECTION________________________________
+
+#____________________________DEFAULTS_ENV_VALUES_SECTION____________________________
+if config.get("ENDPOINT") == "" or config.get("ENDPOINT") is None:
+    set_key(".env", "ENDPOINT", "")
+if config.get("KEYS_PATH") == "" or config.get("KEYS_PATH") is None:
+    set_key(".env", "KEYS_PATH", "keys.json")
+
 if config.get("ENCRYPTION_TOKEN") == "" or config.get("ENCRYPTION_TOKEN") is None:
     print("Generating a new encryption token for safely storing private keys...")
     # Generate a new encryption token for storing private keys
@@ -40,12 +41,10 @@ def w3_init(endpoint) -> Web3:
     else:
         print(f"{Back.RED}\nFailed to connect to the Ethereum endpoint.{Style.RESET_ALL}")
     return w3
-
-
 # _____________________________________________________________________________
 
 
-# _________________________________PRIVATE_KEYS_EXPORT_TO_TXT_SECTION____________________________
+# _________________________________UNSAFE_EXPORT_TO_TXT_SECTION____________________________
 def export_private_keys_to_txt(keys: dict, file_path: str):
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     file_name = f"{timestamp}_export.txt"
@@ -277,5 +276,4 @@ def menu():
 
 
 if __name__ == "__main__":
-    init()
     menu()
