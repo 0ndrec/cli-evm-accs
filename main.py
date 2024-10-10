@@ -21,13 +21,14 @@ if config.get("ENCRYPTION_TOKEN") == "" or config.get("ENCRYPTION_TOKEN") is Non
     print("Generating a new encryption token for safely storing private keys...")
     # Generate a new encryption token for storing private keys
     __token = new_encrypt_token().decode()
-    # Save the new encryption token in the .env file
     set_key(".env", "ENCRYPTION_TOKEN", __token)
-    km = KeyManager(config["KEYS_PATH"], __token)
-else:
-    km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
 # ____________________________________________________________________________________
 
+
+
+#______________________________INITIALIZE_KEY_MANAGER_SECTION________________________
+km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
+# __________________________________________________________________________________
 
 
 # ______________________________INITIALIZE_WEB3_SECTION________________________
