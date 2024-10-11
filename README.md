@@ -33,7 +33,7 @@ python main.py
 ## Autoinstall
 
 ```sh
-  bash <(curl -s "https://raw.githubusercontent.com/0ndrec/cli-evm-accs/refs/heads/main/install.sh")
+  curl -s https://raw.githubusercontent.com/0ndrec/cli-evm-accs/refs/heads/main/install.sh | sudo bash
 ```
 
 Happy testing! 🎉
