@@ -70,6 +70,7 @@ echo "Creating executable at $EXECUTABLE..."
 cat << EOF > "$EXECUTABLE"
 #!/bin/bash
 source "$VENV_DIR/bin/activate"
+echo "Starting evmaccs..."
 python "$REPO_DIR/main.py" "\$@"
 deactivate
 EOF
