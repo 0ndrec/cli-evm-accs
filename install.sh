@@ -39,7 +39,7 @@ fi
 
 # Upgrade packages
 apt-get update || error_exit "Failed to update package list."
-sudo apt upgrade -y || error_exit "Failed to upgrade packages."
+sudo apt upgrade -y > /dev/null || error_exit "Failed to upgrade packages."
 
 # Install Python3 if not installed
 if ! command -v python3 >/dev/null 2>&1; then
