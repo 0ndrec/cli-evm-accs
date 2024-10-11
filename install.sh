@@ -25,6 +25,12 @@ if [[ $EUID -ne 0 ]]; then
     exec sudo bash "$0" "$@"
 fi
 
+# Delete old application directory
+if [[ -d "$APP_DIR" ]]; then
+    echo "Clearing old application directory..."
+    rm -rf "$APP_DIR" || error_exit "Failed to clear old application directory."
+fi
+
 # Clone the repository
 if [[ ! -d "$REPO_DIR" ]]; then
     echo "Cloning repository..."
@@ -48,7 +54,7 @@ fi
 # Create virtual environment
 if [[ ! -d "$VENV_DIR" ]]; then
     echo "Creating Python virtual environment..."
-    cd "$APP_DIR" && python3 -m venv "$VENV_POINT" || error_exit "Failed to create virtual environment."
+    cd "$APP_DIR" && python3 -m venv .venv || python -m venv .venv || error_exit "Failed to create virtual environment."
     cp "$REPO_DIR/.env.example" "$REPO_DIR/.env"
 else
     echo "Virtual environment already exists at $VENV_DIR."
