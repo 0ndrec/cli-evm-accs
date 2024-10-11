@@ -37,14 +37,22 @@ if [[ ! -d "$REPO_DIR" ]]; then
     git clone "$REPO_URL" "$REPO_DIR" || error_exit "Failed to clone repository."
 fi
 
+# Upgrade packages
+apt-get update || error_exit "Failed to update package list."
+sudo apt upgrade -y || error_exit "Failed to upgrade packages."
+
 # Install Python3 if not installed
 if ! command -v python3 >/dev/null 2>&1; then
     echo "Python3 not found. Installing..."
-    apt-get update || error_exit "Failed to update package list."
-    apt-get install -y python3 python3-venv python3-pip || error_exit "Failed to install Python3."
+    apt-get install -y python3 || error_exit "Failed to install Python3."
 else
     echo "Python3 is already installed."
 fi
+
+# Install virtualenv if not installed, and pip
+apt-get install -y python3-pip || error_exit "Failed to install pip."
+apt-get install -y python3-venv || error_exit "Failed to install virtualenv."
+
 
 # Create application directory
 if [[ ! -d "$APP_DIR" ]]; then
