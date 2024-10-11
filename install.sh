@@ -54,14 +54,19 @@ fi
 # Create virtual environment
 if [[ ! -d "$VENV_DIR" ]]; then
     echo "Creating Python virtual environment..."
-    cd "$APP_DIR" && python3 -m venv .venv || python -m venv .venv || error_exit "Failed to create virtual environment."
-    cp "$REPO_DIR/.env.example" "$REPO_DIR/.env"
+    cd "$APP_DIR" && python3 -m venv "$VENV_POINT" || python -m venv "$VENV_POINT" || error_exit "Failed to create virtual environment."
 else
     echo "Virtual environment already exists at $VENV_DIR."
 fi
 
+
 # Activate virtual environment
-source "$VENV_DIR/bin/activate" || error_exit "Failed to activate virtual environment."
+if source "$VENV_DIR/bin/activate"; then
+    echo "Virtual environment activated."
+else
+    error_exit "Failed to activate virtual environment."
+fi
+
 
 # Install dependencies
 if [[ -f "$REPO_DIR/requirements.txt" ]]; then
