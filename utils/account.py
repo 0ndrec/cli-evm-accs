@@ -14,8 +14,9 @@ class KeyManager:
 
         Account.enable_unaudited_hdwallet_features()
 
-        if not os.path.isfile(file_path):
+        if not os.path.exists(file_path):
             open(file_path, 'w').close()
+
         self.file_path = file_path
 
         if encryption_key is None or len(encryption_key) == 0:

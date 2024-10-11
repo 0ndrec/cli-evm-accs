@@ -1,29 +1,19 @@
 import os
 from datetime import datetime
+from utils.init import configure
 from utils.account import new_encrypt_token, KeyManager
-from dotenv import load_dotenv, dotenv_values, set_key
 from colorama import Fore, Back, Style
 from web3 import Web3
 import inquirer
 
-load_dotenv()
-config = dotenv_values(".env")
 
 
-
-#____________________________DEFAULTS_ENV_VALUES_SECTION____________________________
-if config.get("ENDPOINT") == "" or config.get("ENDPOINT") is None:
-    set_key(".env", "ENDPOINT", "")
-if config.get("KEYS_PATH") == "" or config.get("KEYS_PATH") is None:
-    set_key(".env", "KEYS_PATH", "keys.json")
-
-if config.get("ENCRYPTION_TOKEN") == "" or config.get("ENCRYPTION_TOKEN") is None:
-    print("Generating a new encryption token for safely storing private keys...")
-    # Generate a new encryption token for storing private keys
-    __token = new_encrypt_token().decode()
-    set_key(".env", "ENCRYPTION_TOKEN", __token)
-# ____________________________________________________________________________________
-
+# Check validity of .env file
+config = configure(".env", new_encrypt_token().decode())
+for key in ["ENDPOINT", "KEYS_PATH", "ENCRYPTION_TOKEN"]:
+    if config.get(key) is None or len(config.get(key)) == 0:
+        print(f"{Back.RED}Error: {key} is missing or empty.{Style.RESET_ALL}")
+        exit()
 
 
 #______________________________INITIALIZE_KEY_MANAGER_SECTION________________________
@@ -177,7 +167,7 @@ def menu():
                 questions = [
                     inquirer.Password(
                         "endpoint",
-                        message="Enter Ethereum endpoint (default from .env file):",
+                        message="Enter Ethereum endpoint (default from .env file)",
                         default=endpoint_default
                     )
                 ]
@@ -256,7 +246,7 @@ def menu():
                             key = km.get_decrypted_key(acc)
                             address = w3.eth.account.from_key(key).address
                             balance = w3.eth.get_balance(address)
-                            # Convert the balance from wei to ether
+                            # Convert the balance from wei to ether.
                             print(f"{acc}: {balance / 10**18} ETH")
                         print("\n")
                     except Exception as e:
