@@ -59,7 +59,7 @@ def menu():
                     "Show my accounts",
                     "Unsafe export keys to file",
                     "Get balance of each account",
-                    "Transfer native token",
+                    "Transfer native token [TODO]",
                     "Exit",
                 ],
             )
