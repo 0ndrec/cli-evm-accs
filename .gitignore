@@ -1,4 +1,7 @@
 **/__pycache__
+*export.txt
+*export.csv
+keys.json
 venv
 env
 .env

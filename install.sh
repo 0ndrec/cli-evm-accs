@@ -68,7 +68,6 @@ else
 fi
 
 
-# Activate virtual environment
 if source "$VENV_DIR/bin/activate"; then
     echo "Virtual environment activated."
 else

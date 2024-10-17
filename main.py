@@ -1,9 +1,11 @@
 import os
-from datetime import datetime
+from utils.tx import SendTransaction
+from utils.xprt import Export, TEMPLATES
 from utils.init import configure
 from utils.account import new_encrypt_token, KeyManager
 from colorama import Fore, Back, Style
 from web3 import Web3
+import re
 import inquirer
 
 
@@ -24,9 +26,9 @@ km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
 # ______________________________INITIALIZE_WEB3_SECTION________________________
 def w3_init(endpoint) -> Web3:
     w3 = Web3(Web3.HTTPProvider(endpoint))
-    if w3.is_connected():
+    if w3.is_connected():  
         print(
-            f"{Back.GREEN}\nConnected to the endpoint, current chain ID: {w3.eth.chain_id}{Style.RESET_ALL}"
+            f"{Back.BLUE}\nConnected to the endpoint, current chain ID: {w3.eth.chain_id}{Style.RESET_ALL}"
         )
     else:
         print(f"{Back.RED}\nFailed to connect to the Ethereum endpoint.{Style.RESET_ALL}")
@@ -34,15 +36,6 @@ def w3_init(endpoint) -> Web3:
 # _____________________________________________________________________________
 
 
-# _________________________________UNSAFE_EXPORT_TO_TXT_SECTION____________________________
-def export_private_keys_to_txt(keys: dict, file_path: str):
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    file_name = f"{timestamp}_export.txt"
-    file_path = os.path.join(file_path, file_name)
-    with open(file_path, 'w') as file:
-        for address, private_key in keys.items():
-            file.write(f"{private_key} {address}\n")
-#_________________________________________________________________________________________
 
 
 def menu():
@@ -58,14 +51,15 @@ def menu():
                 "choice",
                 message="What do you want to do?",
                 choices=[
-                    "Restore an account from a passphrase",
+                    "Add manually an account by private key",
                     "Delete an account",
                     "Get private key from an account",
                     "Generate new account(s)",
                     "Connect to endpoint",
                     "Show my accounts",
-                    "Unsafe export keys to text file",
+                    "Unsafe export keys to file",
                     "Get balance of each account",
+                    "Transfer native token",
                     "Exit",
                 ],
             )
@@ -74,25 +68,23 @@ def menu():
         choice = answer["choice"]
 
         match choice:
-            case "Restore an account from a passphrase":
+            case "Add manually an account by private key":
                 os.system('cls' if os.name == 'nt' else 'clear')  # Clear terminal before action
                 questions = [
                     inquirer.Text("name", message="Enter account name"),
-                    inquirer.Password("passphrase", message="Enter passphrase"),
+                    inquirer.Password("private_key", message="Enter private key"),
                 ]
                 answers = inquirer.prompt(questions)
                 name = answers["name"]
-                passphrase = answers["passphrase"]
-                if len(passphrase.split(" ")) not in [12, 24]:
-                    print("\n")
-                    print(
-                        f"{Fore.RED}Invalid passphrase. Passphrase should contain 12 or 24 words.{Style.RESET_ALL}"
-                    )
-                    input("Press Enter to continue...")  # Pause before clearing
+                private_key = answers["private_key"]
+                if private_key.startswith("0x"):
+                    private_key = private_key[2:]
+                if len(private_key) != 64:
+                    print(f"{Fore.RED}\nInvalid private key. Length should be 64.{Style.RESET_ALL}\n")
+                    input("Press Enter to continue...")
                     continue
 
                 print("\n")
-                private_key = km.to_private_key(passphrase)
                 km.add_key(name, private_key)
                 print(f"Account '{name}' restored successfully.\n")
                 input("Press Enter to continue...")
@@ -197,7 +189,7 @@ def menu():
                 input("Press Enter to continue...")
                 continue
 
-            case "Unsafe export keys to text file":
+            case "Unsafe export keys to file":
                 DEFAULT_EXPORT_PATH = os.getcwd()
                 os.system('cls' if os.name == 'nt' else 'clear')
                 
@@ -222,14 +214,36 @@ def menu():
                             "export_path",
                             message="Enter the path to export the keys to ",
                             default=DEFAULT_EXPORT_PATH
+                        ),
+                        inquirer.List(
+                            "template",
+                            message="Select the template for export",
+                            choices=TEMPLATES,
+                            default="PRIVATEKEY_ADDRESS"
+                        ),
+                        inquirer.List(
+                            "file_format",
+                            message="Select the file format for export",
+                            choices=["txt", "csv"],
+                            default="txt"
                         )
                     ]
                     answers = inquirer.prompt(questions)
                     export_path = answers["export_path"] or DEFAULT_EXPORT_PATH
-                    export_private_keys_to_txt(export_data, export_path)
+                    template = answers["template"]
+                    file_format = answers["file_format"]
+                    _export = Export(export_path, export_data, template)
+                    if file_format == "txt":
+                        _export.to_txt()
+                    elif file_format == "csv":
+                        _export.to_csv()
+                    else:
+                        print(f"{Fore.RED}\nUnrecognized file format{Style.RESET_ALL}\n")
+                    
                     print("\n")
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
+
                 input("Press Enter to continue...")
                 continue
 
@@ -247,10 +261,76 @@ def menu():
                             address = w3.eth.account.from_key(key).address
                             balance = w3.eth.get_balance(address)
                             # Convert the balance from wei to ether.
-                            print(f"{acc}: {balance / 10**18} ETH")
+                            print(f"{acc}: {balance / 10**18} ETH (or native token) ")
                         print("\n")
                     except Exception as e:
                         print(f"{Fore.RED}\nError fetching balances: {e}{Style.RESET_ALL}\n")
+                else:
+                    print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
+                input("Press Enter to continue...")
+                continue
+
+            case "Transfer native token [TODO]":
+                os.system('cls' if os.name == 'nt' else 'clear')
+                accounts = km.load_keys()
+                if accounts:
+                    if w3 is None:
+                        print(f"{Fore.RED}\nPlease connect to the endpoint first.{Style.RESET_ALL}\n")
+                        input("Press Enter to continue...")
+                        continue
+                    tx_question = [
+                        inquirer.List( 
+                            "accounts",
+                            message="Select accounts to transfer",
+                            choices=accounts,
+                            carousel=True,
+                        ),
+                        inquirer.Text(
+                            "amount",
+                            message="Enter the amount to transfer",
+                        ),
+                        inquirer.Text(
+                            "to_address",
+                            message="Enter the recipient's address",
+                            validate = lambda _, x: re.match("^0x[a-fA-F0-9]{40}$", x)
+                        ),
+                        inquirer.Text(
+                            "gas_limit",
+                            message="Enter the gas limit",
+                        ),
+                        inquirer.Text(
+                            "gas_price",
+                            message="Enter the gas price",
+                        )
+                    ]
+
+                    answers = inquirer.prompt(tx_question)
+
+                    for acc in answers["accounts"]:
+                        key = km.get_decrypted_key(acc)
+                        address = w3.eth.account.from_key(key).address
+                        w3.eth.default_account = address
+                        to_address = answers["to_address"]
+
+
+                        # Convert all strings to floats
+                        amount = int(answers["amount"])
+                        gas_limit = int(answers["gas_limit"])
+                        gas_price = int(answers["gas_price"])
+
+                        amount = int(amount * 10**18)
+                        gas_limit = int(gas_limit * 10**9)
+                        gas_price = int(gas_price * 10**9)
+
+                        tx = SendTransaction(w3, address, to_address, amount, gas_limit, gas_price)
+                        tx.build()
+                        tx.sign()
+                        result = tx.send()
+
+                        if result:
+                            print(f"{Fore.GREEN}\nTransaction sent successfully: {result.hex()}{Style.RESET_ALL}\n")
+                        else:
+                            print(f"{Fore.RED}\nTransaction failed to send for wallet: {address} {Style.RESET_ALL}\n")
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
                 input("Press Enter to continue...")
