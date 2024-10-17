@@ -3,7 +3,7 @@
 set -e
 
 # Function to display an error message and exit
-function error_exit {
+error_exit() {
     echo "Error: $1" >&2
     exit 1
 }
@@ -39,7 +39,7 @@ fi
 
 # Upgrade packages
 apt-get update || error_exit "Failed to update package list."
-sudo apt upgrade -y > /dev/null || error_exit "Failed to upgrade packages."
+apt-get upgrade -y > /dev/null || error_exit "Failed to upgrade packages."
 
 # Install Python3 if not installed
 if ! command -v python3 >/dev/null 2>&1; then
@@ -52,7 +52,6 @@ fi
 # Install virtualenv if not installed, and pip
 apt-get install -y python3-pip || error_exit "Failed to install pip."
 apt-get install -y python3-venv || error_exit "Failed to install virtualenv."
-
 
 # Create application directory
 if [[ ! -d "$APP_DIR" ]]; then
@@ -67,13 +66,11 @@ else
     echo "Virtual environment already exists at $VENV_DIR."
 fi
 
-
 if source "$VENV_DIR/bin/activate"; then
     echo "Virtual environment activated."
 else
     error_exit "Failed to activate virtual environment."
 fi
-
 
 # Install dependencies
 if [[ -f "$REPO_DIR/requirements.txt" ]]; then
