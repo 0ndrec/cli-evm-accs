@@ -25,6 +25,7 @@ A simple CLI tool for safety managing EVM accounts.
    # DEFINE ENDPOINT
    ```
 **⚠️ Important. The file keys.json stores encrypted keys. And the encryption token itself is in the file .env ⚠️**
+** Please note that the application places .env and keys.json in the directory where it is called. **
 
 ## Autoinstall
 
