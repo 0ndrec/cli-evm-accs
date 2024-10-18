@@ -1,5 +1,7 @@
 ## Description
 A simple CLI tool for safety managing EVM accounts.
+⚠️ Important. The file keys.json stores encrypted keys. And the encryption key itself is in the file .env ⚠️
+
 ![alt text](https://github.com/0ndrec/cli-evm-accs/blob/main/img.gif)
 
 ## 🚀 Setup
