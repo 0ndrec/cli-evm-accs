@@ -24,7 +24,7 @@ A simple CLI tool for safety managing EVM accounts.
    nano .env
    # DEFINE ENDPOINT
    ```
-**⚠️ Important. The file keys.json stores encrypted keys. And the encryption key itself is in the file .env ⚠️**
+**⚠️ Important. The file keys.json stores encrypted keys. And the encryption token itself is in the file .env ⚠️**
 
 ## Autoinstall
 
