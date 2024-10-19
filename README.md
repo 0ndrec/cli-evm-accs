@@ -1,5 +1,6 @@
 ## Description
 A simple CLI tool for safety managing EVM accounts.
+
 ![alt text](https://github.com/0ndrec/cli-evm-accs/blob/main/img.gif)
 
 ## 🚀 Setup
@@ -23,17 +24,20 @@ A simple CLI tool for safety managing EVM accounts.
    nano .env
    # DEFINE ENDPOINT
    ```
+**⚠️ Important. The file keys.json stores encrypted keys. And the encryption token itself is in the file .env 
+Please note that the application places .env and keys.json in the directory where it is called. ⚠️**
+
+## Autoinstall
+
+```sh
+  curl -s https://raw.githubusercontent.com/0ndrec/cli-evm-accs/refs/heads/main/install.sh | sudo bash
+```
 
 ## 🛠 Usage
 
 Run the script:
 ```sh
 python main.py
-```
-## Autoinstall
-
-```sh
-  curl -s https://raw.githubusercontent.com/0ndrec/cli-evm-accs/refs/heads/main/install.sh | sudo bash
 ```
 
 Happy testing! 🎉
