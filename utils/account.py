@@ -85,12 +85,18 @@ class KeyManager:
         except ValueError as e:
             print(f"Error converting seed to private key: {e}")
 
-    def create(self, name):
+    def create(self, name) -> str:
         new = Account.create()
         private_key = new._private_key.hex()
         if name is None or len(name) == 0:
             name = f"{new.address[2:5]}_{new.address[-3:]}"
         self.add_key(name, private_key)
         return name
+    
+    def get_available_batches(self) -> typing.List[str]:
+        full_list = list(self.keys)
+        names = [name.split("_")[0] for name in full_list]
+        batches = list(set(names))
+        return batches
 
 

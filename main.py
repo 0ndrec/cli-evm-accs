@@ -1,16 +1,15 @@
 import os
+from colorama import Fore, Back, Style
+from web3 import Web3
+import inquirer
+
 from utils.tx import SendTransaction
 from utils.xprt import Export, TEMPLATES
 from utils.init import configure
 from utils.account import new_encrypt_token, KeyManager
-from colorama import Fore, Back, Style
-from web3 import Web3
-import re
-import inquirer
 
 
-
-# Check validity of .env file
+# Check validity of .env file or initialize it
 config = configure(".env", new_encrypt_token().decode())
 for key in ["ENDPOINT", "KEYS_PATH", "ENCRYPTION_TOKEN"]:
     if config.get(key) is None or len(config.get(key)) == 0:
@@ -57,9 +56,10 @@ def menu():
                     "Generate new account(s)",
                     "Connect to endpoint",
                     "Show my accounts",
+                    "Show available batches of accounts",
                     "Unsafe export keys to file",
                     "Get balance of each account",
-                    "Transfer native token [TODO]",
+                    "Transaction(s) [NATIVE TOKEN]",
                     "Exit",
                 ],
             )
@@ -68,8 +68,19 @@ def menu():
         choice = answer["choice"]
 
         match choice:
+            case "Show available batches of accounts":
+                os.system('cls' if os.name == 'nt' else 'clear')
+                batches = km.get_available_batches()
+                if batches:
+                    print(f"Available batches of accounts: {batches}")
+                else:
+                    print("Not found any batches of accounts.")
+                input("Press Enter to continue...")
+                continue
+
+
             case "Add manually an account by private key":
-                os.system('cls' if os.name == 'nt' else 'clear')  # Clear terminal before action
+                os.system('cls' if os.name == 'nt' else 'clear')
                 questions = [
                     inquirer.Text("name", message="Enter account name"),
                     inquirer.Password("private_key", message="Enter private key"),
@@ -157,7 +168,7 @@ def menu():
                 endpoint_default = config.get("ENDPOINT", "")
 
                 questions = [
-                    inquirer.Password(
+                    inquirer.Text(
                         "endpoint",
                         message="Enter Ethereum endpoint (default from .env file)",
                         default=endpoint_default
@@ -270,29 +281,33 @@ def menu():
                 input("Press Enter to continue...")
                 continue
 
-            case "Transfer native token [TODO]":
+            case "Transaction(s) [NATIVE TOKEN]":
                 os.system('cls' if os.name == 'nt' else 'clear')
                 accounts = km.load_keys()
+
+                # Check if accounts exist
                 if accounts:
                     if w3 is None:
                         print(f"{Fore.RED}\nPlease connect to the endpoint first.{Style.RESET_ALL}\n")
                         input("Press Enter to continue...")
                         continue
+
+
                     tx_question = [
-                        inquirer.List( 
+                        inquirer.Checkbox( 
                             "accounts",
-                            message="Select accounts to transfer",
+                            message="Select [FROM] account(s) to transfer",
                             choices=accounts,
-                            carousel=True,
                         ),
                         inquirer.Text(
                             "amount",
-                            message="Enter the amount to transfer",
+                            message="Enter the amount to transfer (in ether or native token)",
+
                         ),
                         inquirer.Text(
                             "to_address",
                             message="Enter the recipient's address",
-                            validate = lambda _, x: re.match("^0x[a-fA-F0-9]{40}$", x)
+                            default = "0x0000000000000000000000000000000000000000",
                         ),
                         inquirer.Text(
                             "gas_limit",
@@ -301,36 +316,52 @@ def menu():
                         inquirer.Text(
                             "gas_price",
                             message="Enter the gas price",
+                            default = w3.eth.gas_price
                         )
                     ]
 
                     answers = inquirer.prompt(tx_question)
 
+
+
                     for acc in answers["accounts"]:
+
+                        #________________SEND TRANSACTION__________________________
                         key = km.get_decrypted_key(acc)
+                        # add 0x to private key
+                        key = "0x" + key
                         address = w3.eth.account.from_key(key).address
                         w3.eth.default_account = address
                         to_address = answers["to_address"]
 
+                        try:
+                            amount = answers["amount"]
+                            gas_limit = answers["gas_limit"]
+                            gas_price = answers["gas_price"]
+                        except ValueError as e:
+                            print(f"{Fore.RED}\nInvalid input: {e}{Style.RESET_ALL}\n")
+                            continue
+                        # Converting to correct format (wei)
+                        amount = w3.to_wei(float(amount), 'ether')
+                        gas_limit = int(gas_limit)  
+                        gas_price = int(gas_price)
 
-                        # Convert all strings to floats
-                        amount = int(answers["amount"])
-                        gas_limit = int(answers["gas_limit"])
-                        gas_price = int(answers["gas_price"])
 
-                        amount = int(amount * 10**18)
-                        gas_limit = int(gas_limit * 10**9)
-                        gas_price = int(gas_price * 10**9)
-
-                        tx = SendTransaction(w3, address, to_address, amount, gas_limit, gas_price)
+                        print(f"{Fore.GREEN}\nTransferring from: {acc} to: {answers['to_address']}{Style.RESET_ALL}\n")
+                        chain_id = w3.eth.chain_id
+                        tx = SendTransaction(w3, chain_id, key, address, to_address, amount, gas_limit, gas_price)
                         tx.build()
-                        tx.sign()
-                        result = tx.send()
 
-                        if result:
+                        try:
+                            tx.sign()
+                            result = tx.send()
                             print(f"{Fore.GREEN}\nTransaction sent successfully: {result.hex()}{Style.RESET_ALL}\n")
-                        else:
-                            print(f"{Fore.RED}\nTransaction failed to send for wallet: {address} {Style.RESET_ALL}\n")
+                        except Exception as e:
+                            print(f"{Fore.RED}\nError sending transaction: {e}{Style.RESET_ALL}\n")
+                        # __________________________________________________________________
+
+
+
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
                 input("Press Enter to continue...")
