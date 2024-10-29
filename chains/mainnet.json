@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Ethereum Mainnet",
+    "rpcUrl": "https://mainnet.infura.io/v3",
+    "chainId": "1",
+    "symbol": "ETH",
+    "explorer": "https://etherscan.io"
+  },
+  {
+    "name": "NCN Mainnet",
+    "rpcUrl": "https://nc-rpc-prd1.neurochain.io",
+    "chainId": "313",
+    "symbol": "NCN",
+    "explorer": "https://ncnscan.com"
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Unichain Sepolia Testnet",
+    "rpcUrl": "https://autumn-cosmological-scion.unichain-sepolia.quiknode.pro/c568806873f2a9edb9fcdea8aef0569ff729eb25",
+    "chainId": "1301",
+    "symbol": "ETH",
+    "explorer": "https://testnet.brid.gg/sepolia"
+  },
+  {
+    "name": "Humanity Protocol Testnet",
+    "rpcUrl": "https://rpc.testnet.humanity.org",
+    "chainId": "1942999413",
+    "symbol": "tHP",
+    "explorer": "https://explorer.testnet.humanity.org"
+  },
+  {
+    "name": "Lumia Testnet",
+    "rpcUrl": "https://lumia-testnet-rpc.eu-north-2.gateway.fm",
+    "chainId": "1952959480",
+    "symbol": "LUMIA",
+    "explorer": "https://lumia-testnet-blockscout.eu-north-2.gateway.fm"
+  },
+  {
+    "name": "Testnet Onefinity",
+    "rpcUrl": "https://testnet-rpc.onefinity.network",
+    "chainId": "999987",
+    "symbol": "ONE",
+    "explorer": "https://testnet-explorer.onefinity.network"
+  },
+  {
+    "name": "PROM Testnet",
+    "rpcUrl": "https://testnet-rpc.prom.io",
+    "chainId": "584548796",
+    "symbol": "T-PROM",
+    "explorer": "https://testnet.promscan.io"
+  },
+  {
+    "name": "Tabi Testnetv2",
+    "rpcUrl": "https://rpc.testnetv2.tabichain.com",
+    "chainId": "9788",
+    "symbol": "TABI",
+    "explorer": "https://testnetv2.tabiscan.com"
+  },
+  {
+    "name": "Citrea Testnet",
+    "rpcUrl": "https://rpc.testnet.citrea.xyz",
+    "chainId": "5115",
+    "symbol": "cBTC",
+    "explorer": "https://explorer.testnet.citrea.xyz"
+  },
+  {
+    "name": "Open Campus",
+    "rpcUrl": "https://rpc.open-campus-codex.gelato.digital",
+    "chainId": "656476",
+    "symbol": "EDU",
+    "explorer": "https://opencampus-codex.blockscout.com"
+  },
+  {
+    "name": "Movement MEVM",
+    "rpcUrl": "https://mevm.devnet.imola.movementlabs.xyz",
+    "chainId": "30732",
+    "symbol": "MOVE",
+    "explorer": "https://explorer.devnet.imola.movementlabs.xyz"
+  },
+  {
+    "name": "Minato",
+    "rpcUrl": "https://rpc.minato.soneium.org",
+    "chainId": "1946",
+    "symbol": "ETH",
+    "explorer": "https://explorer-testnet.soneium.org"
+  },
+  {
+    "name": "Sonic Fantom Testnet",
+    "rpcUrl": "https://rpc.testnet.soniclabs.com",
+    "chainId": "64165",
+    "symbol": "S",
+    "explorer": "https://testnet.soniclabs.com"
+  },
+  {
+    "name": "Berachain bArtio",
+    "rpcUrl": "https://bartio.rpc.berachain.com",
+    "chainId": "80084",
+    "symbol": "BERA",
+    "explorer": "https://bartio.beratrail.io"
+  },
+  {
+    "name": "Plume Testnet",
+    "rpcUrl": "https://testnet-rpc.plumenetwork.xyz/http",
+    "chainId": "161221135",
+    "symbol": "ETH",
+    "explorer": "https://testnet-explorer.plumenetwork.xyz"
+  },
+  {
+    "name": "Unit Zero Testnet",
+    "rpcUrl": "https://rpc-testnet.unit0.dev",
+    "chainId": "88817",
+    "symbol": "UNIT0",
+    "explorer": "https://explorer-testnet.unit0.dev"
+  },
+  {
+    "name": "StratoVM Sepolia Testnet",
+    "rpcUrl": "https://rpc.stratovm.io",
+    "chainId": "93747",
+    "symbol": "SVM",
+    "explorer": "https://explorer.stratovm.io"
+  },
+  {
+    "name": "Story Testnet",
+    "rpcUrl": "https://testnet.storyrpc.io",
+    "chainId": "1513",
+    "symbol": "IP",
+    "explorer": "https://testnet.storyscan.xyz"
+  },
+  {
+    "name": "WeaveVM Testnet",
+    "rpcUrl": "https://testnet.wvm.dev",
+    "chainId": "9496",
+    "symbol": "tWVM",
+    "explorer": "https://explorer.wvm.dev"
+  }
+]
