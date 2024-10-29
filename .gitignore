@@ -2,6 +2,7 @@
 *export.txt
 *export.csv
 *keys.json
+keys.json
 venv
 env
 .env
