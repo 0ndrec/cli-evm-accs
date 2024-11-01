@@ -38,6 +38,8 @@ def load_chains(chains_path: str):
     testnet_path = Path(chains_path) / "testnet.json"
     mainnet_path = Path(chains_path) / "mainnet.json"
     if not testnet_path.exists() or not mainnet_path.exists():
+        testnet_path.parent.mkdir(parents=True, exist_ok=True)
+        mainnet_path.parent.mkdir(parents=True, exist_ok=True)
         try:
             response = requests.get(TESTNET_JSON_URL)
             if response.status_code == 200:
