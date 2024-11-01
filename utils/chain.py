@@ -53,8 +53,7 @@ class Networks:
             return {"testnet": testnet, "mainnet": mainnet}
         
         except (json.JSONDecodeError, FileNotFoundError) as e:
-            print(f"Error loading network configurations: {e}")
-            return {"testnet": [], "mainnet": []}
+            raise ValueError(f"Error loading network configurations: {e}")
 
     def get_rpc_url(self, network_name: str) -> Optional[str]:
         """
