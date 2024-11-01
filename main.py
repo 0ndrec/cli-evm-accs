@@ -4,6 +4,7 @@ from web3 import Web3
 import inquirer
 
 from utils.tx import SendTransaction
+from utils.chain import Networks
 from utils.export import Export, TEMPLATES
 from utils.init import configure
 from utils.account import new_encrypt_token, KeyManager
@@ -21,6 +22,10 @@ for key in ["ENDPOINT", "KEYS_PATH", "ENCRYPTION_TOKEN"]:
 km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
 # __________________________________________________________________________________
 
+#______________________________INITIALIZE_CHAINS_SECTION________________________
+chains = Networks(chains_path="chains")
+# __________________________________________________________________________________
+
 
 # ______________________________INITIALIZE_WEB3_SECTION________________________
 def w3_init(endpoint) -> Web3:
@@ -33,8 +38,6 @@ def w3_init(endpoint) -> Web3:
         print(f"{Back.RED}\nFailed to connect to the Ethereum endpoint.{Style.RESET_ALL}")
     return w3
 # _____________________________________________________________________________
-
-
 
 
 def menu():
@@ -164,19 +167,30 @@ def menu():
 
             case "Connect to endpoint":
                 os.system('cls' if os.name == 'nt' else 'clear')
-
-                endpoint_default = config.get("ENDPOINT", "")
-
+                endpoint = None 
                 questions = [
-                    inquirer.Text(
-                        "endpoint",
-                        message="Enter Ethereum endpoint (default from .env file)",
-                        default=endpoint_default
+                    inquirer.List(
+                        "type",
+                        message="Select network type",
+                        choices=["Mainnet", "Testnet"],
                     )
                 ]
-
                 answers = inquirer.prompt(questions)
-                endpoint = answers["endpoint"] or endpoint_default
+                if answers["type"] == "Mainnet":
+                    _chains = chains.networks["mainnet"]
+                elif answers["type"] == "Testnet":
+                    _chains = chains.networks["testnet"]
+
+                # Select network by name
+                questions = [
+                    inquirer.List(
+                        "name",
+                        message="Select network",
+                        choices=[chain["name"] for chain in _chains],
+                    )
+                ]
+                answers = inquirer.prompt(questions)
+                endpoint = chains.get_rpc_url(answers["name"])
                 if not endpoint:
                     print(f"{Fore.RED}\nNo endpoint provided.{Style.RESET_ALL}\n")
                     input("Press Enter to continue...")
@@ -267,12 +281,13 @@ def menu():
                         input("Press Enter to continue...")
                         continue
                     try:
+                        current_symbol = chains.get_symbol_by_id(str(w3.eth.chain_id))
                         for acc in accounts:
                             key = km.get_decrypted_key(acc)
                             address = w3.eth.account.from_key(key).address
                             balance = w3.eth.get_balance(address)
                             # Convert the balance from wei to ether.
-                            print(f"{acc}: {balance / 10**18} ETH (or native token) ")
+                            print(f"{acc}: {balance / 10**18} {current_symbol}")
                         print("\n")
                     except Exception as e:
                         print(f"{Fore.RED}\nError fetching balances: {e}{Style.RESET_ALL}\n")
