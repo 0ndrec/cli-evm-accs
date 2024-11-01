@@ -1,11 +1,6 @@
 from typing import List, Dict, Optional
 import json
 from pathlib import Path
-import requests
-
-MAINNET_JSON_URL = "https://raw.githubusercontent.com/0ndrec/cli-evm-accs/refs/heads/main/chains/mainnet.json"
-TESTNET_JSON_URL = "https://raw.githubusercontent.com/0ndrec/cli-evm-accs/refs/heads/main/chains/testnet.json"
-
 
 class Networks:
     def __init__(self, chains_path: str = "chains"):
@@ -33,17 +28,7 @@ class Networks:
             testnet_path = Path(chains_path) / "testnet.json"
             mainnet_path = Path(chains_path) / "mainnet.json"
             if not testnet_path.exists() or not mainnet_path.exists():
-                try:
-                    response = requests.get(TESTNET_JSON_URL)
-                    if response.status_code == 200:
-                        with open(testnet_path, 'w') as f:
-                            json.dump(response.json(), f)
-                    response = requests.get(MAINNET_JSON_URL)
-                    if response.status_code == 200:
-                        with open(mainnet_path, 'w') as f:
-                            json.dump(response.json(), f)
-                except requests.exceptions.RequestException as e:
-                    print(f"Error downloading network configurations: {e}")
+                raise FileNotFoundError
             
             with open(testnet_path, 'r') as f:
                 testnet = json.load(f)

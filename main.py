@@ -6,7 +6,7 @@ import inquirer
 from utils.tx import SendTransaction
 from utils.chain import Networks
 from utils.export import Export, TEMPLATES
-from utils.init import configure
+from utils.init import configure, load_chains
 from utils.account import new_encrypt_token, KeyManager
 
 
@@ -23,7 +23,9 @@ km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
 # __________________________________________________________________________________
 
 #______________________________INITIALIZE_CHAINS_SECTION________________________
-chains = Networks(chains_path="chains")
+chains_dir = 'chains'
+if load_chains(chains_path=chains_dir):
+    chains = Networks(chains_path=chains_dir)
 # __________________________________________________________________________________
 
 
