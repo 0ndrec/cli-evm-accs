@@ -2,6 +2,7 @@ import os
 from colorama import Fore, Back, Style
 from web3 import Web3
 import inquirer
+from pathlib import Path
 
 from utils.tx import SendTransaction
 from utils.chain import Networks
@@ -23,7 +24,8 @@ km = KeyManager(config["KEYS_PATH"], config["ENCRYPTION_TOKEN"])
 # __________________________________________________________________________________
 
 #______________________________INITIALIZE_CHAINS_SECTION________________________
-chains_dir = 'chains'
+app_dir = Path(__file__).parent
+chains_dir = app_dir / "chains"
 if load_chains(chains_path=chains_dir):
     chains = Networks(chains_path=chains_dir)
 # __________________________________________________________________________________
