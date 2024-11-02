@@ -50,8 +50,8 @@ else
 fi
 
 # Install virtualenv if not installed, and pip
-apt-get install -y python3-pip || error_exit "Failed to install pip."
-apt-get install -y python3-venv || error_exit "Failed to install virtualenv."
+apt-get install -y python3-pip > /dev/null || error_exit "Failed to install pip."
+apt-get install -y python3-venv > /dev/null || error_exit "Failed to install virtualenv."
 
 # Create application directory
 if [[ ! -d "$APP_DIR" ]]; then
