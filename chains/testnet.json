@@ -14,6 +14,13 @@
     "explorer": "https://explorer.testnet.humanity.org"
   },
   {
+    "name": "Ink Sepolia",
+    "rpcUrl": "https://rpc-qnd-sepolia.inkonchain.com",
+    "chainId": "763373",
+    "symbol": "ETH",
+    "explorer": "https://explorer-sepolia.inkonchain.com"
+  },
+  {
     "name": "Lumia Testnet",
     "rpcUrl": "https://lumia-testnet-rpc.eu-north-2.gateway.fm",
     "chainId": "1952959480",
