@@ -6,3 +6,4 @@ python-dotenv
 cryptography
 eth-account
 eth-utils
+pydantic

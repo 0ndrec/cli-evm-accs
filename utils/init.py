@@ -6,6 +6,7 @@ import requests
 
 MAINNET_JSON_URL = "https://raw.githubusercontent.com/0ndrec/cli-evm-accs/refs/heads/main/chains/mainnet.json"
 TESTNET_JSON_URL = "https://raw.githubusercontent.com/0ndrec/cli-evm-accs/refs/heads/main/chains/testnet.json"
+DATA_PATH = "data"
 
 class Defaults:
     KEYS_PATH = "keys.json"
@@ -37,6 +38,7 @@ def load_chains(chains_path: str):
     # Check both testnet and mainnet files
     testnet_path = Path(chains_path) / "testnet.json"
     mainnet_path = Path(chains_path) / "mainnet.json"
+
     if not testnet_path.exists() or not mainnet_path.exists():
         testnet_path.parent.mkdir(parents=True, exist_ok=True)
         mainnet_path.parent.mkdir(parents=True, exist_ok=True)
@@ -54,8 +56,19 @@ def load_chains(chains_path: str):
             return False
 
     with open(testnet_path, 'r') as f:
-        json.load(f)
+        testnets=json.load(f)
     with open(mainnet_path, 'r') as f:
-        json.load(f)
+        mainnets=json.load(f)
+
+    for chain in testnets + mainnets:
+        chain_id = chain["chainId"]
+        Path(f"{DATA_PATH}/{chain_id}").mkdir(parents=True, exist_ok=True)
 
     return True
+
+def load_contracts(chain_id)-> list:
+    contracts = []
+    for file in Path(f"{DATA_PATH}/{chain_id}").iterdir():
+        if file.suffix == ".json":
+            contracts.append(file.name)
+    return contracts

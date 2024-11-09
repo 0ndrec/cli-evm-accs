@@ -6,8 +6,9 @@ from pathlib import Path
 
 from utils.tx import SendTransaction
 from utils.chain import Networks
+from utils.abi import ABIDecoder, get_abi
 from utils.export import Export, TEMPLATES
-from utils.init import configure, load_chains
+from utils.init import configure, load_chains, load_contracts
 from utils.account import new_encrypt_token, KeyManager
 
 
@@ -67,6 +68,7 @@ def menu():
                     "Unsafe export keys to file",
                     "Get balance of each account",
                     "Transaction(s) [NATIVE TOKEN]",
+                    "Contract call(s)",
                     "Exit",
                 ],
             )
@@ -377,6 +379,62 @@ def menu():
                             print(f"{Fore.GREEN}\nTransaction sent successfully: {result.hex()}{Style.RESET_ALL}\n")
                         except Exception as e:
                             print(f"{Fore.RED}\nError sending transaction: {e}{Style.RESET_ALL}\n")
+                        # __________________________________________________________________
+
+            case "Contract call(s)":
+                os.system('cls' if os.name == 'nt' else 'clear')
+                accounts = km.load_keys()
+
+                # Check if accounts exist
+                if accounts:
+                    if w3 is None:
+                        print(f"{Fore.RED}\nPlease connect to the endpoint first.{Style.RESET_ALL}\n")
+                        input("Press Enter to continue...")
+                        continue
+
+                    chain_id = w3.eth.chain_id
+                    available_contracts = load_contracts(chain_id)
+
+
+                    primary_question = [
+                        inquirer.Checkbox( 
+                            "accounts",
+                            message="Select [FROM] account(s) to execute contract call",
+                            choices=accounts,
+                        ),
+                        inquirer.List(
+                            "contract",
+                            message="Select a contract",
+                            choices=available_contracts
+
+                        )
+                    ]
+
+                    primary_answers = inquirer.prompt(primary_question)
+
+                    selected_contract = primary_answers["contract"].split(".")[0]
+                    abi = get_abi(selected_contract, chain_id)
+
+                    questions = [
+                        inquirer.List(
+                            "function",
+                            message="Select a function",
+                            choices=abi.list_functions()
+                        )
+                    ]
+
+                    answers = inquirer.prompt(questions)
+
+                    for acc in primary_answers["accounts"]:
+
+                        #________________SEND TRANSACTION__________________________
+                        key = km.get_decrypted_key(acc)
+                        # add 0x to private key
+                        key = "0x" + key
+                        address = w3.eth.account.from_key(key).address
+                        w3.eth.default_account = address
+
+                        print(f"{Fore.GREEN}\nExecuting contract call from: {acc}{Style.RESET_ALL}\n")
                         # __________________________________________________________________
 
 
