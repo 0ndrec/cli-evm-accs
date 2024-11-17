@@ -7,6 +7,13 @@
     "explorer": "https://testnet.brid.gg/sepolia"
   },
   {
+    "name": "Soneium Minato",
+    "rpcUrl": "https://rpc.minato.soneium.org",
+    "chainId": "1946",
+    "symbol": "ETH",
+    "explorer": "https://soneium-minato.blockscout.com"
+  },
+  {
     "name": "Humanity Protocol Testnet",
     "rpcUrl": "https://rpc.testnet.humanity.org",
     "chainId": "1942999413",
