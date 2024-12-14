@@ -7,7 +7,7 @@ from pathlib import Path
 from utils.tx import SendTransaction
 from utils.chain import Networks
 from utils.abi import ABIDecoder, get_abi
-from utils.export import Export, TEMPLATES
+from utils.export import Export, Reader, TEMPLATES
 from utils.init import configure, load_chains, load_contracts
 from utils.account import new_encrypt_token, KeyManager
 
@@ -62,6 +62,7 @@ def menu():
                     "Delete an account",
                     "Get private key from an account",
                     "Generate new account(s)",
+                    "Import batch from file",
                     "Connect to endpoint",
                     "Show my accounts",
                     "Show available batches of accounts",
@@ -168,6 +169,31 @@ def menu():
                 for num in range(num_accounts):
                     km.create(name=f"{name_prefix}_{num + 1}")
                 print(f"Successfully generated {num_accounts} account(s).\n")
+                input("Press Enter to continue...")
+                continue
+
+            case "Import batch from file":
+                os.system('cls' if os.name == 'nt' else 'clear')
+                # Ask path to file. or name
+                questions = [
+                    inquirer.Text("file_path", message="Enter the path to the file"),
+                    inquirer.Text("name_prefix", message="Enter the name prefix for the account(s)"),
+                ]
+                answers = inquirer.prompt(questions)
+                file_path = answers["file_path"]
+                if not os.path.exists(file_path):
+                    print(f"{Fore.RED}\nFile not found.{Style.RESET_ALL}\n")
+                    input("Press Enter to continue...")
+                    continue
+                read = Reader(file_path)
+                acc_list = read.from_txt()
+                if acc_list:
+                    for key in acc_list:
+                        key_name = f"{answers['name_prefix']}_{acc_list.index(key) + 1}"
+                        km.add_key(key_name, key[1])
+                    print(f"Successfully imported {len(acc_list)} account(s).\n")
+                else:
+                    print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
                 input("Press Enter to continue...")
                 continue
 

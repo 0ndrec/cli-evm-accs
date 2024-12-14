@@ -1,5 +1,6 @@
 colorama
 inquirer
+mnemonic
 web3
 requests
 python-dotenv

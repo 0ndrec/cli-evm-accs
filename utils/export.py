@@ -1,5 +1,7 @@
 import csv
+import os
 from datetime import datetime
+import re
 
 TEMPLATES = {
     "PRIVATEKEY_ADDRESS": "Private Key +[space]+ Address",
@@ -61,3 +63,22 @@ class Export:
                     pass
                 case _:
                     print(f"Unknown template: {self.template}")
+
+class Reader:
+    def __init__(self, file_path: str):
+        self.file_path = file_path
+
+    def from_txt(self) -> list[list[str, str]]:
+        if not os.path.exists(self.file_path):
+            return []
+        with open(self.file_path, 'r') as file:
+            lines = file.readlines()
+            address_regex = re.compile(r'0x[a-fA-F0-9]{40}')
+            private_key_regex = re.compile(r'0x[a-fA-F0-9]{64}')
+            keys = []
+            for line in lines:
+                address = address_regex.search(line)
+                private_key = private_key_regex.search(line)
+                if address and private_key:
+                    keys.append([address.group(), private_key.group()])
+            return keys
