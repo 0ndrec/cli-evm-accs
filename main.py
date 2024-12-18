@@ -69,7 +69,7 @@ def menu():
                     "Unsafe export keys to file",
                     "Get balance of each account",
                     "Transaction(s) [NATIVE TOKEN]",
-                    "Contract call(s)",
+                    "Contract call(s) [ERC20 TOKEN]",
                     "Exit",
                 ],
             )
@@ -376,7 +376,8 @@ def menu():
                         #________________SEND TRANSACTION__________________________
                         key = km.get_decrypted_key(acc)
                         # add 0x to private key
-                        key = "0x" + key
+                        if "0x" not in key:
+                            key = "0x" + key
                         address = w3.eth.account.from_key(key).address
                         w3.eth.default_account = address
                         to_address = answers["to_address"]
@@ -407,7 +408,7 @@ def menu():
                             print(f"{Fore.RED}\nError sending transaction: {e}{Style.RESET_ALL}\n")
                         # __________________________________________________________________
 
-            case "Contract call(s)":
+            case "Contract call(s) [ERC20 TOKEN]":
                 os.system('cls' if os.name == 'nt' else 'clear')
                 accounts = km.load_keys()
 
@@ -440,6 +441,9 @@ def menu():
 
                     selected_contract = primary_answers["contract"].split(".")[0]
                     abi = get_abi(selected_contract, chain_id)
+                    current_contract = w3.eth.contract(address=selected_contract, abi=abi.abi)
+                    decimals = current_contract.functions.decimals().call()
+                    print(f"Decimals: {decimals}")
 
                     questions = [
                         inquirer.List(
@@ -450,17 +454,44 @@ def menu():
                     ]
 
                     answers = inquirer.prompt(questions)
+                    if answers["function"] == "transfer":
+                        transfer_question = [
+                            inquirer.Text(
+                                "to_address",
+                                message="Enter the recipient's address",
+                                default = "0x0000000000000000000000000000000000000000",
+                            ),
+                            inquirer.Text(
+                                "amount",
+                                message="Enter the amount to transfer",
+                            )
+                        ]
+
+                        transfer_answers = inquirer.prompt(transfer_question)
+
+                        amount = transfer_answers["amount"]
+                        to_address = transfer_answers["to_address"]
+
+                        amount = w3.to_wei(float(amount), 'ether')
 
                     for acc in primary_answers["accounts"]:
-
-                        #________________SEND TRANSACTION__________________________
                         key = km.get_decrypted_key(acc)
-                        # add 0x to private key
-                        key = "0x" + key
+                        if "0x" not in key:
+                            key = "0x" + key
                         address = w3.eth.account.from_key(key).address
                         w3.eth.default_account = address
+                        nonce = w3.eth.get_transaction_count(address)
+                        tx = current_contract.functions.transfer(to_address, amount).build_transaction({
+                            'from': address,
+                            'nonce': nonce,
+                            'gasPrice': w3.eth.gas_price,
+                            'chainId': chain_id
+                        })
+                        tx['gas'] = w3.eth.estimate_gas(tx)
+                        signed_tx = w3.eth.account.sign_transaction(tx, key)
+                        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+                        print(f"{Fore.GREEN}\nTransaction sent successfully: {tx_hash.hex()}{Style.RESET_ALL}\n")
 
-                        print(f"{Fore.GREEN}\nExecuting contract call from: {acc}{Style.RESET_ALL}\n")
                         # __________________________________________________________________
 
 

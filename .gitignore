@@ -9,3 +9,4 @@ env
 .venv
 .env.secret
 .vscode
+wallets.txt
