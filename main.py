@@ -492,7 +492,6 @@ def menu():
                         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
                         print(f"{Fore.GREEN}\nTransaction sent successfully: {tx_hash.hex()}{Style.RESET_ALL}\n")
 
-                        # __________________________________________________________________
 
 
 
