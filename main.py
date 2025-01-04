@@ -406,6 +406,7 @@ def menu():
                             print(f"{Fore.GREEN}\nTransaction sent successfully: {result.hex()}{Style.RESET_ALL}\n")
                         except Exception as e:
                             print(f"{Fore.RED}\nError sending transaction: {e}{Style.RESET_ALL}\n")
+                            continue
                         # __________________________________________________________________
 
             case "Contract call(s) [ERC20 TOKEN]":
