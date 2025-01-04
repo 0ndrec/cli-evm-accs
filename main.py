@@ -369,7 +369,7 @@ def menu():
 
                     answers = inquirer.prompt(tx_question)
 
-                    selected_accounts = accounts if "Send from all accounts" in answers["accounts"] else answers["accounts"]
+                    selected_accounts = list(accounts) if "Send from all accounts" in answers["accounts"] else answers["accounts"]
 
 
 
