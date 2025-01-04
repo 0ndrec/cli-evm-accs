@@ -318,8 +318,8 @@ def menu():
                             key = km.get_decrypted_key(acc)
                             address = w3.eth.account.from_key(key).address
                             balance = w3.eth.get_balance(address)
-                            # Convert the balance from wei to ether.
-                            print(f"{acc}: {balance / 10**18} {current_symbol}")
+                            if balance > 0:
+                                print(f"{acc}: {balance / 10**18} {current_symbol}")
                         print("\n")
                     except Exception as e:
                         print(f"{Fore.RED}\nError fetching balances: {e}{Style.RESET_ALL}\n")
