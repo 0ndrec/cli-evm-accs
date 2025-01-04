@@ -344,7 +344,7 @@ def menu():
                         inquirer.Checkbox( 
                             "accounts",
                             message="Select [FROM] account(s) to transfer",
-                            choices=accounts,
+                            choices=accounts + ["Send from all accounts"],
                         ),
                         inquirer.Text(
                             "amount",
@@ -369,9 +369,11 @@ def menu():
 
                     answers = inquirer.prompt(tx_question)
 
+                    selected_accounts = accounts if "Send from all accounts" in answers["accounts"] else answers["accounts"]
 
 
-                    for acc in answers["accounts"]:
+
+                    for acc in selected_accounts:
 
                         #________________SEND TRANSACTION__________________________
                         key = km.get_decrypted_key(acc)
