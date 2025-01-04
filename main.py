@@ -344,7 +344,7 @@ def menu():
                         inquirer.Checkbox( 
                             "accounts",
                             message="Select [FROM] account(s) to transfer",
-                            choices=accounts + ["Send from all accounts"],
+                            choices=list(accounts) + ["Send from all accounts"],
                         ),
                         inquirer.Text(
                             "amount",
