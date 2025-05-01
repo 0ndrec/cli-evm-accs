@@ -84,6 +84,13 @@ class KeyManager:
             return account._private_key.hex()
         except ValueError as e:
             print(f"Error converting seed to private key: {e}")
+            
+    # FIX ME
+    def get_mnemonic(self, name):
+        key = self.get_key(name)
+        if key is None:
+            return None
+        return "MNEMONIC_PLACEHOLDER"
 
     def create(self, name) -> str:
         new = Account.create()

@@ -1,0 +1,3544 @@
+[
+  {
+    "name": "ThaiChain",
+    "rpcUrl": "https://rpc.dome.cloud",
+    "chainId": "7",
+    "symbol": "TCH",
+    "explorer": "https://exp.thaichain.org"
+  },
+  {
+    "name": "Flare Mainnet",
+    "rpcUrl": "https://flare-api.flare.network/ext/C/rpc",
+    "chainId": "14",
+    "symbol": "FLR",
+    "explorer": "https://flare-explorer.flare.network"
+  },
+  {
+    "name": "Songbird Testnet Coston",
+    "rpcUrl": "https://coston-api.flare.network/ext/C/rpc",
+    "chainId": "16",
+    "symbol": "CFLR",
+    "explorer": "https://coston-explorer.flare.network"
+  },
+  {
+    "name": "ThunderCore Testnet",
+    "rpcUrl": "https://testnet-rpc.thundercore.com",
+    "chainId": "18",
+    "symbol": "TST",
+    "explorer": "https://explorer-testnet.thundercore.com"
+  },
+  {
+    "name": "Songbird Canary-Network",
+    "rpcUrl": "https://songbird-api.flare.network/ext/C/rpc",
+    "chainId": "19",
+    "symbol": "SGB",
+    "explorer": "https://songbird-explorer.flare.network"
+  },
+  {
+    "name": "Elastos Smart Chain",
+    "rpcUrl": "https://api.elastos.io/eth",
+    "chainId": "20",
+    "symbol": "ELA",
+    "explorer": "https://esc.elastos.io"
+  },
+  {
+    "name": "Elastos Smart Chain Testnet",
+    "rpcUrl": "https://api-testnet.elastos.io/eth",
+    "chainId": "21",
+    "symbol": "tELA",
+    "explorer": "https://esc-testnet.elastos.io"
+  },
+  {
+    "name": "SecureChain Mainnet",
+    "rpcUrl": "https://mainnet-rpc.scai.network",
+    "chainId": "34",
+    "symbol": "SCAI",
+    "explorer": "https://explorer.securechain.ai"
+  },
+  {
+    "name": "LUKSO Mainnet",
+    "rpcUrl": "https://rpc.mainnet.lukso.network",
+    "chainId": "42",
+    "symbol": "LYX",
+    "explorer": "https://explorer.execution.mainnet.lukso.network"
+  },
+  {
+    "name": "Acria IntelliChain",
+    "rpcUrl": "https://aic.acria.ai",
+    "chainId": "47",
+    "symbol": "ACRIA",
+    "explorer": "https://explorer.acria.ai"
+  },
+  {
+    "name": "XDC Apothem Network",
+    "rpcUrl": "https://rpc.apothem.network",
+    "chainId": "51",
+    "symbol": "TXDC",
+    "explorer": "https://testnet.xdcscan.com"
+  },
+  {
+    "name": "Zyx Mainnet",
+    "rpcUrl": "https://rpc-1.zyx.network/",
+    "chainId": "55",
+    "symbol": "ZYX",
+    "explorer": "https://zyxscan.com"
+  },
+  {
+    "name": "Ontology Mainnet",
+    "rpcUrl": "http://dappnode1.ont.io:20339",
+    "chainId": "58",
+    "symbol": "ONG",
+    "explorer": "https://explorer.ont.io"
+  },
+  {
+    "name": "Ethereum Classic",
+    "rpcUrl": "https://etc.rivet.link",
+    "chainId": "61",
+    "symbol": "ETC",
+    "explorer": "https://etc.blockscout.com"
+  },
+  {
+    "name": "Mordor Testnet",
+    "rpcUrl": "https://rpc.mordor.etccooperative.org",
+    "chainId": "63",
+    "symbol": "METC",
+    "explorer": "https://etc-mordor.blockscout.com"
+  },
+  {
+    "name": "Conflux eSpace (Testnet)",
+    "rpcUrl": "https://evmtestnet.confluxrpc.com",
+    "chainId": "71",
+    "symbol": "CFX",
+    "explorer": "https://evmtestnet.confluxscan.net"
+  },
+  {
+    "name": "FNCY",
+    "rpcUrl": "https://fncy-seed1.fncy.world",
+    "chainId": "73",
+    "symbol": "FNCY",
+    "explorer": "https://fncyscan.fncy.world"
+  },
+  {
+    "name": "IDChain Mainnet",
+    "rpcUrl": "https://idchain.one/rpc/",
+    "chainId": "74",
+    "symbol": "EIDI",
+    "explorer": "https://explorer.idchain.one"
+  },
+  {
+    "name": "Japan Open Chain Mainnet",
+    "rpcUrl": "https://rpc-1.japanopenchain.org:8545",
+    "chainId": "81",
+    "symbol": "JOC",
+    "explorer": "https://explorer.japanopenchain.org"
+  },
+  {
+    "name": "Meter Mainnet",
+    "rpcUrl": "https://rpc.meter.io",
+    "chainId": "82",
+    "symbol": "MTR",
+    "explorer": "https://scan.meter.io"
+  },
+  {
+    "name": "Meter Testnet",
+    "rpcUrl": "https://rpctest.meter.io",
+    "chainId": "83",
+    "symbol": "MTR",
+    "explorer": "https://scan-warringstakes.meter.io"
+  },
+  {
+    "name": "SwissDLT",
+    "rpcUrl": "https://rpc.swissdlt.ch",
+    "chainId": "94",
+    "symbol": "BCTS",
+    "explorer": "https://explorer.swissdlt.ch"
+  },
+  {
+    "name": "WorldLand Mainnet",
+    "rpcUrl": "https://seoul.worldland.foundation",
+    "chainId": "103",
+    "symbol": "WLC",
+    "explorer": "https://scan.worldland.foundation"
+  },
+  {
+    "name": "ThunderCore Mainnet",
+    "rpcUrl": "https://mainnet-rpc.thundercore.com",
+    "chainId": "108",
+    "symbol": "TT",
+    "explorer": "https://viewblock.io/thundercore"
+  },
+  {
+    "name": "Shibarium",
+    "rpcUrl": "https://www.shibrpc.com",
+    "chainId": "109",
+    "symbol": "BONE",
+    "explorer": "https://www.shibariumscan.io"
+  },
+  {
+    "name": "Coinbit Mainnet",
+    "rpcUrl": "https://coinbit-rpc-mainnet.chain.sbcrypto.app",
+    "chainId": "112",
+    "symbol": "GIDR",
+    "explorer": "https://coinbit-explorer.chain.sbcrypto.app"
+  },
+  {
+    "name": "Flare Testnet Coston2",
+    "rpcUrl": "https://coston2-api.flare.network/ext/C/rpc",
+    "chainId": "114",
+    "symbol": "C2FLR",
+    "explorer": "https://coston2-explorer.flare.network"
+  },
+  {
+    "name": "ENULS Mainnet",
+    "rpcUrl": "https://evmapi.nuls.io",
+    "chainId": "119",
+    "symbol": "NULS",
+    "explorer": "https://evmscan.nuls.io"
+  },
+  {
+    "name": "Fuse Mainnet",
+    "rpcUrl": "https://rpc.fuse.io",
+    "chainId": "122",
+    "symbol": "FUSE",
+    "explorer": "https://explorer.fuse.io"
+  },
+  {
+    "name": "iExec Sidechain",
+    "rpcUrl": "https://bellecour.iex.ec",
+    "chainId": "134",
+    "symbol": "xRLC",
+    "explorer": "https://blockscout.bellecour.iex.ec"
+  },
+  {
+    "name": "Polygon Mainnet",
+    "rpcUrl": "https://polygon-rpc.com/",
+    "chainId": "137",
+    "symbol": "POL",
+    "explorer": "https://polygonscan.com"
+  },
+  {
+    "name": "Sonic Mainnet",
+    "rpcUrl": "https://rpc.soniclabs.com",
+    "chainId": "146",
+    "symbol": "S",
+    "explorer": "https://explorer.soniclabs.com"
+  },
+  {
+    "name": "ShimmerEVM",
+    "rpcUrl": "https://json-rpc.evm.shimmer.network",
+    "chainId": "148",
+    "symbol": "SMR",
+    "explorer": "https://explorer.evm.shimmer.network"
+  },
+  {
+    "name": "Redbelly Network Mainnet",
+    "rpcUrl": "https://governors.mainnet.redbelly.network",
+    "chainId": "151",
+    "symbol": "RBNT",
+    "explorer": "https://redbelly.routescan.io"
+  },
+  {
+    "name": "Redbelly Network Testnet",
+    "rpcUrl": "https://governors.testnet.redbelly.network",
+    "chainId": "153",
+    "symbol": "RBNT",
+    "explorer": "https://redbelly.testnet.routescan.io"
+  },
+  {
+    "name": "Puppynet",
+    "rpcUrl": "https://puppynet.shibrpc.com",
+    "chainId": "157",
+    "symbol": "BONE",
+    "explorer": "https://puppyscan.shib.io"
+  },
+  {
+    "name": "ABEY Testnet",
+    "rpcUrl": "https://testrpc.abeychain.com",
+    "chainId": "178",
+    "symbol": "tABEY",
+    "explorer": "https://testnet.abeyscan.com"
+  },
+  {
+    "name": "ABEY Mainnet",
+    "rpcUrl": "https://rpc.abeychain.com",
+    "chainId": "179",
+    "symbol": "ABEY",
+    "explorer": "https://abeyscan.com"
+  },
+  {
+    "name": "Dojima Testnet",
+    "rpcUrl": "https://rpc-test-d11k.dojima.network",
+    "chainId": "184",
+    "symbol": "DOJ",
+    "explorer": "https://explorer-test.dojima.network"
+  },
+  {
+    "name": "firachain",
+    "rpcUrl": "https://rpc.firachain.com",
+    "chainId": "194",
+    "symbol": "FIR",
+    "explorer": "https://block.firachain.com"
+  },
+  {
+    "name": "BitTorrent Chain Mainnet",
+    "rpcUrl": "https://rpc.bt.io",
+    "chainId": "199",
+    "symbol": "BTT",
+    "explorer": "https://bttcscan.com"
+  },
+  {
+    "name": "WowChain Mainnet",
+    "rpcUrl": "https://rpc.wowchain.io",
+    "chainId": "203",
+    "symbol": "DOGE",
+    "explorer": "https://explorer.wowchain.io"
+  },
+  {
+    "name": "VinuChain Testnet",
+    "rpcUrl": "https://vinufoundation-rpc.com",
+    "chainId": "206",
+    "symbol": "VC",
+    "explorer": "https://testnet.vinuscan.com"
+  },
+  {
+    "name": "VinuChain Network",
+    "rpcUrl": "https://vinuchain-rpc.com",
+    "chainId": "207",
+    "symbol": "VC",
+    "explorer": "https://vinuscan.com"
+  },
+  {
+    "name": "Bitnet",
+    "rpcUrl": "https://rpc.bitnet.money",
+    "chainId": "210",
+    "symbol": "BTN",
+    "explorer": "https://btnscan.com"
+  },
+  {
+    "name": "MAPO Makalu",
+    "rpcUrl": "https://testnet-rpc.maplabs.io",
+    "chainId": "212",
+    "symbol": "MAPO",
+    "explorer": "https://testnet.maposcan.io"
+  },
+  {
+    "name": "B2 Hub Mainnet",
+    "rpcUrl": "https://hub-rpc.bsquared.network",
+    "chainId": "213",
+    "symbol": "B2",
+    "explorer": "https://hub-explorer.bsquared.network"
+  },
+  {
+    "name": "B2 Mainnet",
+    "rpcUrl": "https://mainnet.b2-rpc.com",
+    "chainId": "223",
+    "symbol": "BTC",
+    "explorer": "https://explorer.bsquared.network"
+  },
+  {
+    "name": "ProtoJumbo Testnet",
+    "rpcUrl": "https://testnode.jumbochain.org",
+    "chainId": "234",
+    "symbol": "JNFTC",
+    "explorer": "https://protojumbo.jumbochain.org"
+  },
+  {
+    "name": "Oasys Mainnet",
+    "rpcUrl": "https://rpc.mainnet.oasys.games",
+    "chainId": "248",
+    "symbol": "OAS",
+    "explorer": "https://explorer.oasys.games"
+  },
+  {
+    "name": "Fantom Opera",
+    "rpcUrl": "https://rpc.ftm.tools",
+    "chainId": "250",
+    "symbol": "FTM",
+    "explorer": "https://ftmscan.com"
+  },
+  {
+    "name": "Kroma",
+    "rpcUrl": "https://api.kroma.network",
+    "chainId": "255",
+    "symbol": "ETH",
+    "explorer": "https://blockscout.kroma.network"
+  },
+  {
+    "name": "High Performance Blockchain",
+    "rpcUrl": "https://hpbnode.com",
+    "chainId": "269",
+    "symbol": "HPB",
+    "explorer": "https://hscan.org"
+  },
+  {
+    "name": "EgonCoin Mainnet",
+    "rpcUrl": "https://rpc.egonscan.com",
+    "chainId": "271",
+    "symbol": "EGON",
+    "explorer": "https://egonscan.com"
+  },
+  {
+    "name": "Neurochain Testnet",
+    "rpcUrl": "https://nc-rpc-test1.neurochain.io",
+    "chainId": "303",
+    "symbol": "tNCN",
+    "explorer": "https://testnet.ncnscan.com"
+  },
+  {
+    "name": "Neurochain Mainnet",
+    "rpcUrl": "https://nc-rpc-prd1.neurochain.io",
+    "chainId": "313",
+    "symbol": "NCN",
+    "explorer": "https://ncnscan.com"
+  },
+  {
+    "name": "Filecoin - Mainnet",
+    "rpcUrl": "https://api.node.glif.io/",
+    "chainId": "314",
+    "symbol": "FIL",
+    "explorer": "https://filfox.info/en"
+  },
+  {
+    "name": "WorldEcoMoney",
+    "rpcUrl": "https://rpc.wemblockchain.com",
+    "chainId": "315",
+    "symbol": "WEM",
+    "explorer": "https://wemscan.com"
+  },
+  {
+    "name": "PulseChain",
+    "rpcUrl": "https://rpc.pulsechain.com",
+    "chainId": "369",
+    "symbol": "PLS",
+    "explorer": "https://scan.pulsechain.com"
+  },
+  {
+    "name": "NEAR Protocol",
+    "rpcUrl": "https://eth-rpc.mainnet.near.org",
+    "chainId": "397",
+    "symbol": "NEAR",
+    "explorer": "https://eth-explorer.near.org"
+  },
+  {
+    "name": "NEAR Protocol Testnet",
+    "rpcUrl": "https://eth-rpc.testnet.near.org",
+    "chainId": "398",
+    "symbol": "NEAR",
+    "explorer": "https://eth-explorer-testnet.near.org"
+  },
+  {
+    "name": "ARZIO Chain",
+    "rpcUrl": "https://chain-rpc.arzio.co",
+    "chainId": "456",
+    "symbol": "AZO",
+    "explorer": "https://scan.arzio.co"
+  },
+  {
+    "name": "Camino C-Chain",
+    "rpcUrl": "https://api.camino.network/ext/bc/C/rpc",
+    "chainId": "500",
+    "symbol": "CAM",
+    "explorer": "https://suite.camino.network/explorer"
+  },
+  {
+    "name": "Columbus Test Network",
+    "rpcUrl": "https://columbus.camino.network/ext/bc/C/rpc",
+    "chainId": "501",
+    "symbol": "CAM",
+    "explorer": "https://suite.camino.network/explorer"
+  },
+  {
+    "name": "Flow EVM Testnet",
+    "rpcUrl": "https://testnet.evm.nodes.onflow.org",
+    "chainId": "545",
+    "symbol": "FLOW",
+    "explorer": "https://evm-testnet.flowscan.io"
+  },
+  {
+    "name": "Dogechain Testnet",
+    "rpcUrl": "https://rpc-testnet.dogechain.dog",
+    "chainId": "568",
+    "symbol": "DOGE",
+    "explorer": "https://explorer-testnet.dogechain.dog"
+  },
+  {
+    "name": "Karura Network Testnet",
+    "rpcUrl": "https://eth-rpc-karura-testnet.aca-staging.network",
+    "chainId": "596",
+    "symbol": "KAR",
+    "explorer": "https://blockscout.karura-testnet.aca-staging.network"
+  },
+  {
+    "name": "Acala Network Testnet",
+    "rpcUrl": "https://eth-rpc-acala-testnet.aca-staging.network",
+    "chainId": "597",
+    "symbol": "ACA",
+    "explorer": "https://blockscout.acala-dev.aca-dev.network"
+  },
+  {
+    "name": "Graphlinq Blockchain Mainnet",
+    "rpcUrl": "https://glq-dataseed.graphlinq.io",
+    "chainId": "614",
+    "symbol": "GLQ",
+    "explorer": "https://explorer.graphlinq.io"
+  },
+  {
+    "name": "Skynet",
+    "rpcUrl": "http://rpc.skynet.io",
+    "chainId": "619",
+    "symbol": "sUSD",
+    "explorer": "http://explorer.skynet.io"
+  },
+  {
+    "name": "Binary Mainnet",
+    "rpcUrl": "https://rpc.zero.thebinaryholdings.com",
+    "chainId": "624",
+    "symbol": "BNRY",
+    "explorer": "https://explorer.thebinaryholdings.com"
+  },
+  {
+    "name": "Binary Sepolia",
+    "rpcUrl": "https://rpc.testnet.thebinaryholdings.com",
+    "chainId": "625",
+    "symbol": "BNRY",
+    "explorer": "https://explorer.sepolia.thebinaryholdings.com"
+  },
+  {
+    "name": "Kalichain",
+    "rpcUrl": "https://mainnet.kalichain.com",
+    "chainId": "654",
+    "symbol": "KALIS",
+    "explorer": "https://explorer.kalichain.com"
+  },
+  {
+    "name": "AmaxSmartchain",
+    "rpcUrl": "https://rpc.amaxchain.io",
+    "chainId": "662",
+    "symbol": "AMAX",
+    "explorer": "https://scan.amaxchain.io"
+  },
+  {
+    "name": "Karura Network",
+    "rpcUrl": "https://eth-rpc-karura.aca-api.network",
+    "chainId": "686",
+    "symbol": "KAR",
+    "explorer": "https://blockscout.karura.network"
+  },
+  {
+    "name": "Shibarium Beta",
+    "rpcUrl": "https://puppynet.shibrpc.com",
+    "chainId": "719",
+    "symbol": "BONE",
+    "explorer": "https://puppyscan.shib.io"
+  },
+  {
+    "name": "OpenChain Testnet",
+    "rpcUrl": null,
+    "chainId": "776",
+    "symbol": "TOPC",
+    "explorer": "https://testnet.openchain.info"
+  },
+  {
+    "name": "Acala Network",
+    "rpcUrl": "https://eth-rpc-acala.aca-api.network",
+    "chainId": "787",
+    "symbol": "ACA",
+    "explorer": "https://blockscout.acala.network"
+  },
+  {
+    "name": "Dexit Network",
+    "rpcUrl": "https://dxt.dexit.network",
+    "chainId": "877",
+    "symbol": "DXT",
+    "explorer": "https://dxtscan.com"
+  },
+  {
+    "name": "Weber Governance Mainnet",
+    "rpcUrl": "https://chain.myweber.org",
+    "chainId": "881",
+    "symbol": "PTT",
+    "explorer": "https://mainnet.myweber.org"
+  },
+  {
+    "name": "Wanchain",
+    "rpcUrl": "https://gwan-ssl.wandevs.org:56891/",
+    "chainId": "888",
+    "symbol": "WAN",
+    "explorer": "https://wanscan.org"
+  },
+  {
+    "name": "Rinia",
+    "rpcUrl": "https://rinia-rpc1.thefirechain.com",
+    "chainId": "917",
+    "symbol": "FIRE",
+    "explorer": "https://rinia.firescan.io"
+  },
+  {
+    "name": "Yidark Chain Mainnet",
+    "rpcUrl": "https://rpc.yidark.io",
+    "chainId": "927",
+    "symbol": "YDK",
+    "explorer": "https://yidarkscan.com"
+  },
+  {
+    "name": "PulseChain Testnet v4",
+    "rpcUrl": "https://rpc.v4.testnet.pulsechain.com",
+    "chainId": "943",
+    "symbol": "tPLS",
+    "explorer": "https://scan.v4.testnet.pulsechain.com"
+  },
+  {
+    "name": "BTC20 Smart Chain",
+    "rpcUrl": "https://rpc.bitcoincode.technology/",
+    "chainId": "963",
+    "symbol": "BTCC",
+    "explorer": "https://scan.bitcoincode.technology"
+  },
+  {
+    "name": "Oort Ascraeus",
+    "rpcUrl": "https://ascraeus-rpc.oortech.com",
+    "chainId": "972",
+    "symbol": "CCNA",
+    "explorer": "https://ascraeus-scan.oortech.com"
+  },
+  {
+    "name": "Memo Smart Chain Mainnet",
+    "rpcUrl": "https://chain.metamemo.one:8501",
+    "chainId": "985",
+    "symbol": "CMEMO",
+    "explorer": "https://scan.metamemo.one:8080"
+  },
+  {
+    "name": "TOP Mainnet",
+    "rpcUrl": null,
+    "chainId": "989",
+    "symbol": "TOP",
+    "explorer": "https://www.topscan.io"
+  },
+  {
+    "name": "Wanchain Testnet",
+    "rpcUrl": "https://gwan-ssl.wandevs.org:46891/",
+    "chainId": "999",
+    "symbol": "WAN",
+    "explorer": "https://testnet.wanscan.org"
+  },
+  {
+    "name": "Kaia Kairos Testnet",
+    "rpcUrl": "https://public-en-kairos.node.kaia.io",
+    "chainId": "1001",
+    "symbol": "KAIA",
+    "explorer": "https://kairos.kaiascope.com"
+  },
+  {
+    "name": "Tectum Emission Token",
+    "rpcUrl": "https://rpc.softnote.com/",
+    "chainId": "1003",
+    "symbol": "TET",
+    "explorer": "https://explorer.tectum.io"
+  },
+  {
+    "name": "Jumbochain Mainnet",
+    "rpcUrl": "https://rpcpriv.jumbochain.org",
+    "chainId": "1009",
+    "symbol": "JNFTC",
+    "explorer": "https://jumboscan.jumbochain.org"
+  },
+  {
+    "name": "BitTorrent Chain Donau",
+    "rpcUrl": "https://pre-rpc.bt.io",
+    "chainId": "1029",
+    "symbol": "BTT",
+    "explorer": "https://testnet.bttcscan.com"
+  },
+  {
+    "name": "Conflux eSpace",
+    "rpcUrl": "https://evm.confluxrpc.com",
+    "chainId": "1030",
+    "symbol": "CFX",
+    "explorer": "https://evm.confluxscan.net"
+  },
+  {
+    "name": "Bronos Mainnet",
+    "rpcUrl": null,
+    "chainId": "1039",
+    "symbol": "BRO",
+    "explorer": "https://broscan.bronos.org"
+  },
+  {
+    "name": "OpenGPU Mainnet",
+    "rpcUrl": "https://mainnet-rpc.ogpuscan.io",
+    "chainId": "1071",
+    "symbol": "OGPU",
+    "explorer": "https://ogpuscan.io"
+  },
+  {
+    "name": "ShimmerEVM Testnet Deprecated 1072",
+    "rpcUrl": null,
+    "chainId": "1072",
+    "symbol": "SMR",
+    "explorer": "https://explorer.evm.testnet.shimmer.network"
+  },
+  {
+    "name": "IOTA EVM Testnet",
+    "rpcUrl": "https://json-rpc.evm.testnet.iotaledger.net",
+    "chainId": "1075",
+    "symbol": "IOTA",
+    "explorer": "https://explorer.evm.testnet.iotaledger.net"
+  },
+  {
+    "name": "MOAC mainnet",
+    "rpcUrl": null,
+    "chainId": "1099",
+    "symbol": "mc",
+    "explorer": "https://explorer.moac.io"
+  },
+  {
+    "name": "WEMIX3.0 Mainnet",
+    "rpcUrl": "https://api.wemix.com",
+    "chainId": "1111",
+    "symbol": "WEMIX",
+    "explorer": "https://explorer.wemix.com"
+  },
+  {
+    "name": "WEMIX3.0 Testnet",
+    "rpcUrl": "https://api.test.wemix.com",
+    "chainId": "1112",
+    "symbol": "tWEMIX",
+    "explorer": "https://microscope.test.wemix.com"
+  },
+  {
+    "name": "B2 Hub Testnet",
+    "rpcUrl": "https://testnet-hub-rpc.bsquared.network",
+    "chainId": "1113",
+    "symbol": "B2",
+    "explorer": "https://testnet-hub-explorer.bsquared.network"
+  },
+  {
+    "name": "StateMesh",
+    "rpcUrl": "https://rpc.statemesh.net",
+    "chainId": "1134",
+    "symbol": "MESH",
+    "explorer": "https://scan.statemesh.net"
+  },
+  {
+    "name": "ADF Chain Testnet",
+    "rpcUrl": "https://testnet.adftechnology.com/",
+    "chainId": "1212",
+    "symbol": "tADF",
+    "explorer": "https://testnet-explorer.adftechnology.com"
+  },
+  {
+    "name": "Popcateum Mainnet",
+    "rpcUrl": "https://dataseed.popcateum.org",
+    "chainId": "1213",
+    "symbol": "POP",
+    "explorer": "https://explorer.popcateum.org"
+  },
+  {
+    "name": "ADF Chain",
+    "rpcUrl": "https://mainnet.adftechnology.com/",
+    "chainId": "1215",
+    "symbol": "ADF",
+    "explorer": "https://explorer.adftechnology.com"
+  },
+  {
+    "name": "Dogether Mainnet",
+    "rpcUrl": "https://rpc.dogether.dog/",
+    "chainId": "1248",
+    "symbol": "dogeth",
+    "explorer": "https://explorer.dogether.dog"
+  },
+  {
+    "name": "HALO Mainnet",
+    "rpcUrl": "https://nodes.halo.land",
+    "chainId": "1280",
+    "symbol": "HO",
+    "explorer": "https://browser.halo.land"
+  },
+  {
+    "name": "COINZAX",
+    "rpcUrl": "https://rpc.coinzax.com",
+    "chainId": "1310",
+    "symbol": "ZAX",
+    "explorer": "https://explorer.coinzax.com"
+  },
+  {
+    "name": "JaiHo Chain",
+    "rpcUrl": "https://rpc.jaihochain.com",
+    "chainId": "1313",
+    "symbol": "JaiHo",
+    "explorer": "https://jaihochain.com"
+  },
+  {
+    "name": "AIA Mainnet",
+    "rpcUrl": "https://aia-dataseed1.aiachain.org",
+    "chainId": "1319",
+    "symbol": "AIA",
+    "explorer": "https://aiascan.com"
+  },
+  {
+    "name": "AIA Testnet",
+    "rpcUrl": "https://aia-dataseed1-testnet.aiachain.org",
+    "chainId": "1320",
+    "symbol": "AIA",
+    "explorer": "https://testnet.aiascan.com"
+  },
+  {
+    "name": "Sei Testnet",
+    "rpcUrl": "https://evm-rpc-testnet.sei-apis.com",
+    "chainId": "1328",
+    "symbol": "SEI",
+    "explorer": "https://seitrace.com"
+  },
+  {
+    "name": "Sei Network",
+    "rpcUrl": "https://evm-rpc.sei-apis.com",
+    "chainId": "1329",
+    "symbol": "SEI",
+    "explorer": "https://seitrace.com"
+  },
+  {
+    "name": "Ramestta Mainnet",
+    "rpcUrl": "https://blockchain.ramestta.com",
+    "chainId": "1370",
+    "symbol": "RAMA",
+    "explorer": "https://ramascan.com"
+  },
+  {
+    "name": "Pingaksha testnet",
+    "rpcUrl": "https://testnet.ramestta.com",
+    "chainId": "1377",
+    "symbol": "tRAMA",
+    "explorer": "https://pingaksha.ramascan.com"
+  },
+  {
+    "name": "Polygon zkEVM Testnet old",
+    "rpcUrl": null,
+    "chainId": "1402",
+    "symbol": "ETH",
+    "explorer": "https://explorer.public.zkevm-test.net"
+  },
+  {
+    "name": "Polygon zkEVM Testnet Pre Audit-Upgraded",
+    "rpcUrl": null,
+    "chainId": "1422",
+    "symbol": "ETH",
+    "explorer": "https://explorer.public.zkevm-test.net"
+  },
+  {
+    "name": "ONINO Mainnet",
+    "rpcUrl": "https://rpc.onino.io",
+    "chainId": "1425",
+    "symbol": "ONI",
+    "explorer": "https://explorer.onino.io"
+  },
+  {
+    "name": "Ctex Scan Blockchain",
+    "rpcUrl": "https://mainnet-rpc.ctexscan.com/",
+    "chainId": "1455",
+    "symbol": "CTEX",
+    "explorer": "https://ctexscan.com"
+  },
+  {
+    "name": "Vitruveo Mainnet",
+    "rpcUrl": "https://rpc.vitruveo.xyz",
+    "chainId": "1490",
+    "symbol": "VTRU",
+    "explorer": "https://explorer.vitruveo.xyz"
+  },
+  {
+    "name": "Datacore Smart Chain",
+    "rpcUrl": "https://rpc01.dscscan.io",
+    "chainId": "1555",
+    "symbol": "DSC",
+    "explorer": "https://dscscan.io"
+  },
+  {
+    "name": "Reactive Mainnet",
+    "rpcUrl": "https://mainnet-rpc.rnk.dev",
+    "chainId": "1597",
+    "symbol": "REACT",
+    "explorer": "https://reactscan.net"
+  },
+  {
+    "name": "Betherance",
+    "rpcUrl": "https://rpc.bethscan.io",
+    "chainId": "1605",
+    "symbol": "BETH",
+    "explorer": "https://bethscan.io"
+  },
+  {
+    "name": "Liquichain",
+    "rpcUrl": null,
+    "chainId": "1662",
+    "symbol": "LCN",
+    "explorer": "https://mainnet.liquichain.io"
+  },
+  {
+    "name": "Doric Network",
+    "rpcUrl": "https://mainnet.doric.network",
+    "chainId": "1717",
+    "symbol": "DRC",
+    "explorer": "https://explorer.doric.network"
+  },
+  {
+    "name": "Palette Chain Mainnet",
+    "rpcUrl": "https://palette-rpc.com:22000",
+    "chainId": "1718",
+    "symbol": "PLT",
+    "explorer": "https://palettescan.com"
+  },
+  {
+    "name": "Kerleano",
+    "rpcUrl": "https://cacib-saturn-test.francecentral.cloudapp.azure.com",
+    "chainId": "1804",
+    "symbol": "CRC",
+    "explorer": "https://ethereum-pocr.github.io/explorer/kerleano"
+  },
+  {
+    "name": "Bitcichain Testnet",
+    "rpcUrl": "https://testnet.bitcichain.com",
+    "chainId": "1908",
+    "symbol": "TBITCI",
+    "explorer": "https://testnet.bitciexplorer.com"
+  },
+  {
+    "name": "Merkle Scan",
+    "rpcUrl": "https://marklechain-rpc.merklescan.com",
+    "chainId": "1909",
+    "symbol": "MRK",
+    "explorer": "https://merklescan.com"
+  },
+  {
+    "name": "RedeCoin",
+    "rpcUrl": "https://rpc2.redecoin.eu",
+    "chainId": "1972",
+    "symbol": "REDEV2",
+    "explorer": "https://explorer3.redecoin.eu"
+  },
+  {
+    "name": "ONUS Chain Mainnet",
+    "rpcUrl": "https://rpc.onuschain.io",
+    "chainId": "1975",
+    "symbol": "ONUS",
+    "explorer": "https://explorer.onuschain.io"
+  },
+  {
+    "name": "Dogechain Mainnet",
+    "rpcUrl": "https://rpc.dogechain.dog",
+    "chainId": "2000",
+    "symbol": "DOGE",
+    "explorer": "https://explorer.dogechain.dog"
+  },
+  {
+    "name": "CloudWalk Testnet",
+    "rpcUrl": null,
+    "chainId": "2008",
+    "symbol": "CWN",
+    "explorer": "https://explorer.testnet.cloudwalk.io"
+  },
+  {
+    "name": "CloudWalk Mainnet",
+    "rpcUrl": null,
+    "chainId": "2009",
+    "symbol": "CWN",
+    "explorer": "https://explorer.mainnet.cloudwalk.io"
+  },
+  {
+    "name": "NOW Chain Testnet",
+    "rpcUrl": "https://rpc-testnet.nowscan.io",
+    "chainId": "2014",
+    "symbol": "NOW",
+    "explorer": "https://testnet.nowscan.io"
+  },
+  {
+    "name": "Stratos",
+    "rpcUrl": "https://web3-rpc.thestratos.org",
+    "chainId": "2048",
+    "symbol": "STOS",
+    "explorer": "https://web3-explorer.thestratos.org"
+  },
+  {
+    "name": "BOSagora Mainnet",
+    "rpcUrl": "https://mainnet.bosagora.org",
+    "chainId": "2151",
+    "symbol": "BOA",
+    "explorer": "https://boascan.io"
+  },
+  {
+    "name": "Bitcoin EVM",
+    "rpcUrl": "https://connect.bitcoinevm.com",
+    "chainId": "2203",
+    "symbol": "BTC",
+    "explorer": "https://explorer.bitcoinevm.com"
+  },
+  {
+    "name": "CratD2C",
+    "rpcUrl": "https://node1.cratd2csmartchain.io",
+    "chainId": "2310",
+    "symbol": "CRAT",
+    "explorer": "https://explorer.cratd2csmartchain.io"
+  },
+  {
+    "name": "GOAT Network",
+    "rpcUrl": "https://rpc.goat.network",
+    "chainId": "2345",
+    "symbol": "BTC",
+    "explorer": "https://explorer.goat.network"
+  },
+  {
+    "name": "Silicon zkEVM",
+    "rpcUrl": "https://rpc.silicon.network",
+    "chainId": "2355",
+    "symbol": "ETH",
+    "explorer": "https://scope.silicon.network"
+  },
+  {
+    "name": "Kroma Sepolia",
+    "rpcUrl": "https://api.sepolia.kroma.network",
+    "chainId": "2358",
+    "symbol": "ETH",
+    "explorer": "https://blockscout.sepolia.kroma.network"
+  },
+  {
+    "name": "KiteAI Testnet",
+    "rpcUrl": "https://rpc-testnet.gokite.ai",
+    "chainId": "2368",
+    "symbol": "KITE",
+    "explorer": "https://testnet.kitescan.ai"
+  },
+  {
+    "name": "TAC Turin",
+    "rpcUrl": "https://turin.rpc.tac.build",
+    "chainId": "2390",
+    "symbol": "TAC",
+    "explorer": "https://turin.explorer.tac.build"
+  },
+  {
+    "name": "XODEX",
+    "rpcUrl": "https://mainnet.xo-dex.com/rpc",
+    "chainId": "2415",
+    "symbol": "XODEX",
+    "explorer": "https://explorer.xo-dex.com"
+  },
+  {
+    "name": "6Degree of Outreach",
+    "rpcUrl": "https://rpc.6dochain.com",
+    "chainId": "2477",
+    "symbol": "6DO",
+    "explorer": "https://explorer.6dochain.com"
+  },
+  {
+    "name": "Unicorn Ultra Nebulas Testnet",
+    "rpcUrl": "https://rpc-nebulas-testnet.uniultra.xyz",
+    "chainId": "2484",
+    "symbol": "U2U",
+    "explorer": "https://testnet.u2uscan.xyz"
+  },
+  {
+    "name": "NOW Chain Mainnet",
+    "rpcUrl": "https://rpc.nowscan.io",
+    "chainId": "2488",
+    "symbol": "NOW",
+    "explorer": "https://nowscan.io"
+  },
+  {
+    "name": "TechPay Mainnet",
+    "rpcUrl": "https://api.techpay.io/",
+    "chainId": "2569",
+    "symbol": "TPC",
+    "explorer": "https://tpcscan.com"
+  },
+  {
+    "name": "Pho Blockchain Mainnet",
+    "rpcUrl": "https://mainnet.phochain.org",
+    "chainId": "2605",
+    "symbol": "PHO",
+    "explorer": "https://phoscan.org"
+  },
+  {
+    "name": "PoCRNet",
+    "rpcUrl": "https://pocrnet.westeurope.cloudapp.azure.com/http",
+    "chainId": "2606",
+    "symbol": "CRC",
+    "explorer": "https://ethereum-pocr.github.io/explorer/pocrnet"
+  },
+  {
+    "name": "HyperAGI Mainnet",
+    "rpcUrl": null,
+    "chainId": "2868",
+    "symbol": "HYPT",
+    "explorer": "https://block.hyperagi.network"
+  },
+  {
+    "name": "Elux Chain",
+    "rpcUrl": "https://rpc.eluxscan.com",
+    "chainId": "2907",
+    "symbol": "ELUX",
+    "explorer": "https://eluxscan.com"
+  },
+  {
+    "name": "BitYuan Mainnet",
+    "rpcUrl": "https://mainnet.bityuan.com/eth",
+    "chainId": "2999",
+    "symbol": "BTY",
+    "explorer": "https://mainnet.bityuan.com"
+  },
+  {
+    "name": "Canxium Mainnet",
+    "rpcUrl": "https://rpc.canxium.org",
+    "chainId": "3003",
+    "symbol": "CAU",
+    "explorer": "https://explorer.canxium.org"
+  },
+  {
+    "name": "BC Hyper Chain Mainnet",
+    "rpcUrl": "https://mainapi.bchscan.io",
+    "chainId": "3030",
+    "symbol": "VTCN",
+    "explorer": "https://bchscan.io"
+  },
+  {
+    "name": "Movement EVM",
+    "rpcUrl": null,
+    "chainId": "3073",
+    "symbol": "MOVE",
+    "explorer": "https://explorer.movementlabs.xyz"
+  },
+  {
+    "name": "QuarkChain L2 Beta Testnet",
+    "rpcUrl": "https://rpc.beta.testnet.l2.quarkchain.io:8545",
+    "chainId": "3335",
+    "symbol": "QKC",
+    "explorer": "https://explorer.beta.testnet.l2.quarkchain.io"
+  },
+  {
+    "name": "EVOLVE Mainnet",
+    "rpcUrl": "https://rpc.evoexplorer.com",
+    "chainId": "3424",
+    "symbol": "EVO",
+    "explorer": "https://evoexplorer.com"
+  },
+  {
+    "name": "GTCSCAN",
+    "rpcUrl": "https://gtc-dataseed.gtcscan.io/",
+    "chainId": "3490",
+    "symbol": "GTC",
+    "explorer": "https://gtcscan.io"
+  },
+  {
+    "name": "Paribu Net Testnet",
+    "rpcUrl": "https://rpc.testnet.paribuscan.com",
+    "chainId": "3500",
+    "symbol": "PRB",
+    "explorer": "https://testnet.paribuscan.com"
+  },
+  {
+    "name": "PandoProject Mainnet",
+    "rpcUrl": "https://eth-rpc-api.pandoproject.org/rpc",
+    "chainId": "3601",
+    "symbol": "PTX",
+    "explorer": "https://explorer.pandoproject.org"
+  },
+  {
+    "name": "iChain Network",
+    "rpcUrl": "https://rpc.ichainscan.com",
+    "chainId": "3639",
+    "symbol": "ISLAMI",
+    "explorer": "https://ichainscan.com"
+  },
+  {
+    "name": "iChain Testnet",
+    "rpcUrl": "https://istanbul.ichainscan.com",
+    "chainId": "3645",
+    "symbol": "ISLAMI",
+    "explorer": "https://test.ichainscan.com"
+  },
+  {
+    "name": "Jouleverse Mainnet",
+    "rpcUrl": "https://rpc.jnsdao.com:8503",
+    "chainId": "3666",
+    "symbol": "J",
+    "explorer": "https://jscan.jnsdao.com"
+  },
+  {
+    "name": "Xpla Testnet",
+    "rpcUrl": "https://dimension-rpc.xpla.dev",
+    "chainId": "3701",
+    "symbol": "XPLA",
+    "explorer": "https://explorer.xpla.io"
+  },
+  {
+    "name": "Crossbell",
+    "rpcUrl": "https://rpc.crossbell.io",
+    "chainId": "3737",
+    "symbol": "CSB",
+    "explorer": "https://scan.crossbell.io"
+  },
+  {
+    "name": "AlveyChain Mainnet",
+    "rpcUrl": "https://elves-core1.alvey.io",
+    "chainId": "3797",
+    "symbol": "ALV",
+    "explorer": "https://alveyscan.com"
+  },
+  {
+    "name": "YuanChain Mainnet",
+    "rpcUrl": "https://mainnet.yuan.org/eth",
+    "chainId": "3999",
+    "symbol": "YCC",
+    "explorer": "https://mainnet.yuan.org"
+  },
+  {
+    "name": "Fantom Testnet",
+    "rpcUrl": "https://rpc.testnet.fantom.network",
+    "chainId": "4002",
+    "symbol": "FTM",
+    "explorer": "https://testnet.ftmscan.com"
+  },
+  {
+    "name": "Zeroth Mainnet",
+    "rpcUrl": "https://my.zeroth.run",
+    "chainId": "4088",
+    "symbol": "ZRH",
+    "explorer": "https://scan.zeroth.run"
+  },
+  {
+    "name": "LUKSO Testnet",
+    "rpcUrl": "https://rpc.testnet.lukso.network",
+    "chainId": "4201",
+    "symbol": "LYXt",
+    "explorer": "https://explorer.execution.testnet.lukso.network"
+  },
+  {
+    "name": "MemeCore",
+    "rpcUrl": "https://rpc.memecore.net",
+    "chainId": "4352",
+    "symbol": "M",
+    "explorer": "https://www.okx.com/web3/explorer/memecore"
+  },
+  {
+    "name": "VERY Mainnet",
+    "rpcUrl": "https://rpc.verylabs.io",
+    "chainId": "4613",
+    "symbol": "VERY",
+    "explorer": "https://www.veryscan.io"
+  },
+  {
+    "name": "MST Chain",
+    "rpcUrl": "https://mariorpc.mstblockchain.com",
+    "chainId": "4646",
+    "symbol": "MST",
+    "explorer": "https://mstscan.com"
+  },
+  {
+    "name": "Nollie Skatechain Testnet",
+    "rpcUrl": "https://nollie-rpc.skatechain.org/",
+    "chainId": "5051",
+    "symbol": "ETH",
+    "explorer": "https://nolliescan.skatechain.org"
+  },
+  {
+    "name": "Pione Zero",
+    "rpcUrl": "https://rpc.zeroscan.org",
+    "chainId": "5080",
+    "symbol": "PZO",
+    "explorer": "https://zeroscan.org"
+  },
+  {
+    "name": "Pione Chain Mainnet",
+    "rpcUrl": "https://rpc.pionescan.com",
+    "chainId": "5090",
+    "symbol": "PIO",
+    "explorer": "https://pionescan.com"
+  },
+  {
+    "name": "Bahamut",
+    "rpcUrl": "https://rpc1.bahamut.io",
+    "chainId": "5165",
+    "symbol": "FTN",
+    "explorer": "https://ftnscan.com"
+  },
+  {
+    "name": "TLChain Network Mainnet",
+    "rpcUrl": "https://mainnet-rpc.tlxscan.com/",
+    "chainId": "5177",
+    "symbol": "TLC",
+    "explorer": "https://explorer.tlchain.network"
+  },
+  {
+    "name": "Netsbo",
+    "rpcUrl": "https://rpc1.netsbo.io",
+    "chainId": "5333",
+    "symbol": "NETS",
+    "explorer": "https://explorer.netsbo.io"
+  },
+  {
+    "name": "Inertia Scan",
+    "rpcUrl": "https://rpc.inertiascan.com",
+    "chainId": "5433",
+    "symbol": "IRTA",
+    "explorer": "https://inertiascan.com"
+  },
+  {
+    "name": "PointPay Mainnet",
+    "rpcUrl": "https://rpc-mainnet.pointpay.io",
+    "chainId": "5511",
+    "symbol": "PXP",
+    "explorer": "https://explorer.pointpay.io"
+  },
+  {
+    "name": "VEX EVM TESTNET",
+    "rpcUrl": "https://testnet.vexascan.com/evmapi",
+    "chainId": "5522",
+    "symbol": "VEX",
+    "explorer": "https://testnet.vexascan.com/evmexplorer"
+  },
+  {
+    "name": "Nahmii 2 Mainnet",
+    "rpcUrl": "https://l2.nahmii.io",
+    "chainId": "5551",
+    "symbol": "ETH",
+    "explorer": "https://explorer.n2.nahmii.io"
+  },
+  {
+    "name": "opBNB Testnet",
+    "rpcUrl": "https://opbnb-testnet-rpc.bnbchain.org",
+    "chainId": "5611",
+    "symbol": "tBNB",
+    "explorer": "https://opbnb-testnet.bscscan.com"
+  },
+  {
+    "name": "QIE Blockchain",
+    "rpcUrl": "https://rpc-main1.qiblockchain.online/",
+    "chainId": "5656",
+    "symbol": "QIE",
+    "explorer": "https://mainnet.qiblockchain.online"
+  },
+  {
+    "name": "Hika Network Testnet",
+    "rpcUrl": "https://rpc-testnet.hika.network/",
+    "chainId": "5729",
+    "symbol": "HIK",
+    "explorer": "https://scan-testnet.hika.network"
+  },
+  {
+    "name": "SatoshiChain Testnet",
+    "rpcUrl": "https://testnet-rpc.satoshichain.io",
+    "chainId": "5758",
+    "symbol": "SATS",
+    "explorer": "https://testnet.satoshiscan.io"
+  },
+  {
+    "name": "Ontology Testnet",
+    "rpcUrl": "http://polaris1.ont.io:20339",
+    "chainId": "5851",
+    "symbol": "ONG",
+    "explorer": "https://explorer.ont.io/testnet"
+  },
+  {
+    "name": "Chang Chain Foundation Mainnet",
+    "rpcUrl": "https://rpc.cthscan.com/",
+    "chainId": "5858",
+    "symbol": "CTH",
+    "explorer": "https://cthscan.com"
+  },
+  {
+    "name": "BC Hyper Chain Testnet",
+    "rpcUrl": "https://rpc.bchscan.io",
+    "chainId": "6060",
+    "symbol": "TVTCN",
+    "explorer": "https://testnet.bchscan.io"
+  },
+  {
+    "name": "Rails",
+    "rpcUrl": "https://mainnet.steamexchange.io",
+    "chainId": "6278",
+    "symbol": "STEAMX",
+    "explorer": "https://explore.steamexchange.io"
+  },
+  {
+    "name": "Pixie Chain Mainnet",
+    "rpcUrl": "https://http-mainnet.chain.pixie.xyz",
+    "chainId": "6626",
+    "symbol": "PIX",
+    "explorer": "https://scan.chain.pixie.xyz"
+  },
+  {
+    "name": "Edge Matrix Chain",
+    "rpcUrl": "https://rpc1-mainnet.emc.network",
+    "chainId": "6678",
+    "symbol": "EMC",
+    "explorer": "https://emcscan.com"
+  },
+  {
+    "name": "Compverse Mainnet",
+    "rpcUrl": "https://rpc.compverse.io/",
+    "chainId": "6779",
+    "symbol": "CPV",
+    "explorer": "https://scan.compverse.io"
+  },
+  {
+    "name": "Gold Smart Chain Mainnet",
+    "rpcUrl": "https://rpc-mainnet.goldsmartchain.com",
+    "chainId": "6789",
+    "symbol": "STAND",
+    "explorer": "https://mainnet.goldsmartchain.com"
+  },
+  {
+    "name": "Tomb Chain Mainnet",
+    "rpcUrl": "https://rpc.tombchain.com/",
+    "chainId": "6969",
+    "symbol": "TOMB",
+    "explorer": "https://tombscout.com"
+  },
+  {
+    "name": "BST Chain",
+    "rpcUrl": "https://rpc.bstchain.io/",
+    "chainId": "7007",
+    "symbol": "BSTC",
+    "explorer": "https://bstscan.com"
+  },
+  {
+    "name": "Ella the heart",
+    "rpcUrl": "https://rpc.ella.network",
+    "chainId": "7027",
+    "symbol": "ELLA",
+    "explorer": "https://ella.network"
+  },
+  {
+    "name": "UXLINK One Testnet",
+    "rpcUrl": "https://rpc-sepolia.uxlinkone.com",
+    "chainId": "7181",
+    "symbol": "UXLINK",
+    "explorer": "https://sepolia.uxlinkone.com"
+  },
+  {
+    "name": "exSat Mainnet",
+    "rpcUrl": "https://evm.exsat.network",
+    "chainId": "7200",
+    "symbol": "BTC",
+    "explorer": "https://scan.exsat.network"
+  },
+  {
+    "name": "ZEUS Testnet",
+    "rpcUrl": "https://testnet-rpc.zeuschainscan.io",
+    "chainId": "7244",
+    "symbol": "ZEUSX",
+    "explorer": "https://testnet-explorer.zeuschainscan.io"
+  },
+  {
+    "name": "Shyft Mainnet",
+    "rpcUrl": "https://rpc.shyft.network/",
+    "chainId": "7341",
+    "symbol": "SHYFT",
+    "explorer": "https://bx.shyft.network"
+  },
+  {
+    "name": "ADIL Testnet",
+    "rpcUrl": "https://testnet.adilchain-rpc.io",
+    "chainId": "7575",
+    "symbol": "ADIL",
+    "explorer": "https://testnet.adilchain-scan.io"
+  },
+  {
+    "name": "Adil Chain V2 Mainnet",
+    "rpcUrl": "https://adilchain-rpc.io",
+    "chainId": "7576",
+    "symbol": "ADIL",
+    "explorer": "https://adilchain-scan.io"
+  },
+  {
+    "name": "Draw Coin",
+    "rpcUrl": "https://rpc.drawchain.org",
+    "chainId": "7788",
+    "symbol": "DRW",
+    "explorer": "https://drawscan.io"
+  },
+  {
+    "name": "Dot Blox",
+    "rpcUrl": "https://rpc.dotblox.io",
+    "chainId": "7923",
+    "symbol": "DTBX",
+    "explorer": "https://explorer.dotblox.io"
+  },
+  {
+    "name": "Exorium Testnet",
+    "rpcUrl": "https://rpc-1-testnet.exorium.net",
+    "chainId": "7957",
+    "symbol": "tEXOR",
+    "explorer": "https://testnet.exoscan.net"
+  },
+  {
+    "name": "iSunCoin Mainnet",
+    "rpcUrl": "https://mainnet.isuncoin.com",
+    "chainId": "8017",
+    "symbol": "ISC",
+    "explorer": "https://baifa.io/app/chains/8017"
+  },
+  {
+    "name": "Qitmeer Network Testnet",
+    "rpcUrl": "https://testnet-qng.rpc.qitmeer.io",
+    "chainId": "8131",
+    "symbol": "MEER-T",
+    "explorer": "https://testnet-qng.qitmeer.io"
+  },
+  {
+    "name": "Torus Mainnet",
+    "rpcUrl": "https://rpc.toruschain.com",
+    "chainId": "8192",
+    "symbol": "TQF",
+    "explorer": "https://toruscan.com"
+  },
+  {
+    "name": "Torus Testnet",
+    "rpcUrl": "https://rpc.testnet.toruschain.com",
+    "chainId": "8194",
+    "symbol": "TTQF",
+    "explorer": "https://testnet.toruscan.com"
+  },
+  {
+    "name": "TOOL Global Mainnet",
+    "rpcUrl": "https://mainnet-web3.wolot.io",
+    "chainId": "8723",
+    "symbol": "OLO",
+    "explorer": "https://www.olo.network"
+  },
+  {
+    "name": "Alph Network",
+    "rpcUrl": "https://rpc.alph.network",
+    "chainId": "8738",
+    "symbol": "ALPH",
+    "explorer": "https://explorer.alph.network"
+  },
+  {
+    "name": "Okto Testnet",
+    "rpcUrl": "https://rpc.okto-testnet.zeeve.online",
+    "chainId": "8801",
+    "symbol": "OKTO",
+    "explorer": "https://explorer.okto-testnet.zeeve.online"
+  },
+  {
+    "name": "IOTA EVM",
+    "rpcUrl": "https://json-rpc.evm.iotaledger.net",
+    "chainId": "8822",
+    "symbol": "IOTA",
+    "explorer": "https://explorer.evm.iota.org"
+  },
+  {
+    "name": "Hydra Chain Testnet",
+    "rpcUrl": "https://rpc-testnet.hydrachain.org",
+    "chainId": "8844",
+    "symbol": "tHYDRA",
+    "explorer": "https://hydragon.hydrachain.org"
+  },
+  {
+    "name": "JIBCHAIN L1",
+    "rpcUrl": "https://rpc-l1.jibchain.net",
+    "chainId": "8899",
+    "symbol": "JBC",
+    "explorer": "https://exp-l1.jibchain.net"
+  },
+  {
+    "name": "Giant Mammoth Mainnet",
+    "rpcUrl": "https://rpc-asia.gmmtchain.io",
+    "chainId": "8989",
+    "symbol": "GMMT",
+    "explorer": "https://scan.gmmtchain.io"
+  },
+  {
+    "name": "Oasys Testnet",
+    "rpcUrl": "https://rpc.testnet.oasys.games",
+    "chainId": "9372",
+    "symbol": "OAS",
+    "explorer": "https://explorer.testnet.oasys.games"
+  },
+  {
+    "name": "Evoke Mainnet",
+    "rpcUrl": "https://mainnet-rpc.evokescan.org",
+    "chainId": "9395",
+    "symbol": "MTHN",
+    "explorer": "https://explorer.evokescan.org"
+  },
+  {
+    "name": "QEasyWeb3 Testnet",
+    "rpcUrl": "https://qeasyweb3.com",
+    "chainId": "9528",
+    "symbol": "QET",
+    "explorer": "https://www.qeasyweb3.com"
+  },
+  {
+    "name": "Rebus Mainnet",
+    "rpcUrl": "https://apievml2.rebuschain.com/l2rpc",
+    "chainId": "9696",
+    "symbol": "ETH",
+    "explorer": "https://evm.rebuschain.com"
+  },
+  {
+    "name": "PepeNetwork Mainnet",
+    "rpcUrl": "https://rpc-mainnet.pepenetwork.io",
+    "chainId": "9779",
+    "symbol": "WPEPE",
+    "explorer": "https://explorer.pepenetwork.io"
+  },
+  {
+    "name": "OptimusZ7 Mainnet",
+    "rpcUrl": "https://rpc.optimusz7.com",
+    "chainId": "9797",
+    "symbol": "OZ7",
+    "explorer": "https://explorer.optimusz7.com"
+  },
+  {
+    "name": "Larissa Chain",
+    "rpcUrl": "https://rpc.larissa.network",
+    "chainId": "9898",
+    "symbol": "LRS",
+    "explorer": "https://scan.larissa.network"
+  },
+  {
+    "name": "Mind Smart Chain Mainnet",
+    "rpcUrl": "https://rpc-msc.mindchain.info/",
+    "chainId": "9996",
+    "symbol": "MIND",
+    "explorer": "https://mainnet.mindscan.info"
+  },
+  {
+    "name": "AEON Chain",
+    "rpcUrl": "https://node.aeon.xyz/rpc",
+    "chainId": "10025",
+    "symbol": "AEON",
+    "explorer": "https://scan.aeon.xyz"
+  },
+  {
+    "name": "Japan Open Chain Testnet",
+    "rpcUrl": "https://rpc-1.testnet.japanopenchain.org:8545",
+    "chainId": "10081",
+    "symbol": "JOCT",
+    "explorer": "https://explorer.testnet.japanopenchain.org"
+  },
+  {
+    "name": "MaxxChain Mainnet",
+    "rpcUrl": "https://rpc.maxxchain.org",
+    "chainId": "10201",
+    "symbol": "PWR",
+    "explorer": "https://explorer.maxxchain.org"
+  },
+  {
+    "name": "GLScan",
+    "rpcUrl": "https://glc-dataseed.glscan.io/",
+    "chainId": "10222",
+    "symbol": "GLC",
+    "explorer": "https://glscan.io"
+  },
+  {
+    "name": "Arthera Mainnet",
+    "rpcUrl": "https://rpc.arthera.net",
+    "chainId": "10242",
+    "symbol": "AA",
+    "explorer": "https://explorer.arthera.net"
+  },
+  {
+    "name": "TAO EVM Testnet",
+    "rpcUrl": "https://testnet-rpc.taoevm.io",
+    "chainId": "10324",
+    "symbol": "TAO",
+    "explorer": "https://testnet.taoscan.org"
+  },
+  {
+    "name": "WorldLand Testnet",
+    "rpcUrl": "https://gwangju.worldland.foundation",
+    "chainId": "10395",
+    "symbol": "WLC",
+    "explorer": "https://testscan.worldland.foundation"
+  },
+  {
+    "name": "Numbers Mainnet",
+    "rpcUrl": "https://mainnetrpc.num.network",
+    "chainId": "10507",
+    "symbol": "NUM",
+    "explorer": "https://mainnet.num.network"
+  },
+  {
+    "name": "Numbers Testnet",
+    "rpcUrl": "https://testnetrpc.num.network",
+    "chainId": "10508",
+    "symbol": "NUM",
+    "explorer": "https://testnet.num.network"
+  },
+  {
+    "name": "Quadrans Blockchain",
+    "rpcUrl": "https://rpc.quadrans.io",
+    "chainId": "10946",
+    "symbol": "QDC",
+    "explorer": "https://explorer.quadrans.io"
+  },
+  {
+    "name": "Quadrans Blockchain Testnet",
+    "rpcUrl": "https://rpctest.quadrans.io",
+    "chainId": "10947",
+    "symbol": "tQDC",
+    "explorer": "https://explorer.testnet.quadrans.io"
+  },
+  {
+    "name": "Shine Chain",
+    "rpcUrl": "https://rpc.shinescan.io",
+    "chainId": "11221",
+    "symbol": "SC20",
+    "explorer": "https://shinescan.io"
+  },
+  {
+    "name": "StateMesh Testnet",
+    "rpcUrl": "https://rpc-test.statemesh.net",
+    "chainId": "11343",
+    "symbol": "MESH",
+    "explorer": "https://explorer-test.statemesh.net"
+  },
+  {
+    "name": "Shyft Testnet",
+    "rpcUrl": null,
+    "chainId": "11437",
+    "symbol": "SHYFTT",
+    "explorer": "https://bx.testnet.shyft.network"
+  },
+  {
+    "name": "Artela Mainnet",
+    "rpcUrl": "https://node-euro.artela.network/rpc",
+    "chainId": "11820",
+    "symbol": "ART",
+    "explorer": "https://artscan.artela.network"
+  },
+  {
+    "name": "Polygon Supernet Arianee",
+    "rpcUrl": "https://rpc.polygonsupernet.public.arianee.net",
+    "chainId": "11891",
+    "symbol": "ARIA20",
+    "explorer": "https://polygonsupernet.explorer.arianee.net"
+  },
+  {
+    "name": "Aternos",
+    "rpcUrl": "https://rpc.aternoschain.com",
+    "chainId": "12020",
+    "symbol": "ATR",
+    "explorer": "https://explorer.aternoschain.com"
+  },
+  {
+    "name": "Singularity ZERO Mainnet",
+    "rpcUrl": "https://zerorpc.singularity.gold",
+    "chainId": "12052",
+    "symbol": "ZERO",
+    "explorer": "https://zeroscan.singularity.gold"
+  },
+  {
+    "name": "Immutable zkEVM",
+    "rpcUrl": "https://rpc.immutable.com",
+    "chainId": "13371",
+    "symbol": "IMX",
+    "explorer": "https://explorer.immutable.com"
+  },
+  {
+    "name": "Phoenix Mainnet",
+    "rpcUrl": "https://rpc.phoenixplorer.com/",
+    "chainId": "13381",
+    "symbol": "PHX",
+    "explorer": "https://phoenixplorer.com"
+  },
+  {
+    "name": "Immutable zkEVM Testnet",
+    "rpcUrl": "https://rpc.testnet.immutable.com",
+    "chainId": "13473",
+    "symbol": "tIMX",
+    "explorer": "https://explorer.testnet.immutable.com"
+  },
+  {
+    "name": "EVOLVE Testnet",
+    "rpcUrl": "https://testnet-rpc.evolveblockchain.io",
+    "chainId": "14324",
+    "symbol": "EVO",
+    "explorer": "https://testnet.evolveblockchain.io"
+  },
+  {
+    "name": "Vitruveo Testnet",
+    "rpcUrl": "https://test-rpc.vitruveo.xyz",
+    "chainId": "14333",
+    "symbol": "tVTRU",
+    "explorer": "https://test-explorer.vitruveo.xyz"
+  },
+  {
+    "name": "Vana Satori Testnet",
+    "rpcUrl": "http://rpc.satori.vana.org",
+    "chainId": "14801",
+    "symbol": "DAT",
+    "explorer": "https://satori.vanascan.io"
+  },
+  {
+    "name": "Poodl Testnet",
+    "rpcUrl": "https://testnet-rpc.poodl.org",
+    "chainId": "15257",
+    "symbol": "POODL",
+    "explorer": "https://testnet.poodl.org"
+  },
+  {
+    "name": "Poodl Mainnet",
+    "rpcUrl": "https://rpc.poodl.org",
+    "chainId": "15259",
+    "symbol": "POODL",
+    "explorer": "https://explorer.poodl.org"
+  },
+  {
+    "name": "KYMTC Mainnet",
+    "rpcUrl": "https://mainnet-rpc.kymaticscan.online",
+    "chainId": "15430",
+    "symbol": "KYMTC",
+    "explorer": "https://kymaticscan.online"
+  },
+  {
+    "name": "LoopNetwork Mainnet",
+    "rpcUrl": "https://api.mainnetloop.com",
+    "chainId": "15551",
+    "symbol": "LOOP",
+    "explorer": "http://explorer.mainnetloop.com"
+  },
+  {
+    "name": "EOS EVM Network Testnet",
+    "rpcUrl": "https://api.testnet.evm.eosnetwork.com",
+    "chainId": "15557",
+    "symbol": "EOS",
+    "explorer": "https://explorer.testnet.evm.eosnetwork.com"
+  },
+  {
+    "name": "DeFiVerse Mainnet",
+    "rpcUrl": "https://rpc.defi-verse.org/",
+    "chainId": "16116",
+    "symbol": "OAS",
+    "explorer": "https://scan.defi-verse.org"
+  },
+  {
+    "name": "Cypherium Mainnet",
+    "rpcUrl": "https://pubnodes.cypherium.io/rpc",
+    "chainId": "16166",
+    "symbol": "CPH",
+    "explorer": "https://cypherium.tryethernal.com"
+  },
+  {
+    "name": "Genesys Mainnet",
+    "rpcUrl": "https://rpc.genesys.network",
+    "chainId": "16507",
+    "symbol": "GSYS",
+    "explorer": "https://gchainexplorer.genesys.network"
+  },
+  {
+    "name": "0G-Newton-Testnet",
+    "rpcUrl": "https://evmrpc-testnet.0g.ai",
+    "chainId": "16600",
+    "symbol": "A0GI",
+    "explorer": "https://chainscan-newton.0g.ai"
+  },
+  {
+    "name": "IVAR Chain Testnet",
+    "rpcUrl": "https://testnet-rpc.ivarex.com",
+    "chainId": "16888",
+    "symbol": "tIVAR",
+    "explorer": "https://testnet.ivarscan.com"
+  },
+  {
+    "name": "DeFiVerse Testnet",
+    "rpcUrl": "https://rpc-testnet.defi-verse.org/",
+    "chainId": "17117",
+    "symbol": "OAS",
+    "explorer": "https://scan-testnet.defi-verse.org"
+  },
+  {
+    "name": "G8Chain Mainnet",
+    "rpcUrl": "https://mainnet-rpc.oneg8.network",
+    "chainId": "17171",
+    "symbol": "G8C",
+    "explorer": "https://mainnet.oneg8.network"
+  },
+  {
+    "name": "Palette Chain Testnet",
+    "rpcUrl": "https://palette-opennet.com:22000",
+    "chainId": "17180",
+    "symbol": "PLT",
+    "explorer": "https://testnet.palettescan.com"
+  },
+  {
+    "name": "Esports Chain",
+    "rpcUrl": "https://esportsblock.org/rpc/",
+    "chainId": "17735",
+    "symbol": "ESPT",
+    "explorer": "https://esportsblock.org/explorer"
+  },
+  {
+    "name": "EOS EVM Network",
+    "rpcUrl": "https://api.evm.eosnetwork.com",
+    "chainId": "17777",
+    "symbol": "EOS",
+    "explorer": "https://explorer.evm.eosnetwork.com"
+  },
+  {
+    "name": "Smart Trade Networks",
+    "rpcUrl": "https://beefledgerwallet.com:8544",
+    "chainId": "18122",
+    "symbol": "STN",
+    "explorer": "https://stnscan.com"
+  },
+  {
+    "name": "G8Chain Testnet",
+    "rpcUrl": "https://testnet-rpc.oneg8.network",
+    "chainId": "18181",
+    "symbol": "G8C",
+    "explorer": "https://testnet.oneg8.network"
+  },
+  {
+    "name": "MXC zkEVM Moonchain",
+    "rpcUrl": "https://rpc.mxc.com",
+    "chainId": "18686",
+    "symbol": "MXC",
+    "explorer": "https://explorer.moonchain.com"
+  },
+  {
+    "name": "Ultra EVM Network Testnet",
+    "rpcUrl": "https://evm.test.ultra.eosusa.io",
+    "chainId": "18881",
+    "symbol": "UOS",
+    "explorer": "https://evmexplorer.testnet.ultra.io"
+  },
+  {
+    "name": "Decentraconnect Social",
+    "rpcUrl": "https://rpc.decentraconnect.io",
+    "chainId": "19224",
+    "symbol": "DCSM",
+    "explorer": "https://decentraconnect.io"
+  },
+  {
+    "name": "SEC Testnet",
+    "rpcUrl": "https://testnet-rpc.secexplorer.io",
+    "chainId": "19515",
+    "symbol": "SEP",
+    "explorer": "https://testnet.secexplorer.io"
+  },
+  {
+    "name": "SEC Mainnet",
+    "rpcUrl": "https://rpc.secexplorer.io",
+    "chainId": "19516",
+    "symbol": "SEP",
+    "explorer": "https://secexplorer.io"
+  },
+  {
+    "name": "LBRY Mainnet",
+    "rpcUrl": "https://lbry.nl/rpc",
+    "chainId": "19600",
+    "symbol": "LBC",
+    "explorer": "https://explorer.lbry.com"
+  },
+  {
+    "name": "Ultra EVM Network",
+    "rpcUrl": "https://evm.ultra.eosusa.io",
+    "chainId": "19991",
+    "symbol": "UOS",
+    "explorer": "https://evmexplorer.ultra.io"
+  },
+  {
+    "name": "XUSD ONE StableChain Mainnet",
+    "rpcUrl": "https://xusd.live",
+    "chainId": "20441",
+    "symbol": "X1",
+    "explorer": "https://xusdscan.com"
+  },
+  {
+    "name": "P12 Chain",
+    "rpcUrl": "https://rpc-chain.p12.games",
+    "chainId": "20736",
+    "symbol": "hP2",
+    "explorer": "https://explorer.p12.games"
+  },
+  {
+    "name": "DCpay Mainnet",
+    "rpcUrl": "https://rpc.dcpay.io",
+    "chainId": "21223",
+    "symbol": "DCP",
+    "explorer": "https://mainnet.dcpay.io"
+  },
+  {
+    "name": "Lestnet",
+    "rpcUrl": "https://service.lestnet.org",
+    "chainId": "21363",
+    "symbol": "LETH",
+    "explorer": "https://explore.lestnet.org"
+  },
+  {
+    "name": "MAP Protocol",
+    "rpcUrl": "https://rpc.maplabs.io",
+    "chainId": "22776",
+    "symbol": "MAPO",
+    "explorer": "https://maposcan.io"
+  },
+  {
+    "name": "DreyerX Mainnet",
+    "rpcUrl": "https://rpc.dreyerx.com",
+    "chainId": "23451",
+    "symbol": "DRX",
+    "explorer": "https://scan.dreyerx.com"
+  },
+  {
+    "name": "DreyerX Testnet",
+    "rpcUrl": "https://testnet-rpc.dreyerx.com",
+    "chainId": "23452",
+    "symbol": "DRX",
+    "explorer": "https://testnet-scan.dreyerx.com"
+  },
+  {
+    "name": "KYMTC Testnet",
+    "rpcUrl": "https://testnet-rpc.kymaticscan.online",
+    "chainId": "24076",
+    "symbol": "KYMTC",
+    "explorer": "https://testnet-explorer.kymaticscan.online"
+  },
+  {
+    "name": "Amauti",
+    "rpcUrl": "https://testnet.steamexchange.io",
+    "chainId": "24116",
+    "symbol": "STEAMX",
+    "explorer": "https://build.steamexchange.io"
+  },
+  {
+    "name": "Nexurachain",
+    "rpcUrl": "https://rpc.nexurachain.io",
+    "chainId": "24125",
+    "symbol": "XURA",
+    "explorer": "https://explorer.nexurachain.io"
+  },
+  {
+    "name": "Hammer Chain Mainnet",
+    "rpcUrl": "https://www.hammerchain.io/rpc",
+    "chainId": "25888",
+    "symbol": "GOLDT",
+    "explorer": "https://www.hammerchain.io"
+  },
+  {
+    "name": "Ferrum Quantum Portal Network",
+    "rpcUrl": "https://qpn.svcs.ferrumnetwork.io",
+    "chainId": "26100",
+    "symbol": "qpFRM",
+    "explorer": "https://explorer.ferrumnetwork.io"
+  },
+  {
+    "name": "AB Core Testnet",
+    "rpcUrl": "https://rpc.core.testnet.ab.org",
+    "chainId": "26888",
+    "symbol": "AB",
+    "explorer": "https://explorer.core.testnet.ab.org"
+  },
+  {
+    "name": "XferChain Testnet",
+    "rpcUrl": "https://testnet-rpc.xferchain.org",
+    "chainId": "27125",
+    "symbol": "Dapo",
+    "explorer": "https://testnet.xferchain.org"
+  },
+  {
+    "name": "Nanon Sepolia",
+    "rpcUrl": "https://sepolia-rpc.nanon.network",
+    "chainId": "27483",
+    "symbol": "ETH",
+    "explorer": "https://sepolia-explorer.nanon.network"
+  },
+  {
+    "name": "XferChain Mainnet",
+    "rpcUrl": "https://rpc.xferchain.org",
+    "chainId": "28125",
+    "symbol": "Dapo",
+    "explorer": "https://xferchain.org"
+  },
+  {
+    "name": "Vizing Mainnet",
+    "rpcUrl": "https://rpc.vizing.com",
+    "chainId": "28518",
+    "symbol": "ETH",
+    "explorer": "https://explorer.vizing.com"
+  },
+  {
+    "name": "KaiChain Testnet",
+    "rpcUrl": "https://testnet-rpc.kaichain.net",
+    "chainId": "29536",
+    "symbol": "KEC",
+    "explorer": "https://testnet-explorer.kaichain.net"
+  },
+  {
+    "name": "qChain Mainnet",
+    "rpcUrl": "https://rpc.qchain.kr",
+    "chainId": "30000",
+    "symbol": "QCO",
+    "explorer": "https://scan.qchain.kr"
+  },
+  {
+    "name": "MiYou Mainnet",
+    "rpcUrl": "https://blockchain.miyou.io",
+    "chainId": "30088",
+    "symbol": "MY",
+    "explorer": "https://myscan.miyou.io"
+  },
+  {
+    "name": "Movement EVM Legacy",
+    "rpcUrl": null,
+    "chainId": "30730",
+    "symbol": "MOVE",
+    "explorer": "https://explorer.movementlabs.xyz"
+  },
+  {
+    "name": "Movement EVM Devnet",
+    "rpcUrl": null,
+    "chainId": "30731",
+    "symbol": "MOVE",
+    "explorer": "https://explorer.movementlabs.xyz"
+  },
+  {
+    "name": "Evoke Testnet",
+    "rpcUrl": "https://testnet-rpc.evokescan.org",
+    "chainId": "31414",
+    "symbol": "MTHN",
+    "explorer": "https://testnet-explorer.evokescan.org"
+  },
+  {
+    "name": "Wirex Pay Mainnet",
+    "rpcUrl": "https://rpc.wirexpaychain.com",
+    "chainId": "31415",
+    "symbol": "ETH",
+    "explorer": "https://blockscout.wirexpaychain.com"
+  },
+  {
+    "name": "Fusion Mainnet",
+    "rpcUrl": "https://mainnet.fusionnetwork.io",
+    "chainId": "32659",
+    "symbol": "FSN",
+    "explorer": "https://fsnscan.com"
+  },
+  {
+    "name": "Aves Mainnet",
+    "rpcUrl": "https://rpc.avescoin.io",
+    "chainId": "33333",
+    "symbol": "AVS",
+    "explorer": "https://avescan.io"
+  },
+  {
+    "name": "ZEUS Mainnet",
+    "rpcUrl": "https://mainnet-rpc.zeuschainscan.io",
+    "chainId": "34504",
+    "symbol": "ZEUSX",
+    "explorer": "https://zeuschainscan.io"
+  },
+  {
+    "name": "J2O Taro",
+    "rpcUrl": "https://rpc.j2o.io",
+    "chainId": "35011",
+    "symbol": "taro",
+    "explorer": "https://exp.j2o.io"
+  },
+  {
+    "name": "Q Testnet",
+    "rpcUrl": "https://rpc.qtestnet.org",
+    "chainId": "35443",
+    "symbol": "Q",
+    "explorer": "https://explorer.qtestnet.org"
+  },
+  {
+    "name": "OHO Mainnet",
+    "rpcUrl": "https://mainnet.oho.ai",
+    "chainId": "39815",
+    "symbol": "OHO",
+    "explorer": "https://ohoscan.com"
+  },
+  {
+    "name": "Asset Chain Mainnet",
+    "rpcUrl": "https://mainnet-rpc.assetchain.org",
+    "chainId": "42420",
+    "symbol": "RWA",
+    "explorer": "https://scan.assetchain.org"
+  },
+  {
+    "name": "Asset Chain Testnet",
+    "rpcUrl": "https://enugu-rpc.assetchain.org",
+    "chainId": "42421",
+    "symbol": "RWA",
+    "explorer": "https://scan-testnet.assetchain.org"
+  },
+  {
+    "name": "ZKFair Mainnet",
+    "rpcUrl": "https://rpc.zkfair.io",
+    "chainId": "42766",
+    "symbol": "USDC",
+    "explorer": "https://scan.zkfair.io"
+  },
+  {
+    "name": "Formicarium",
+    "rpcUrl": "https://rpc.formicarium.memecore.net",
+    "chainId": "43521",
+    "symbol": "M",
+    "explorer": "https://www.okx.com/web3/explorer/formicarium-testnet"
+  },
+  {
+    "name": "ZKFair Testnet",
+    "rpcUrl": "https://testnet-rpc.zkfair.io",
+    "chainId": "43851",
+    "symbol": "USDC",
+    "explorer": "https://testnet-scan.zkfair.io"
+  },
+  {
+    "name": "Juneo JUNE-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/JUNE/rpc",
+    "chainId": "45003",
+    "symbol": "JUNE",
+    "explorer": "https://juneoscan.io/chain/2"
+  },
+  {
+    "name": "Juneo DAI1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/DAI1/rpc",
+    "chainId": "45004",
+    "symbol": "DAI1",
+    "explorer": "https://juneoscan.io/chain/5"
+  },
+  {
+    "name": "Juneo USDT1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/USDT1/rpc",
+    "chainId": "45005",
+    "symbol": "USDT1",
+    "explorer": "https://juneoscan.io/chain/3"
+  },
+  {
+    "name": "Juneo USD1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/USD1/rpc",
+    "chainId": "45006",
+    "symbol": "USD1",
+    "explorer": "https://juneoscan.io/chain/4"
+  },
+  {
+    "name": "Juneo mBTC1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/mBTC1/rpc",
+    "chainId": "45007",
+    "symbol": "mBTC1",
+    "explorer": "https://juneoscan.io/chain/9"
+  },
+  {
+    "name": "Juneo GLD1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/GLD1/rpc",
+    "chainId": "45008",
+    "symbol": "GLD1",
+    "explorer": "https://juneoscan.io/chain/8"
+  },
+  {
+    "name": "Juneo LTC1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/LTC1/rpc",
+    "chainId": "45009",
+    "symbol": "LTC1",
+    "explorer": "https://juneoscan.io/chain/11"
+  },
+  {
+    "name": "Juneo DOGE1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/DOGE1/rpc",
+    "chainId": "45010",
+    "symbol": "DOGE1",
+    "explorer": "https://juneoscan.io/chain/10"
+  },
+  {
+    "name": "Juneo EUR1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/EUR1/rpc",
+    "chainId": "45011",
+    "symbol": "EUR1",
+    "explorer": "https://juneoscan.io/chain/6"
+  },
+  {
+    "name": "Juneo SGD1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/SGD1/rpc",
+    "chainId": "45012",
+    "symbol": "SGD1",
+    "explorer": "https://juneoscan.io/chain/7"
+  },
+  {
+    "name": "Juneo BCH1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/BCH1/rpc",
+    "chainId": "45013",
+    "symbol": "BCH1",
+    "explorer": "https://juneoscan.io/chain/12"
+  },
+  {
+    "name": "Juneo LINK1-Chain",
+    "rpcUrl": "https://rpc.juneo-mainnet.network/ext/bc/LINK1/rpc",
+    "chainId": "45014",
+    "symbol": "LINK1",
+    "explorer": "https://juneoscan.io/chain/13"
+  },
+  {
+    "name": "Deelance Mainnet",
+    "rpcUrl": "https://rpc.deelance.com",
+    "chainId": "45510",
+    "symbol": "DEE",
+    "explorer": "https://deescan.com"
+  },
+  {
+    "name": "Fusion Testnet",
+    "rpcUrl": "https://testnet.fusionnetwork.io",
+    "chainId": "46688",
+    "symbol": "T-FSN",
+    "explorer": "https://testnet.fsnscan.com"
+  },
+  {
+    "name": "Neo X Mainnet",
+    "rpcUrl": "https://mainnet-1.rpc.banelabs.org",
+    "chainId": "47763",
+    "symbol": "GAS",
+    "explorer": "https://xexplorer.neo.org"
+  },
+  {
+    "name": "Somnia Testnet",
+    "rpcUrl": "https://dream-rpc.somnia.network",
+    "chainId": "50312",
+    "symbol": "STT",
+    "explorer": "https://somnia-testnet.socialscan.io"
+  },
+  {
+    "name": "Erbie Mainnet",
+    "rpcUrl": "https://api.erbie.io",
+    "chainId": "50888",
+    "symbol": "ERB",
+    "explorer": "https://www.erbie.io/explorer"
+  },
+  {
+    "name": "Electroneum Mainnet",
+    "rpcUrl": "https://rpc.electroneum.com",
+    "chainId": "52014",
+    "symbol": "ETN",
+    "explorer": "https://blockexplorer.electroneum.com"
+  },
+  {
+    "name": "Cytonic Ethereum Testnet",
+    "rpcUrl": "http://rpc.evm.testnet.cytonic.com",
+    "chainId": "52226",
+    "symbol": "CCC",
+    "explorer": "https://explorer.evm.testnet.cytonic.com"
+  },
+  {
+    "name": "BirdLayer",
+    "rpcUrl": "https://rpc.birdlayer.xyz",
+    "chainId": "53456",
+    "symbol": "ETH",
+    "explorer": "https://scan.birdlayer.xyz"
+  },
+  {
+    "name": "OverProtocol Mainnet",
+    "rpcUrl": "https://rpc.overprotocol.com",
+    "chainId": "54176",
+    "symbol": "OVER",
+    "explorer": "https://scan.over.network"
+  },
+  {
+    "name": "Linea Sepolia",
+    "rpcUrl": "https://rpc.sepolia.linea.build",
+    "chainId": "59141",
+    "symbol": "ETH",
+    "explorer": "https://sepolia.lineascan.build"
+  },
+  {
+    "name": "Metis Sepolia Testnet",
+    "rpcUrl": "https://sepolia.metisdevops.link",
+    "chainId": "59902",
+    "symbol": "tMETIS",
+    "explorer": "https://sepolia-explorer.metisdevops.link"
+  },
+  {
+    "name": "KaiChain",
+    "rpcUrl": "https://mainnet-rpc.kaichain.net",
+    "chainId": "61406",
+    "symbol": "KEC",
+    "explorer": "https://explorer.kaichain.net"
+  },
+  {
+    "name": "Etica Mainnet",
+    "rpcUrl": "https://eticamainnet.eticascan.org",
+    "chainId": "61803",
+    "symbol": "EGAZ",
+    "explorer": "https://eticascan.org"
+  },
+  {
+    "name": "OPTOPIA Testnet",
+    "rpcUrl": "https://rpc-testnet.optopia.ai",
+    "chainId": "62049",
+    "symbol": "ETH",
+    "explorer": "https://scan-testnet.optopia.ai"
+  },
+  {
+    "name": "Optopia Mainnet",
+    "rpcUrl": "https://rpc-mainnet.optopia.ai",
+    "chainId": "62050",
+    "symbol": "ETH",
+    "explorer": "https://scan.optopia.ai"
+  },
+  {
+    "name": "MultiVAC Mainnet",
+    "rpcUrl": "https://rpc.mtv.ac",
+    "chainId": "62621",
+    "symbol": "MTV",
+    "explorer": "https://e.mtv.ac"
+  },
+  {
+    "name": "eCredits Testnet",
+    "rpcUrl": null,
+    "chainId": "63001",
+    "symbol": "ECS",
+    "explorer": "https://explorer.tst.ecredits.com"
+  },
+  {
+    "name": "CratD2C Testnet",
+    "rpcUrl": "https://cratd2c-testnet-node1.cratd2csmartchain.io/",
+    "chainId": "65349",
+    "symbol": "CRAT",
+    "explorer": "https://explorer-testnet.cratd2csmartchain.io"
+  },
+  {
+    "name": "Scolcoin Mainnet",
+    "rpcUrl": "https://mainnet-rpc.scolcoin.com",
+    "chainId": "65450",
+    "symbol": "SCOL",
+    "explorer": "https://explorer.scolcoin.com"
+  },
+  {
+    "name": "CyberChain Mainnet",
+    "rpcUrl": "https://rpc.cyberchain.xyz/",
+    "chainId": "65535",
+    "symbol": "XCC",
+    "explorer": "https://scan.cyberchain.xyz"
+  },
+  {
+    "name": "Animechain Mainnet",
+    "rpcUrl": null,
+    "chainId": "69000",
+    "symbol": "ANIME",
+    "explorer": "https://explorer.anime.xyz"
+  },
+  {
+    "name": "Thinkium Mainnet Chain 0",
+    "rpcUrl": "https://proxy.thinkiumrpc.net/",
+    "chainId": "70000",
+    "symbol": "TKM",
+    "explorer": "https://chain0.thinkiumscan.net"
+  },
+  {
+    "name": "Thinkium Mainnet Chain 1",
+    "rpcUrl": "https://proxy1.thinkiumrpc.net/",
+    "chainId": "70001",
+    "symbol": "TKM",
+    "explorer": "https://chain1.thinkiumscan.net"
+  },
+  {
+    "name": "Thinkium Mainnet Chain 2",
+    "rpcUrl": "https://proxy2.thinkiumrpc.net/",
+    "chainId": "70002",
+    "symbol": "TKM",
+    "explorer": "https://chain2.thinkiumscan.net"
+  },
+  {
+    "name": "Thinkium Mainnet Chain 103",
+    "rpcUrl": "https://proxy103.thinkiumrpc.net/",
+    "chainId": "70103",
+    "symbol": "TKM",
+    "explorer": "https://chain103.thinkiumscan.net"
+  },
+  {
+    "name": "CAGA mainnet",
+    "rpcUrl": "https://cagamainnet.com",
+    "chainId": "72888",
+    "symbol": "CAGA",
+    "explorer": "https://explorer.cagamainnet.com"
+  },
+  {
+    "name": "ICB Testnet",
+    "rpcUrl": "https://rpc1-testnet.icbnetwork.info/",
+    "chainId": "73114",
+    "symbol": "ICBT",
+    "explorer": "https://testnet.icbscan.io"
+  },
+  {
+    "name": "ICB Network",
+    "rpcUrl": "https://rpc1-mainnet.icbnetwork.info/",
+    "chainId": "73115",
+    "symbol": "ICBX",
+    "explorer": "https://icbscan.io"
+  },
+  {
+    "name": "ResinCoin Mainnet",
+    "rpcUrl": null,
+    "chainId": "75000",
+    "symbol": "RESIN",
+    "explorer": "https://explorer.resincoin.dev"
+  },
+  {
+    "name": "BORAchain mainnet",
+    "rpcUrl": "https://public-node.api.boraportal.com/bora/mainnet",
+    "chainId": "77001",
+    "symbol": "BORA",
+    "explorer": "https://scope.boraportal.com"
+  },
+  {
+    "name": "Toronet Mainnet",
+    "rpcUrl": "https://www.toronet.org/rpc2/",
+    "chainId": "77777",
+    "symbol": "TOROE",
+    "explorer": "https://toronet.org/explorer"
+  },
+  {
+    "name": "Berachain bArtio",
+    "rpcUrl": null,
+    "chainId": "80084",
+    "symbol": "BERA",
+    "explorer": "https://bartio.beratrail.io"
+  },
+  {
+    "name": "Berachain Artio",
+    "rpcUrl": null,
+    "chainId": "80085",
+    "symbol": "BERA",
+    "explorer": "https://artio.beratrail.io"
+  },
+  {
+    "name": "Hizoco mainnet",
+    "rpcUrl": "https://hizoco.net/rpc",
+    "chainId": "80096",
+    "symbol": "HZC",
+    "explorer": "https://hizoco.net:38443"
+  },
+  {
+    "name": "Unit Zero Testnet",
+    "rpcUrl": "https://rpc-testnet.unit0.dev",
+    "chainId": "88817",
+    "symbol": "UNIT0",
+    "explorer": "https://explorer-testnet.unit0.dev"
+  },
+  {
+    "name": "Unit Zero Stagenet",
+    "rpcUrl": "https://rpc-stagenet.unit0.dev",
+    "chainId": "88819",
+    "symbol": "UNIT0",
+    "explorer": "https://explorer-stagenet.unit0.dev"
+  },
+  {
+    "name": "Matr1x Testnet",
+    "rpcUrl": "https://testnet-rpc.m1chain.io",
+    "chainId": "88866",
+    "symbol": "MAX",
+    "explorer": "https://testnet-scan.m1chain.io"
+  },
+  {
+    "name": "MetaDAP Enterprise Mainnet",
+    "rpcUrl": "https://rpc.chain.metadap.io",
+    "chainId": "91120",
+    "symbol": "DAP",
+    "explorer": "https://explorer.chain.metadap.io"
+  },
+  {
+    "name": "Lux Testnet",
+    "rpcUrl": "https://api.lux-test.network",
+    "chainId": "96368",
+    "symbol": "tLUX",
+    "explorer": "https://explore.lux.network"
+  },
+  {
+    "name": "Lux Mainnet",
+    "rpcUrl": "https://api.lux.network",
+    "chainId": "96369",
+    "symbol": "LUX",
+    "explorer": "https://explore.lux.network"
+  },
+  {
+    "name": "Boba BNB Mainnet Old",
+    "rpcUrl": null,
+    "chainId": "97288",
+    "symbol": "BOBA",
+    "explorer": "https://blockexplorer.bnb.boba.network"
+  },
+  {
+    "name": "Edge Matrix Chain Sepolia",
+    "rpcUrl": "https://rpc1-sepolia.emc.network",
+    "chainId": "99879",
+    "symbol": "EMC",
+    "explorer": "https://sepolia.emcscan.com"
+  },
+  {
+    "name": "QuarkChain Mainnet Shard 0",
+    "rpcUrl": "https://mainnet-s0-ethapi.quarkchain.io",
+    "chainId": "100001",
+    "symbol": "QKC",
+    "explorer": "https://mainnet.quarkchain.io/0"
+  },
+  {
+    "name": "QuarkChain Mainnet Shard 1",
+    "rpcUrl": "https://mainnet-s1-ethapi.quarkchain.io",
+    "chainId": "100002",
+    "symbol": "QKC",
+    "explorer": "https://mainnet.quarkchain.io/1"
+  },
+  {
+    "name": "QuarkChain Mainnet Shard 2",
+    "rpcUrl": "https://mainnet-s2-ethapi.quarkchain.io",
+    "chainId": "100003",
+    "symbol": "QKC",
+    "explorer": "https://mainnet.quarkchain.io/2"
+  },
+  {
+    "name": "QuarkChain Mainnet Shard 3",
+    "rpcUrl": "https://mainnet-s3-ethapi.quarkchain.io",
+    "chainId": "100004",
+    "symbol": "QKC",
+    "explorer": "https://mainnet.quarkchain.io/3"
+  },
+  {
+    "name": "QuarkChain Mainnet Shard 4",
+    "rpcUrl": "https://mainnet-s4-ethapi.quarkchain.io",
+    "chainId": "100005",
+    "symbol": "QKC",
+    "explorer": "https://mainnet.quarkchain.io/4"
+  },
+  {
+    "name": "QuarkChain Mainnet Shard 5",
+    "rpcUrl": "https://mainnet-s5-ethapi.quarkchain.io",
+    "chainId": "100006",
+    "symbol": "QKC",
+    "explorer": "https://mainnet.quarkchain.io/5"
+  },
+  {
+    "name": "QuarkChain Mainnet Shard 6",
+    "rpcUrl": "https://mainnet-s6-ethapi.quarkchain.io",
+    "chainId": "100007",
+    "symbol": "QKC",
+    "explorer": "https://mainnet.quarkchain.io/6"
+  },
+  {
+    "name": "QuarkChain Mainnet Shard 7",
+    "rpcUrl": "https://mainnet-s7-ethapi.quarkchain.io",
+    "chainId": "100008",
+    "symbol": "QKC",
+    "explorer": "https://mainnet.quarkchain.io/7"
+  },
+  {
+    "name": "VeChain",
+    "rpcUrl": "https://rpc-mainnet.vechain.energy",
+    "chainId": "100009",
+    "symbol": "VET",
+    "explorer": "https://vechainstats.com"
+  },
+  {
+    "name": "VeChain Testnet",
+    "rpcUrl": "https://rpc-testnet.vechain.energy",
+    "chainId": "100010",
+    "symbol": "VET",
+    "explorer": "https://explore-testnet.vechain.org"
+  },
+  {
+    "name": "Socotra JUNE-Chain",
+    "rpcUrl": "https://rpc.socotra-testnet.network/ext/bc/JUNE/rpc",
+    "chainId": "101003",
+    "symbol": "JUNE",
+    "explorer": "https://socotra.juneoscan.io/chain/2"
+  },
+  {
+    "name": "Global Trust Network",
+    "rpcUrl": "https://gtn.stabilityprotocol.com",
+    "chainId": "101010",
+    "symbol": "FREE",
+    "explorer": "https://stability.blockscout.com"
+  },
+  {
+    "name": "QuarkChain Devnet Shard 0",
+    "rpcUrl": "https://devnet-s0-ethapi.quarkchain.io",
+    "chainId": "110001",
+    "symbol": "QKC",
+    "explorer": "https://devnet.quarkchain.io/0"
+  },
+  {
+    "name": "QuarkChain Devnet Shard 1",
+    "rpcUrl": "https://devnet-s1-ethapi.quarkchain.io",
+    "chainId": "110002",
+    "symbol": "QKC",
+    "explorer": "https://devnet.quarkchain.io/1"
+  },
+  {
+    "name": "QuarkChain Devnet Shard 2",
+    "rpcUrl": "https://devnet-s2-ethapi.quarkchain.io",
+    "chainId": "110003",
+    "symbol": "QKC",
+    "explorer": "https://devnet.quarkchain.io/2"
+  },
+  {
+    "name": "QuarkChain Devnet Shard 3",
+    "rpcUrl": "https://devnet-s3-ethapi.quarkchain.io",
+    "chainId": "110004",
+    "symbol": "QKC",
+    "explorer": "https://devnet.quarkchain.io/3"
+  },
+  {
+    "name": "QuarkChain Devnet Shard 4",
+    "rpcUrl": "https://devnet-s4-ethapi.quarkchain.io",
+    "chainId": "110005",
+    "symbol": "QKC",
+    "explorer": "https://devnet.quarkchain.io/4"
+  },
+  {
+    "name": "QuarkChain Devnet Shard 5",
+    "rpcUrl": "https://devnet-s5-ethapi.quarkchain.io",
+    "chainId": "110006",
+    "symbol": "QKC",
+    "explorer": "https://devnet.quarkchain.io/5"
+  },
+  {
+    "name": "QuarkChain Devnet Shard 6",
+    "rpcUrl": "https://devnet-s6-ethapi.quarkchain.io",
+    "chainId": "110007",
+    "symbol": "QKC",
+    "explorer": "https://devnet.quarkchain.io/6"
+  },
+  {
+    "name": "QuarkChain Devnet Shard 7",
+    "rpcUrl": "https://devnet-s7-ethapi.quarkchain.io",
+    "chainId": "110008",
+    "symbol": "QKC",
+    "explorer": "https://devnet.quarkchain.io/7"
+  },
+  {
+    "name": "Siberium Test Network",
+    "rpcUrl": "https://rpc.test.siberium.net",
+    "chainId": "111000",
+    "symbol": "SIBR",
+    "explorer": "https://explorer.test.siberium.net"
+  },
+  {
+    "name": "MetaDAP Enterprise Testnet",
+    "rpcUrl": "https://rpc.testnet.chain.metadap.io",
+    "chainId": "119139",
+    "symbol": "DAP",
+    "explorer": "https://explorer.testnet.chain.metadap.io"
+  },
+  {
+    "name": "Fushuma",
+    "rpcUrl": "https://rpc.fushuma.com",
+    "chainId": "121224",
+    "symbol": "FUMA",
+    "explorer": "https://fumascan.com"
+  },
+  {
+    "name": "ADIL Devnet",
+    "rpcUrl": "https://devnet.adilchain-rpc.io",
+    "chainId": "123456",
+    "symbol": "ADIL",
+    "explorer": "https://devnet.adilchain-scan.io"
+  },
+  {
+    "name": "Odyssey Chain Mainnet",
+    "rpcUrl": "https://node.dioneprotocol.com/ext/bc/D/rpc",
+    "chainId": "153153",
+    "symbol": "DIONE",
+    "explorer": "https://odysseyscan.com"
+  },
+  {
+    "name": "CryptoX",
+    "rpcUrl": "https://rpc-xcoin.cryptoxnetwork.io",
+    "chainId": "158245",
+    "symbol": "XCOIN",
+    "explorer": "https://cryptoxscan.io"
+  },
+  {
+    "name": "XCOIN",
+    "rpcUrl": "https://rpc-xcoin.cryptoxnetwork.io",
+    "chainId": "158345",
+    "symbol": "XCOIN",
+    "explorer": "https://cryptoxscan.io"
+  },
+  {
+    "name": "Taiko Alethia",
+    "rpcUrl": "https://rpc.mainnet.taiko.xyz",
+    "chainId": "167000",
+    "symbol": "ETH",
+    "explorer": "https://taikoscan.io"
+  },
+  {
+    "name": "Taiko Hekla",
+    "rpcUrl": "https://rpc.hekla.taiko.xyz",
+    "chainId": "167009",
+    "symbol": "ETH",
+    "explorer": "https://blockscoutapi.hekla.taiko.xyz"
+  },
+  {
+    "name": "Wadzchain Mainnet",
+    "rpcUrl": "https://rpc.wadzchain.io",
+    "chainId": "171717",
+    "symbol": "WCO",
+    "explorer": "https://scan.wadzchain.io"
+  },
+  {
+    "name": "Chronicle - Lit Protocol Testnet",
+    "rpcUrl": "https://chain-rpc.litprotocol.com/http",
+    "chainId": "175177",
+    "symbol": "tstLIT",
+    "explorer": "https://chain.litprotocol.com"
+  },
+  {
+    "name": "Altblockscan Mainnet",
+    "rpcUrl": "https://rpc.altblockscan.com",
+    "chainId": "191919",
+    "symbol": "ALTB",
+    "explorer": "https://scan.altblockscan.com"
+  },
+  {
+    "name": "R0AR Chain",
+    "rpcUrl": "https://rpc-r0ar.io",
+    "chainId": "193939",
+    "symbol": "ETH",
+    "explorer": "https://r0arscan.io"
+  },
+  {
+    "name": "Zoo Mainnet",
+    "rpcUrl": "https://api.zoo.network",
+    "chainId": "200200",
+    "symbol": "ZOO",
+    "explorer": "https://explore.zoo.network"
+  },
+  {
+    "name": "Bitlayer Testnet",
+    "rpcUrl": "https://testnet-rpc.bitlayer.org",
+    "chainId": "200810",
+    "symbol": "BTC",
+    "explorer": "https://testnet.btrscan.com"
+  },
+  {
+    "name": "Bitlayer Mainnet",
+    "rpcUrl": "https://rpc.bitlayer.org",
+    "chainId": "200901",
+    "symbol": "BTC",
+    "explorer": "https://www.btrscan.com"
+  },
+  {
+    "name": "Blockfit",
+    "rpcUrl": "https://rpc.blockfitscan.io",
+    "chainId": "202424",
+    "symbol": "BFIT",
+    "explorer": "https://blockfitscan.io"
+  },
+  {
+    "name": "PlatON Mainnet",
+    "rpcUrl": "https://openapi2.platon.network/rpc",
+    "chainId": "210425",
+    "symbol": "lat",
+    "explorer": "https://scan.platon.network"
+  },
+  {
+    "name": "Mas Mainnet",
+    "rpcUrl": "http://node.masnet.ai:8545",
+    "chainId": "220315",
+    "symbol": "MAS",
+    "explorer": "https://explorer.masnet.ai"
+  },
+  {
+    "name": "B20 Testnet",
+    "rpcUrl": "https://rpc.beonescan.com",
+    "chainId": "223344",
+    "symbol": "TBOC",
+    "explorer": "https://beonescan.com"
+  },
+  {
+    "name": "Studio Testnet",
+    "rpcUrl": "https://rpc.studio-blockchain.com",
+    "chainId": "240240",
+    "symbol": "STO",
+    "explorer": "https://studio-scan.com"
+  },
+  {
+    "name": "CELESTIUM Network Testnet",
+    "rpcUrl": "https://rpc-private-testnet.celestium.network",
+    "chainId": "252525",
+    "symbol": "tCLT",
+    "explorer": "https://testnet.celestium.network"
+  },
+  {
+    "name": "EgonCoin Testnet",
+    "rpcUrl": "https://rpctest.egonscan.com",
+    "chainId": "271271",
+    "symbol": "EGON",
+    "explorer": "https://testnet.egonscan.com"
+  },
+  {
+    "name": "Filecoin - Calibration testnet",
+    "rpcUrl": "https://api.calibration.node.glif.io/rpc/v1",
+    "chainId": "314159",
+    "symbol": "tFIL",
+    "explorer": "https://calibration.filscan.io"
+  },
+  {
+    "name": "WABA Chain Testnet",
+    "rpcUrl": "https://rpc.wabaworld.com",
+    "chainId": "327126",
+    "symbol": "WABA",
+    "explorer": "https://explorer.wabaworld.com"
+  },
+  {
+    "name": "TTcoin Smart Chain Mainnet",
+    "rpcUrl": "https://mainnet-rpc.tscscan.com",
+    "chainId": "330844",
+    "symbol": "TC",
+    "explorer": "https://tscscan.com"
+  },
+  {
+    "name": "Oone Chain Devnet",
+    "rpcUrl": "https://rpc.dev.oonechain.com",
+    "chainId": "333777",
+    "symbol": "tOONE",
+    "explorer": "https://dev.oonescan.com"
+  },
+  {
+    "name": "Infinaeon",
+    "rpcUrl": "https://rpc.infinaeon.com",
+    "chainId": "420000",
+    "symbol": "ETH",
+    "explorer": "https://explorer.infinaeon.com"
+  },
+  {
+    "name": "PUMPFI CHAIN TESTNET",
+    "rpcUrl": "https://rpc1testnet.pumpfi.me",
+    "chainId": "490092",
+    "symbol": "PMPT",
+    "explorer": "https://testnetscan.pumpfi.me"
+  },
+  {
+    "name": "EthereumFair",
+    "rpcUrl": "https://rpc.etherfair.org",
+    "chainId": "513100",
+    "symbol": "ETHF",
+    "explorer": "https://www.oklink.com/ethf"
+  },
+  {
+    "name": "BeanEco SmartChain",
+    "rpcUrl": "https://mainnet-rpc.bescscan.io",
+    "chainId": "535037",
+    "symbol": "BESC",
+    "explorer": "https://Bescscan.io"
+  },
+  {
+    "name": "OverProtocol Testnet",
+    "rpcUrl": "https://rpc.dolphin.overprotocol.com",
+    "chainId": "541764",
+    "symbol": "OVER",
+    "explorer": "https://dolphin-scan.over.network"
+  },
+  {
+    "name": "Pentagon Testnet",
+    "rpcUrl": "https://rpc-testnet.pentagon.games",
+    "chainId": "555555",
+    "symbol": "PEN",
+    "explorer": "https://explorer-testnet.pentagon.games"
+  },
+  {
+    "name": "Hypra Mainnet",
+    "rpcUrl": "https://rpc.hypra.network",
+    "chainId": "622277",
+    "symbol": "HYP",
+    "explorer": "https://explorer.hypra.network"
+  },
+  {
+    "name": "Atlas",
+    "rpcUrl": "https://rpc.testnet.atl.network",
+    "chainId": "622463",
+    "symbol": "TON",
+    "explorer": "https://explorer.testnet.atl.network"
+  },
+  {
+    "name": "ALL Mainnet",
+    "rpcUrl": "https://mainnet-rpc.alltra.global",
+    "chainId": "651940",
+    "symbol": "ALL",
+    "explorer": "https://alltra.global"
+  },
+  {
+    "name": "Fidesinnova",
+    "rpcUrl": "https://rpc1.fidesinnova.io",
+    "chainId": "706883",
+    "symbol": "FDS",
+    "explorer": "https://explorer.fidesinnova.io"
+  },
+  {
+    "name": "Sei Devnet",
+    "rpcUrl": "https://evm-rpc-arctic-1.sei-apis.com",
+    "chainId": "713715",
+    "symbol": "SEI",
+    "explorer": "https://seistream.app"
+  },
+  {
+    "name": "Zether Mainnet",
+    "rpcUrl": "https://rpc.zether.org",
+    "chainId": "715131",
+    "symbol": "ZTH",
+    "explorer": "https://zthscan.com"
+  },
+  {
+    "name": "Ternoa",
+    "rpcUrl": "https://rpc-mainnet.zkevm.ternoa.network",
+    "chainId": "752025",
+    "symbol": "CAPS",
+    "explorer": "https://explorer-mainnet.zkevm.ternoa.network"
+  },
+  {
+    "name": "Miexs Smartchain",
+    "rpcUrl": "https://mainnet-rpc.miexs.com",
+    "chainId": "761412",
+    "symbol": "MIX",
+    "explorer": "https://miexs.com"
+  },
+  {
+    "name": "Winr Protocol Mainnet",
+    "rpcUrl": "https://rpc.winr.games",
+    "chainId": "777777",
+    "symbol": "WINR",
+    "explorer": "https://explorer.winr.games"
+  },
+  {
+    "name": "Zebro Smart Chain",
+    "rpcUrl": "https://rpc.zebrocoin.app",
+    "chainId": "786786",
+    "symbol": "ZEBRO",
+    "explorer": "https://explorer.zebrocoin.app"
+  },
+  {
+    "name": "Emeraldz",
+    "rpcUrl": "https://public.0xrpc.com/789789",
+    "chainId": "789789",
+    "symbol": "EMED",
+    "explorer": "https://emeraldzscan.com"
+  },
+  {
+    "name": "exSat Testnet",
+    "rpcUrl": "https://evm-tst3.exsat.network",
+    "chainId": "839999",
+    "symbol": "BTC",
+    "explorer": "https://scan-testnet.exsat.network"
+  },
+  {
+    "name": "RUNEVM Testnet",
+    "rpcUrl": "https://rpc.runevm.io/",
+    "chainId": "840000",
+    "symbol": "tBTC",
+    "explorer": "https://explorer.runevm.io"
+  },
+  {
+    "name": "Vision - Mainnet",
+    "rpcUrl": "https://infragrid.v.network/ethereum/compatible",
+    "chainId": "888888",
+    "symbol": "VS",
+    "explorer": "https://www.visionscan.org"
+  },
+  {
+    "name": "FNCY Testnet",
+    "rpcUrl": "https://fncy-testnet-seed.fncy.world",
+    "chainId": "923018",
+    "symbol": "FNCY",
+    "explorer": "https://fncyscan-testnet.fncy.world"
+  },
+  {
+    "name": "Forma",
+    "rpcUrl": "https://rpc.forma.art",
+    "chainId": "984122",
+    "symbol": "TIA",
+    "explorer": "https://explorer.forma.art"
+  },
+  {
+    "name": "Forma Sketchpad",
+    "rpcUrl": "https://rpc.sketchpad-1.forma.art",
+    "chainId": "984123",
+    "symbol": "TIA",
+    "explorer": "https://explorer.sketchpad-1.forma.art"
+  },
+  {
+    "name": "Supernet Testnet",
+    "rpcUrl": "https://testnet-rpc.supernet.chaingames.io/",
+    "chainId": "998899",
+    "symbol": "CHAIN",
+    "explorer": "https://testnet-explorer.supernet.chaingames.io"
+  },
+  {
+    "name": "AmChain",
+    "rpcUrl": "https://node1.amchain.net",
+    "chainId": "999999",
+    "symbol": "AMC",
+    "explorer": "https://explorer.amchain.net"
+  },
+  {
+    "name": "Netmind Chain Testnet",
+    "rpcUrl": "https://testblock.protago-dev.com",
+    "chainId": "1100789",
+    "symbol": "NMT",
+    "explorer": "https://testbrower.protago-dev.com"
+  },
+  {
+    "name": "Etho Protocol",
+    "rpcUrl": "https://rpc.ethoprotocol.com",
+    "chainId": "1313114",
+    "symbol": "ETHO",
+    "explorer": "https://explorer.ethoprotocol.com"
+  },
+  {
+    "name": "Waterfall 9 Test Network",
+    "rpcUrl": "https://rpc.testnet9.waterfall.network",
+    "chainId": "1501869",
+    "symbol": "WATER",
+    "explorer": "https://explorer.testnet9.waterfall.network"
+  },
+  {
+    "name": "PlatON Dev Testnet2",
+    "rpcUrl": "https://devnet2openapi.platon.network/rpc",
+    "chainId": "2206132",
+    "symbol": "lat",
+    "explorer": "https://devnet2scan.platon.network"
+  },
+  {
+    "name": "COTI",
+    "rpcUrl": "https://mainnet.coti.io/rpc",
+    "chainId": "2632500",
+    "symbol": "COTI",
+    "explorer": "https://mainnet.cotiscan.io"
+  },
+  {
+    "name": "Moonchain Geneva Testnet",
+    "rpcUrl": "https://geneva-rpc.moonchain.com",
+    "chainId": "5167004",
+    "symbol": "MXC",
+    "explorer": "https://geneva-explorer.moonchain.com"
+  },
+  {
+    "name": "Reactive Kopli",
+    "rpcUrl": "https://kopli-rpc.rnk.dev",
+    "chainId": "5318008",
+    "symbol": "REACT",
+    "explorer": "https://kopli.reactscan.net"
+  },
+  {
+    "name": "PointPay Testnet",
+    "rpcUrl": "https://rpc-testnet.pointpay.io",
+    "chainId": "5511555",
+    "symbol": "PXP",
+    "explorer": "https://testnet.pointpay.io"
+  },
+  {
+    "name": "Astar zKyoto",
+    "rpcUrl": "https://rpc.startale.com/zkyoto",
+    "chainId": "6038361",
+    "symbol": "ETH",
+    "explorer": "https://astar-zkyoto.blockscout.com"
+  },
+  {
+    "name": "Safe(AnWang) Mainnet",
+    "rpcUrl": "https://rpc.anwang.com",
+    "chainId": "6666665",
+    "symbol": "SAFE",
+    "explorer": "http://safe4.anwang.com"
+  },
+  {
+    "name": "Safe(AnWang) Testnet",
+    "rpcUrl": "https://rpc-testnet.anwang.com",
+    "chainId": "6666666",
+    "symbol": "SAFE",
+    "explorer": "http://safe4-testnet.anwang.com"
+  },
+  {
+    "name": "The Ting Blockchain Testnet Explorer",
+    "rpcUrl": "https://testnet.tingchain.org",
+    "chainId": "6666689",
+    "symbol": "Ton",
+    "explorer": "https://tingscan.com"
+  },
+  {
+    "name": "COTI Testnet",
+    "rpcUrl": "https://testnet.coti.io/rpc",
+    "chainId": "7082400",
+    "symbol": "COTI",
+    "explorer": "https://testnet.cotiscan.io"
+  },
+  {
+    "name": "XCAP",
+    "rpcUrl": "https://xcap-mainnet.relay.xcap.network/znzvh2ueyvm2yts5fv5gnul395jbkfb2/rpc1",
+    "chainId": "9322252",
+    "symbol": "GAS",
+    "explorer": "https://xcap-mainnet.explorer.xcap.network"
+  },
+  {
+    "name": "R0AR Testnet",
+    "rpcUrl": "https://testnet.rpc-r0ar.io",
+    "chainId": "11166111",
+    "symbol": "ETH",
+    "explorer": "https://testnet.r0arscan.io"
+  },
+  {
+    "name": "Lummio Network",
+    "rpcUrl": "https://rpc.lummio.net",
+    "chainId": "12020498",
+    "symbol": "LRPO",
+    "explorer": "https://blockscout.lummio.net"
+  },
+  {
+    "name": "Neo X Testnet T4",
+    "rpcUrl": "https://testnet.rpc.banelabs.org/",
+    "chainId": "12227332",
+    "symbol": "GAS",
+    "explorer": "https://xt4scan.ngd.network"
+  },
+  {
+    "name": "Privix Chain Mainnet",
+    "rpcUrl": "https://mainnet-rpc.privixchain.xyz/",
+    "chainId": "16969696",
+    "symbol": "PRIVIX",
+    "explorer": "https://privixscan.io"
+  },
+  {
+    "name": "Stability Testnet",
+    "rpcUrl": "https://free.testnet.stabilityprotocol.com",
+    "chainId": "20180427",
+    "symbol": "FREE",
+    "explorer": "https://stability-testnet.blockscout.com"
+  },
+  {
+    "name": "SmartMesh Mainnet",
+    "rpcUrl": "https://jsonapi1.smartmesh.cn",
+    "chainId": "20180430",
+    "symbol": "SMT",
+    "explorer": "https://spectrum.pub"
+  },
+  {
+    "name": "Pego Network",
+    "rpcUrl": "https://pegorpc.com",
+    "chainId": "20201022",
+    "symbol": "PG",
+    "explorer": "https://scan.pego.network"
+  },
+  {
+    "name": "SoonChain Sepolia Devnet",
+    "rpcUrl": "https://sepolia.rpc.soonchain.ai",
+    "chainId": "20221001",
+    "symbol": "ETH",
+    "explorer": "https://sepolia.explorer.soonchain.ai"
+  },
+  {
+    "name": "ETP Mainnet",
+    "rpcUrl": "https://rpc.etpscan.xyz",
+    "chainId": "20256789",
+    "symbol": "ETP",
+    "explorer": "https://etpscan.xyz"
+  },
+  {
+    "name": "Corn",
+    "rpcUrl": "https://mainnet.corn-rpc.com",
+    "chainId": "21000000",
+    "symbol": "BTCN",
+    "explorer": "https://cornscan.io"
+  },
+  {
+    "name": "Corn Testnet",
+    "rpcUrl": "https://testnet.corn-rpc.com",
+    "chainId": "21000001",
+    "symbol": "BTCN",
+    "explorer": "https://testnet.cornscan.io"
+  },
+  {
+    "name": "6Degree of Outreach - Testnet",
+    "rpcUrl": "https://rpc-testnet.6dochain.com",
+    "chainId": "24772477",
+    "symbol": "6DO-T",
+    "explorer": "https://explorer-testnet.6dochain.com"
+  },
+  {
+    "name": "Excoincial Chain Mainnet",
+    "rpcUrl": "https://rpc.exlscan.com",
+    "chainId": "27082022",
+    "symbol": "EXL",
+    "explorer": "https://exlscan.com"
+  },
+  {
+    "name": "SKALE Nebula Hub Testnet",
+    "rpcUrl": "https://testnet.skalenodes.com/v1/lanky-ill-funny-testnet",
+    "chainId": "37084624",
+    "symbol": "sFUEL",
+    "explorer": "https://lanky-ill-funny-testnet.explorer.testnet.skalenodes.com"
+  },
+  {
+    "name": "Autonity Bakerloo (Thames) Testnet",
+    "rpcUrl": null,
+    "chainId": "65010000",
+    "symbol": "ATN",
+    "explorer": "https://bakerloo.autonity.org"
+  },
+  {
+    "name": "Autonity Bakerloo (Barada) Testnet",
+    "rpcUrl": null,
+    "chainId": "65010001",
+    "symbol": "ATN",
+    "explorer": "https://bakerloo.autonity.org"
+  },
+  {
+    "name": "Autonity Bakerloo (Sumida) Testnet",
+    "rpcUrl": null,
+    "chainId": "65010002",
+    "symbol": "ATN",
+    "explorer": "https://bakerloo.autonity.org"
+  },
+  {
+    "name": "Autonity Bakerloo (Yamuna) Testnet",
+    "rpcUrl": null,
+    "chainId": "65010003",
+    "symbol": "ATN",
+    "explorer": "https://bakerloo.autonity.org"
+  },
+  {
+    "name": "Autonity Piccadilly (Thames) Testnet",
+    "rpcUrl": null,
+    "chainId": "65100000",
+    "symbol": "ATN",
+    "explorer": "https://piccadilly.autonity.org"
+  },
+  {
+    "name": "Autonity Piccadilly (Barada) Testnet",
+    "rpcUrl": null,
+    "chainId": "65100001",
+    "symbol": "ATN",
+    "explorer": "https://piccadilly.autonity.org"
+  },
+  {
+    "name": "Autonity Piccadilly (Sumida) Testnet",
+    "rpcUrl": null,
+    "chainId": "65100002",
+    "symbol": "ATN",
+    "explorer": "https://piccadilly.autonity.org"
+  },
+  {
+    "name": "Autonity Piccadilly (Yamuna) Testnet",
+    "rpcUrl": null,
+    "chainId": "65100003",
+    "symbol": "ATN",
+    "explorer": "https://piccadilly.autonity.org"
+  },
+  {
+    "name": "Autonity Piccadilly (Tiber) Testnet",
+    "rpcUrl": "https://autonity.rpc.web3cdn.network/testnet",
+    "chainId": "65100004",
+    "symbol": "ATN",
+    "explorer": "https://piccadilly.autonity.org"
+  },
+  {
+    "name": "Winr Protocol Testnet",
+    "rpcUrl": "https://rpc-devnet.winr.games",
+    "chainId": "66666666",
+    "symbol": "WINR",
+    "explorer": "https://explorer-winrprotocoltestnet-wmwv59m23g.t.conduit.xyz"
+  },
+  {
+    "name": " Privix Chain Testnet",
+    "rpcUrl": "https://testnet-rpc.privixchain.xyz/",
+    "chainId": "96969696",
+    "symbol": "PRIVIX",
+    "explorer": "https://testnet.privixscan.io"
+  },
+  {
+    "name": "OneLedger Mainnet",
+    "rpcUrl": "https://mainnet-rpc.oneledger.network",
+    "chainId": "311752642",
+    "symbol": "OLT",
+    "explorer": "https://mainnet-explorer.oneledger.network"
+  },
+  {
+    "name": "Smart Mainnet",
+    "rpcUrl": null,
+    "chainId": "661898459",
+    "symbol": "SMART",
+    "explorer": "https://smartexplorer.com"
+  },
+  {
+    "name": "SKALE Calypso Hub Testnet",
+    "rpcUrl": "https://testnet.skalenodes.com/v1/giant-half-dual-testnet",
+    "chainId": "974399131",
+    "symbol": "sFUEL",
+    "explorer": "https://giant-half-dual-testnet.explorer.testnet.skalenodes.com"
+  },
+  {
+    "name": "SKALE Titan Hub Testnet",
+    "rpcUrl": "https://testnet.skalenodes.com/v1/aware-fake-trim-testnet",
+    "chainId": "1020352220",
+    "symbol": "sFUEL",
+    "explorer": "https://aware-fake-trim-testnet.explorer.testnet.skalenodes.com"
+  },
+  {
+    "name": "HUMAN Protocol",
+    "rpcUrl": "https://mainnet.skalenodes.com/v1/wan-red-ain",
+    "chainId": "1273227453",
+    "symbol": "sFUEL",
+    "explorer": "https://wan-red-ain.explorer.mainnet.skalenodes.com"
+  },
+  {
+    "name": "Aurora Mainnet",
+    "rpcUrl": "https://mainnet.aurora.dev",
+    "chainId": "1313161554",
+    "symbol": "ETH",
+    "explorer": "https://explorer.aurora.dev"
+  },
+  {
+    "name": "Aurora Testnet",
+    "rpcUrl": "https://testnet.aurora.dev/",
+    "chainId": "1313161555",
+    "symbol": "ETH",
+    "explorer": "https://explorer.testnet.aurora.dev"
+  },
+  {
+    "name": "PowerGold",
+    "rpcUrl": "https://powergold.aurora.dev",
+    "chainId": "1313161560",
+    "symbol": "ETH",
+    "explorer": "https://explorer.powergold.aurora.dev"
+  },
+  {
+    "name": "Turbo",
+    "rpcUrl": "https://rpc-0x4e45415f.aurora-cloud.dev",
+    "chainId": "1313161567",
+    "symbol": "TURBO",
+    "explorer": "https://explorer.turbo.aurora.dev"
+  },
+  {
+    "name": "Tuxappcoin",
+    "rpcUrl": "https://rpc-0x4e454165.aurora-cloud.dev",
+    "chainId": "1313161573",
+    "symbol": "TUXA",
+    "explorer": "https://explorer.tuxa.aurora.dev"
+  },
+  {
+    "name": "SKALE Titan Hub",
+    "rpcUrl": "https://mainnet.skalenodes.com/v1/parallel-stormy-spica",
+    "chainId": "1350216234",
+    "symbol": "sFUEL",
+    "explorer": "https://parallel-stormy-spica.explorer.mainnet.skalenodes.com"
+  },
+  {
+    "name": "SKALE Europa Hub Testnet",
+    "rpcUrl": "https://testnet.skalenodes.com/v1/juicy-low-small-testnet",
+    "chainId": "1444673419",
+    "symbol": "sFUEL",
+    "explorer": "https://juicy-low-small-testnet.explorer.testnet.skalenodes.com"
+  },
+  {
+    "name": "SKALE Nebula Hub",
+    "rpcUrl": "https://mainnet.skalenodes.com/v1/green-giddy-denebola",
+    "chainId": "1482601649",
+    "symbol": "sFUEL",
+    "explorer": "https://green-giddy-denebola.explorer.mainnet.skalenodes.com"
+  },
+  {
+    "name": "SKALE Calypso Hub",
+    "rpcUrl": "https://mainnet.skalenodes.com/v1/honorable-steel-rasalhague",
+    "chainId": "1564830818",
+    "symbol": "sFUEL",
+    "explorer": "https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com"
+  },
+  {
+    "name": "Harmony Mainnet Shard 0",
+    "rpcUrl": "https://api.harmony.one",
+    "chainId": "1666600000",
+    "symbol": "ONE",
+    "explorer": "https://explorer.harmony.one"
+  },
+  {
+    "name": "Harmony Mainnet Shard 1",
+    "rpcUrl": "https://api.s1.t.hmny.io",
+    "chainId": "1666600001",
+    "symbol": "ONE",
+    "explorer": "https://explorer.harmony.one/blocks/shard/1"
+  },
+  {
+    "name": "Harmony Testnet Shard 0",
+    "rpcUrl": "https://api.s0.b.hmny.io",
+    "chainId": "1666700000",
+    "symbol": "ONE",
+    "explorer": "https://explorer.testnet.harmony.one"
+  },
+  {
+    "name": "Harmony Testnet Shard 1",
+    "rpcUrl": "https://api.s1.b.hmny.io",
+    "chainId": "1666700001",
+    "symbol": "ONE",
+    "explorer": "https://explorer.testnet.harmony.one"
+  },
+  {
+    "name": "Silicon zkEVM Sepolia Testnet",
+    "rpcUrl": "https://rpc-sepolia.silicon.network",
+    "chainId": "1722641160",
+    "symbol": "ETH",
+    "explorer": "https://scope-sepolia.silicon.network"
+  },
+  {
+    "name": "Kakarot Sepolia (Deprecated)",
+    "rpcUrl": null,
+    "chainId": "1802203764",
+    "symbol": "ETH",
+    "explorer": "https://sepolia.kakarotscan.org"
+  },
+  {
+    "name": "SKALE Europa Hub",
+    "rpcUrl": "https://mainnet.skalenodes.com/v1/elated-tan-skat",
+    "chainId": "2046399126",
+    "symbol": "sFUEL",
+    "explorer": "https://elated-tan-skat.explorer.mainnet.skalenodes.com"
+  },
+  {
+    "name": "Ultima Mainnet",
+    "rpcUrl": null,
+    "chainId": "3416255149",
+    "symbol": "ULTIMA",
+    "explorer": "https://ultimachain.info"
+  },
+  {
+    "name": "OneLedger Testnet Frankenstein",
+    "rpcUrl": "https://frankenstein-rpc.oneledger.network",
+    "chainId": "4216137055",
+    "symbol": "OLT",
+    "explorer": "https://frankenstein-explorer.oneledger.network"
+  },
+  {
+    "name": "Deriw Devnet",
+    "rpcUrl": "https://rpc.dev.deriw.com",
+    "chainId": "44474237230",
+    "symbol": "Der",
+    "explorer": "https://explorer.dev.deriw.com"
+  },
+  {
+    "name": "ALDChain Testnet",
+    "rpcUrl": "https://testnet-rpc.aldrickb.xyz",
+    "chainId": "96737205180",
+    "symbol": "ALD",
+    "explorer": "https://testnet-explorer.aldrickb.xyz"
+  },
+  {
+    "name": "Thanos Sepolia",
+    "rpcUrl": "https://rpc.thanos-sepolia.tokamak.network",
+    "chainId": "111551119090",
+    "symbol": "TON",
+    "explorer": "https://explorer.thanos-sepolia.tokamak.network"
+  },
+  {
+    "name": "Ntity Mainnet",
+    "rpcUrl": "https://rpc.ntity.io",
+    "chainId": "197710212030",
+    "symbol": "NTT",
+    "explorer": "https://explorer.ntity.io"
+  },
+  {
+    "name": "Haradev Testnet",
+    "rpcUrl": "https://blockchain.haradev.com",
+    "chainId": "197710212031",
+    "symbol": "NTTH",
+    "explorer": "https://explorer.haradev.com"
+  },
+  {
+    "name": "Zeniq",
+    "rpcUrl": "https://api.zeniq.network",
+    "chainId": "383414847825",
+    "symbol": "ZENIQ",
+    "explorer": "https://zeniqscan.com"
+  }
+]

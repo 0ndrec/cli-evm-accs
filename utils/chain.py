@@ -1,6 +1,8 @@
 from typing import List, Dict, Optional
 import json
+import requests
 from pathlib import Path
+
 
 class Networks:
     def __init__(self, chains_path: str = "chains"):
@@ -27,6 +29,7 @@ class Networks:
         try:
             testnet_path = Path(chains_path) / "testnet.json"
             mainnet_path = Path(chains_path) / "mainnet.json"
+            mixed_path = Path(chains_path) / "chains.json"
             if not testnet_path.exists() or not mainnet_path.exists():
                 raise FileNotFoundError
             
@@ -34,11 +37,20 @@ class Networks:
                 testnet = json.load(f)
             with open(mainnet_path, 'r') as f:
                 mainnet = json.load(f)
+            with open(mixed_path, 'r') as f:
+                mixed = json.load(f)
+
+            # Return only alpaphabetically sorted networks by name
+            testnet = sorted(testnet, key=lambda x: x.get("name", "").lower())
+            mainnet = sorted(mainnet, key=lambda x: x.get("name", "").lower())
+            mixed = sorted(mixed, key=lambda x: x.get("name", "").lower())
                 
-            return {"testnet": testnet, "mainnet": mainnet}
+            return {"testnet": testnet, "mainnet": mainnet, "mixed": mixed}
         
         except (json.JSONDecodeError, FileNotFoundError) as e:
             raise ValueError(f"Error loading network configurations: {e}")
+        
+
 
     def get_rpc_url(self, network_name: str) -> Optional[str]:
         """
@@ -51,7 +63,7 @@ class Networks:
         Optional[str]: The RPC URL for the network or None if not found.
         """
         try:
-            for network in self.networks.get("testnet", []) + self.networks.get("mainnet", []):
+            for network in self.networks.get("testnet", []) + self.networks.get("mainnet", []) + self.networks.get("mixed", []):
                 if network.get("name") == network_name:
                     return network.get("rpcUrl")
             raise ValueError(f"Network '{network_name}' not found.")
@@ -71,7 +83,7 @@ class Networks:
         Optional[str]: The symbol for the network or None if not found.
         """
         try:
-            for network in self.networks.get("testnet", []) + self.networks.get("mainnet", []):
+            for network in self.networks.get("testnet", []) + self.networks.get("mainnet", [] + self.networks.get("mixed", [])):
                 if network.get("chainId") == network_id:
                     return network.get("symbol")
             raise ValueError(f"Network '{network_id}' not found.")

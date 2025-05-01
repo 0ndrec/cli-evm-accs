@@ -16,6 +16,7 @@ class Export:
         self.keys = keys
         self.template = template
 
+
     def to_txt(self):
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         file_name = f"{timestamp}_export.txt"
@@ -28,12 +29,13 @@ class Export:
                         file.write(f"{key} {value}\n")
                     case "0XPRIVATEKEY_ADDRESS":
                         file.write(f"0x{value} {key}\n")
+
                     case "ADDRESS_SEEDPHRASE":
                         #todo
-                        pass
+                        file.write(f"{key} {value}\n")
                     case "SEEDPHRASE_ADDRESS":
                         #todo
-                        pass
+                        file.write(f"{value} {key}\n")
                     case _:
                         print(f"Unknown template: {self.template}")
 
