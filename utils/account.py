@@ -68,7 +68,7 @@ class KeyManager:
             __pkey = self.cipher_suite.decrypt(key.encode())
             return __pkey.decode()
         except InvalidToken as e:
-            print(f"Error decrypting key")
+            print(f"Error decrypting...")
 
     def delete_key(self, name):
         if name in self.keys:

@@ -44,10 +44,6 @@ def w3_init(endpoint) -> Web3:
     return w3
 # _____________________________________________________________________________
 
-def return_to_main_menu():
-    """Helper function to return to the main menu."""
-    input("Press Enter to continue...")
-
 
 def menu():
     sentinel = "Exit"
@@ -89,7 +85,7 @@ def menu():
                     print(f"Available batches of accounts: {batches}")
                 else:
                     print("Not found any batches of accounts.")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
 
@@ -106,7 +102,7 @@ def menu():
                     private_key = private_key[2:]
                 if len(private_key) != 64:
                     print(f"{Fore.RED}\nInvalid private key. Length should be 64.{Style.RESET_ALL}\n")
-                    return_to_main_menu()
+                    input("Press Enter to continue...")
                     continue
 
                 print("\n")
@@ -114,7 +110,7 @@ def menu():
                 print(f"Account '{name}' restored successfully.\n")
                 input("Press Enter to continue...")
                 continue
-            
+
             case "Delete an account":
                 os.system('cls' if os.name == 'nt' else 'clear')
                 accounts = km.load_keys()
@@ -132,7 +128,7 @@ def menu():
                     print(f"Account '{name}' deleted.\n")
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             case "Get private key from an account":
@@ -153,7 +149,7 @@ def menu():
                         print(f"Private key for '{name}': {private_key}\n")
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             case "Generate new account(s)":
@@ -173,7 +169,7 @@ def menu():
                 for num in range(num_accounts):
                     km.create(name=f"{name_prefix}_{num + 1}")
                 print(f"Successfully generated {num_accounts} account(s).\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             case "Import batch from file":
@@ -187,7 +183,7 @@ def menu():
                 file_path = answers["file_path"]
                 if not os.path.exists(file_path):
                     print(f"{Fore.RED}\nFile not found.{Style.RESET_ALL}\n")
-                    return_to_main_menu()
+                    input("Press Enter to continue...")
                     continue
                 read = Reader(file_path)
                 acc_list = read.from_txt()
@@ -198,7 +194,7 @@ def menu():
                     print(f"Successfully imported {len(acc_list)} account(s).\n")
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             case "Connect to endpoint":
@@ -231,11 +227,11 @@ def menu():
                 endpoint = chains.get_rpc_url(answers["name"])
                 if not endpoint:
                     print(f"{Fore.RED}\nNo endpoint provided.{Style.RESET_ALL}\n")
-                    return_to_main_menu()
+                    input("Press Enter to continue...")
                     continue
                 w3 = w3_init(endpoint)
                 print("\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             
@@ -249,7 +245,7 @@ def menu():
                     print("_________________\n")
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             case "Unsafe export keys to file":
@@ -262,7 +258,7 @@ def menu():
                 if w3 is None:
                     print(f"{Fore.RED}\nPlease connect to the endpoint first.{Style.RESET_ALL}\n")
                     input("Press Enter to continue...")
-                    return_to_main_menu()
+                    continue
 
 
                 if accounts:
@@ -291,10 +287,14 @@ def menu():
                     file_format = answers["file_format"]
 
                     for acc in accounts:
-                        key = km.get_decrypted_key(acc)
-                        evm_acc = w3.eth.account.from_key(key)
-                        address = evm_acc.address
-                        mnemonic = km.get_mnemonic(acc)
+                        try:
+                            key = km.get_decrypted_key(acc)
+                            evm_acc = w3.eth.account.from_key(key)
+                            address = evm_acc.address
+                            mnemonic = km.get_mnemonic(acc)
+                        except Exception as e:
+                            print(f"{Fore.RED}\nMake sure the account is valid and try again.{Style.RESET_ALL}\n")
+                            continue
 
                         if key:
                             if "PRIVATEKEY" in template:
@@ -318,7 +318,7 @@ def menu():
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
 
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             case "Get balance of each account":
@@ -327,7 +327,7 @@ def menu():
                 if accounts:
                     if w3 is None:
                         print(f"{Fore.RED}\nPlease connect to the endpoint first.{Style.RESET_ALL}\n")
-                        return_to_main_menu()
+                        input("Press Enter to continue...")
                         continue
                     try:
                         current_symbol = chains.get_symbol_by_id(str(w3.eth.chain_id))
@@ -342,7 +342,7 @@ def menu():
                         print(f"{Fore.RED}\nError fetching balances: {e}{Style.RESET_ALL}\n")
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             case "Transaction(s) [NATIVE TOKEN]":
@@ -353,7 +353,7 @@ def menu():
                 if accounts:
                     if w3 is None:
                         print(f"{Fore.RED}\nPlease connect to the endpoint first.{Style.RESET_ALL}\n")
-                        return_to_main_menu()
+                        input("Press Enter to continue...")
                         continue
 
 
@@ -407,7 +407,7 @@ def menu():
                             gas_price = answers["gas_price"]
                         except ValueError as e:
                             print(f"{Fore.RED}\nInvalid input: {e}{Style.RESET_ALL}\n")
-                            return_to_main_menu()
+                            continue
                         # Converting to correct format (wei)
                         amount = w3.to_wei(float(amount), 'ether')
                         gas_limit = int(gas_limit)  
@@ -425,7 +425,7 @@ def menu():
                             print(f"{Fore.GREEN}\nTransaction sent successfully: {result.hex()}{Style.RESET_ALL}\n")
                         except Exception as e:
                             print(f"{Fore.RED}\nError sending transaction: {e}{Style.RESET_ALL}\n")
-                            return_to_main_menu()
+                            continue
                         # __________________________________________________________________
 
             case "Contract call(s) [ERC20 TOKEN]":
@@ -436,7 +436,7 @@ def menu():
                 if accounts:
                     if w3 is None:
                         print(f"{Fore.RED}\nPlease connect to the endpoint first.{Style.RESET_ALL}\n")
-                        return_to_main_menu()
+                        input("Press Enter to continue...")
                         continue
 
                     chain_id = w3.eth.chain_id
@@ -517,7 +517,7 @@ def menu():
 
                 else:
                     print(f"{Fore.RED}\nNo accounts found.{Style.RESET_ALL}\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
                 continue
 
             case "Exit":
@@ -526,7 +526,7 @@ def menu():
 
             case _:
                 print("Invalid choice. Please try again.\n")
-                return_to_main_menu()
+                input("Press Enter to continue...")
 
 
 if __name__ == "__main__":

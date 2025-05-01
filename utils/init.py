@@ -25,9 +25,11 @@ def configure(path, encryption_token):
 
         load_dotenv(path)
         return dotenv_values(path)
-    
     else:
         load_dotenv(path)
+        if not dotenv_values(path).get("ENCRYPTION_TOKEN"):
+            set_key(path, "ENCRYPTION_TOKEN", encryption_token)
+            print("NEW encryption token set.")
         for key in ["KEYS_PATH","ENDPOINT"]:
             value = dotenv_values(path).get(key)
             if value is None or len(value) == 0:
