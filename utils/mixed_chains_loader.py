@@ -45,7 +45,7 @@ def convert_chain_format(chain: dict) -> dict:
     """
     def is_url_reachable(url):
         try:
-            with urllib.request.urlopen(url, timeout=5) as response:
+            with urllib.request.urlopen(url, timeout=2) as response:
                 return response.status == 200
         except:
             return False
@@ -57,8 +57,8 @@ def convert_chain_format(chain: dict) -> dict:
     # Get RPC URL (first one from the list if available)
     rpc_urls = chain.get("rpc", [])
     rpc_url = rpc_urls[0] if rpc_urls else None
-    if rpc_url and not is_url_reachable(rpc_url):
-        print(f"Skipping {name} because RPC endpoint {rpc_url} is not reachable.")
+    if rpc_url and is_url_reachable(rpc_url):
+        print(f"Writing {name} ({chain_id}) RPC URL: {rpc_url}")
         return None
     
     # Get native currency symbol
@@ -81,7 +81,7 @@ def convert_chain_format(chain: dict) -> dict:
         "explorer": explorer_url
     }
 
-def write_chains_to_file(chains: typing.List[dict], file_path: Path, max_workers: int = 10) -> None:
+def write_chains_to_file(chains: typing.List[dict], file_path: Path, max_workers: int = 30) -> None:
     """
     Write the chains to a file in the target format. with threading
     """
@@ -96,8 +96,8 @@ def write_chains_to_file(chains: typing.List[dict], file_path: Path, max_workers
             if result:  # Only add if the result is not None
                 formatted_chains.append(result)
 
-
     # Write the formatted chains to file with pretty printing
+    print(f"Qantity of chains to write: {len(formatted_chains)}")
     with open(file_path, 'w') as file:
         json.dump(formatted_chains, file, indent=2)
 
@@ -106,7 +106,6 @@ if __name__ == "__main__":
     if tempfile:
         with open(tempfile, 'r') as file:
             chains = json.load(file)
-            print(f"Loaded {len(chains)} chains from {tempfile.name}")
         write_chains_to_file(chains, file_path=Path("chains.json"))
     else:
         print("Failed to preload chains.")
